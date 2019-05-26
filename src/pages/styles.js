@@ -6,11 +6,16 @@ import { Page } from "styles";
 export const HomePage = styled(Page)`
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 `;
 
 export const ContentPage = styled.div`
-  min-height: calc(100vh - 76px);
-  width: 100vw;
+  margin-top: 76px;
+`;
+
+export const AboutPage = styled(ContentPage)`
+  padding-top: 16px;
+  display: flex;
 `;
 
 const rotate = keyframes`

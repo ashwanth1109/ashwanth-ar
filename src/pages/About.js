@@ -2,8 +2,9 @@
 
 import React from "react";
 
-import { ContentPage } from "./styles";
-import Card from "components/Info/Card";
+import { AboutPage } from "./styles";
+import Info from "components/Info";
+import Skills from "components/Skills";
 import { Container } from "styles";
 
 // type Props = {
@@ -12,14 +13,14 @@ import { Container } from "styles";
 
 const About = () => {
   return (
-    <ContentPage>
-      <Container>
-        <Container flexValue="1" align="initial">
-          <Card>My Info</Card>
-        </Container>
-        <Container flexValue="2">My Skills</Container>
+    <AboutPage>
+      <Container flexValue={1}>
+        <Info />
       </Container>
-    </ContentPage>
+      <Container flexValue={2}>
+        <Skills />
+      </Container>
+    </AboutPage>
   );
 };
 
