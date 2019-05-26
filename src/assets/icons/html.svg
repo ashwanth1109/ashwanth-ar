@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="126px" viewBox="0 0 110 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>html-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-234.000000, -39.000000)" fill-rule="nonzero">
+            <g id="html-icon" transform="translate(234.000000, 39.000000)">
+                <polygon id="Shape" fill="#F4B400" points="10.037 112.876 0.032 0.661 109.968 0.661 99.952 112.859 54.933 125.339"></polygon>
+                <polygon id="Shape" fill="#F4B400" points="55 115.8 91.378 105.714 99.937 9.836 55 9.836"></polygon>
+                <path d="M55,51.455 L36.788,51.455 L35.53,37.361 L55,37.361 L55,23.599 L20.489,23.599 L20.819,27.291 L24.201,65.218 L55,65.218 L55,51.455 Z M55,87.198 L54.939,87.215 L39.612,83.075 L38.633,72.1 L24.816,72.1 L26.744,93.709 L54.937,101.535 L55,101.518 L55,87.198 Z" id="Shape" fill="#141414"></path>
+                <path d="M53.952,51.455 L53.952,65.218 L70.899,65.218 L69.302,83.067 L53.952,87.21 L53.952,101.529 L82.167,93.709 L82.374,91.384 L85.608,55.151 L85.943,51.455 L82.235,51.455 L53.952,51.455 Z M53.952,23.599 L53.952,37.361 L87.196,37.361 L87.472,34.269 L88.1,27.291 L88.429,23.599 L53.952,23.599 Z" id="Shape" fill="#141414"></path>
+            </g>
+        </g>
+    </g>
+</svg>

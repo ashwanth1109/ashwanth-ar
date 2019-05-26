@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="126px" viewBox="0 0 112 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>css</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-374.000000, -39.000000)" fill-rule="nonzero">
+            <g id="css" transform="translate(374.000000, 39.000000)">
+                <polygon id="Shape" fill="#F4B400" points="10.814 113.123 0.76 0.352 111.24 0.352 101.176 113.106 55.933 125.649 10.814 113.123"></polygon>
+                <polygon id="Shape" fill="#F4B400" points="56.001 116.062 92.56 105.926 101.161 9.572 56.001 9.572"></polygon>
+                <polygon id="Shape" fill="#141414" points="56.001 50.429 74.303 50.429 75.567 36.266 56.001 36.266 56.001 22.435 90.683 22.435 90.351 26.146 86.951 64.26 56.001 64.26 56.001 50.429"></polygon>
+                <polygon id="Shape" fill="#141414" points="57.083 86.349 57.022 86.367 41.619 82.208 40.634 71.177 26.752 71.177 28.689 92.894 57.02 100.757 57.083 100.739 57.083 86.349"></polygon>
+                <polygon id="Shape" fill="#141414" points="73.127 63.675 71.461 82.197 56.035 86.361 56.035 100.751 84.389 92.893 84.597 90.556 87.003 63.675"></polygon>
+                <path d="M57.048,22.435 L57.048,36.266 L23.64,36.266 L23.363,33.158 L22.733,26.146 L22.402,22.435 L57.048,22.435 L57.048,22.435 Z M57.001,50.431 L57.001,64.262 L41.792,64.262 L41.515,61.154 L40.884,54.142 L40.554,50.431 L57.001,50.431 L57.001,50.431 Z" id="Shape" fill="#141414"></path>
+            </g>
+        </g>
+    </g>
+</svg>
