@@ -2,14 +2,7 @@
 
 import React from "react";
 
-import {
-  Card,
-  ProfilePicture,
-  Para,
-  ScrollArea,
-  ScrollContent
-} from "./styles";
-// import Card from "./Card";
+import { Card, ProfilePicture, Para } from "./styles";
 import profile from "assets/profile-photo.jpg";
 
 type Props = {
