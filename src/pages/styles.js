@@ -18,6 +18,14 @@ export const AboutPage = styled(ContentPage)`
   display: flex;
 `;
 
+export const TechPage = styled(ContentPage)`
+  padding-top: 16px;
+  display: flex;
+  margin-left: 16px;
+  margin-right: 16px;
+  flex-direction: column;
+`;
+
 const rotate = keyframes`
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}

@@ -18,10 +18,7 @@ export const Container = styled.div`
   width: ${prop("width", "100%")};
   height: ${prop("height", "100%")};
   justify-content: ${prop("justify", "center")};
-  align-items: ${switchProp(prop("align", "center"), {
-    center: "center",
-    initial: "initial"
-  })};
+  align-items: ${prop("align", "center")};
   margin: ${prop("margin", "0px")};
 `;
 
@@ -50,4 +47,23 @@ export const Heading = styled.div`
   align-items: center;
   font-family: ${fonts.secondary};
   font-weight: bold;
+`;
+
+export const Spacer = styled.div`
+  width: ${prop("width", "100%")};
+  height: ${prop("height", "100%")};
+`;
+
+export const SubHeading = styled.div`
+  font-family: ${fonts.primary};
+  font-size: 32px;
+`;
+
+export const Para = styled.p`
+  font-family: ${fonts.secondary};
+  font-size: 16px;
+`;
+
+export const BlogImage = styled.img`
+  width: ${prop("width", "100%")};
 `;
