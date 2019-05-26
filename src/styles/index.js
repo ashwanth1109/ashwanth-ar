@@ -1,7 +1,7 @@
 // @flow
 
 import styled from "styled-components";
-import { prop, switchProp } from "styled-tools";
+import { prop } from "styled-tools";
 import { colors, fonts } from "styles/constants";
 
 export const Title = styled.h1`
