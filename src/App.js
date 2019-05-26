@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// @flow
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from "react";
+import { connect } from "react-redux";
 
-export default App;
+import * as pages from "./pages";
+
+import Header from "components/Header";
+import { Page as StyledPage } from "styles";
+
+const App = ({ page }) => {
+  const Page = pages[page];
+  if (page !== "Home") {
+    return (
+      <StyledPage>
+        <Header />
+        <Page />
+      </StyledPage>
+    );
+  }
+  return <Page />;
+};
+
+const mapStateToProps = ({ page }) => ({ page });
+
+export default connect(mapStateToProps)(App);
