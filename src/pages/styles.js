@@ -26,6 +26,24 @@ export const TechPage = styled(ContentPage)`
   flex-direction: column;
 `;
 
+export const MusicPage = styled(ContentPage)`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const VideoGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 16px;
+`;
+
+export const VideoCell = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const rotate = keyframes`
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
