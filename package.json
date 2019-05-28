@@ -47,6 +47,7 @@
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
+    "react-youtube": "^7.9.0",
     "redux": "^4.0.1",
     "redux-first-router": "^2.1.1",
     "redux-first-router-link": "^2.1.1",
