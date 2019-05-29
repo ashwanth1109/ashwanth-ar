@@ -275,6 +275,7 @@ module.exports = function(webpackEnv) {
         pages: path.join(__dirname, "../src/pages"),
         styles: path.join(__dirname, "../src/styles"),
         assets: path.join(__dirname, "../src/assets"),
+        articles: path.join(__dirname, "../src/articles"),
         components: path.join(__dirname, "../src/components"),
         hooks: path.join(__dirname, "../src/hooks"),
         data: path.join(__dirname, "../src/data"),

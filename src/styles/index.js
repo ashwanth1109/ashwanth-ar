@@ -67,3 +67,71 @@ export const Para = styled.p`
 export const BlogImage = styled.img`
   width: ${prop("width", "100%")};
 `;
+
+export const Article = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  width: 100%;
+  a {
+    color: ${colors.pureWhite};
+    text-decoration: underline;
+  }
+  h1 {
+    width: 100%;
+    background-color: ${colors.slabGray};
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ${fonts.secondary};
+    font-weight: bold;
+  }
+  h2 {
+    font-family: ${fonts.primary};
+    font-size: 32px;
+  }
+  h3 {
+    font-family: ${fonts.primary};
+  }
+  p {
+    font-family: ${fonts.secondary};
+    font-size: 16px;
+  }
+  img {
+    display: block;
+    width: 80%;
+    object-fit: contain;
+    max-height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  pre {
+    display: flex;
+  }
+  code {
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%;
+    background: ${colors.slabGray};
+  }
+`;
+
+export const Button = styled.div`
+  width: 100%;
+  height: 50px;
+  background-color: ${colors.slabGray};
+  color: ${colors.goldenYellow};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ${fonts.primary};
+  font-size: 1.5rem;
+  transition: 0.4s ease-in-out;
+  :hover {
+    background-color: ${colors.goldenYellow};
+    cursor: pointer;
+    color: ${colors.slabGray};
+  }
+`;

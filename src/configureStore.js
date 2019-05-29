@@ -9,6 +9,7 @@ const routesMap = {
   HOME: "/",
   ABOUT: "/about",
   TECH: "/tech",
+  TECH_ARTICLES: "/tech/:article",
   MUSIC: "/music",
   BOOKS: "/books"
 };

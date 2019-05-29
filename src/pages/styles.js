@@ -21,8 +21,8 @@ export const AboutPage = styled(ContentPage)`
 export const TechPage = styled(ContentPage)`
   padding-top: 16px;
   display: flex;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
   flex-direction: column;
 `;
 
