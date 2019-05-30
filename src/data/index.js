@@ -27,8 +27,8 @@ export const menuOptions = [
     link: "/music"
   },
   {
-    id: "BOOKS",
-    link: "/books"
+    id: "PHILOSOPHY",
+    link: "/philosophy"
   }
 ];
 
@@ -88,5 +88,15 @@ export const miniApps = [
     image: eventful,
     github: "",
     live: ""
+  }
+];
+
+export const techArticles = [
+  {
+    title: "DEV OPS VS SRE: Competing Standards?",
+    link: "dev-ops-vs-sre",
+    date: "May 30, 2019",
+    description: "To build, maintain and run production systems at scale",
+    length: "5 min read"
   }
 ];

@@ -11,7 +11,7 @@ const routesMap = {
   TECH: "/tech",
   TECH_ARTICLES: "/tech/:article",
   MUSIC: "/music",
-  BOOKS: "/books"
+  PHILOSOPHY: "/philosophy"
 };
 
 export default function configureStore(preloadedState) {

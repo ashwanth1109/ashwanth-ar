@@ -1,4 +1,4 @@
-# DEV OPS VS SRE: Competing Standards or Friends
+# DEV OPS VS SRE: Competing Standards?
 
 ![The DevOps Movement](https://cdn-images-1.medium.com/max/2600/1*EBXc9eJ1YRFLtkNI_djaAw.png)
 

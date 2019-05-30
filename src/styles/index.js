@@ -135,3 +135,8 @@ export const Button = styled.div`
     color: ${colors.slabGray};
   }
 `;
+
+export const Quote = styled.span`
+  font-style: oblique;
+  margin-right: 16px;
+`;

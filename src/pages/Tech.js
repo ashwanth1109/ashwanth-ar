@@ -1,19 +1,14 @@
 // @flow
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { TechPage } from "./styles";
-import {
-  Heading,
-  SubHeading,
-  Spacer,
-  Para,
-  Container,
-  BlogImage,
-  Article
-} from "styles";
+import { Heading } from "styles";
 
 import MiniApps from "components/MiniApps";
+import BlogPost from "components/BlogPost";
+
+import { techArticles } from "data";
 
 // type Props = {
 //   //
@@ -22,6 +17,14 @@ import MiniApps from "components/MiniApps";
 const Tech = () => {
   return (
     <TechPage>
+      <Heading>THE DEVIL IS IN THE DETAILS</Heading>
+      {techArticles.map((article, id) => (
+        <BlogPost key={id} article={article} />
+      ))}
+      <Heading>THE BIGGER PICTURE</Heading>
+      {techArticles.map((article, id) => (
+        <BlogPost key={id} article={article} />
+      ))}
       <MiniApps />
     </TechPage>
   );

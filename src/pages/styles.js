@@ -31,6 +31,10 @@ export const MusicPage = styled(ContentPage)`
   flex-direction: column;
 `;
 
+export const PhilosophyPage = styled(ContentPage)`
+  padding: 32px;
+`;
+
 export const VideoGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
