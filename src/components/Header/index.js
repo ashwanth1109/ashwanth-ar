@@ -55,7 +55,9 @@ const Header = ({ currentPage, width, toggleShowMenu }: Props) => {
               ))}
             </Menu>
           )}
-          <HamburgerMenu src={menu} onClick={toggleShowMenu} />
+          {width <= 500 && (
+            <HamburgerMenu src={menu} onClick={toggleShowMenu} />
+          )}
         </VisibleHeader>
         {width <= 500 && <Collapsible currentPage={currentPage} />}
       </StyledHeader>
