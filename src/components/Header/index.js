@@ -9,10 +9,14 @@ import {
   VisibleHeader,
   Logo,
   Menu,
-  MenuOption
+  MenuOption,
+  HamburgerMenu
 } from "./styles";
 
 import logo from "assets/logo.svg";
+import menu from "assets/menu.svg";
+import { toggleCollapsibleMenu } from "actions/ui";
+
 import { headerOptions } from "data";
 import { string } from "utils";
 import ContactDetails from "./ContactDetails";
@@ -20,10 +24,11 @@ import Collapsible from "./Collapsible";
 
 type Props = {
   currentPage: string,
-  width: Number
+  width: Number,
+  toggleShowMenu: Function
 };
 
-const Header = ({ currentPage, width }: Props) => {
+const Header = ({ currentPage, width, toggleShowMenu }: Props) => {
   const [contactMenu, setContactMenu] = useState(false);
   console.log(width);
 
@@ -50,8 +55,9 @@ const Header = ({ currentPage, width }: Props) => {
               ))}
             </Menu>
           )}
-          {width <= 500 && <Collapsible currentPage={currentPage} />}
+          <HamburgerMenu src={menu} onClick={toggleShowMenu} />
         </VisibleHeader>
+        {width <= 500 && <Collapsible currentPage={currentPage} />}
       </StyledHeader>
     </>
   );
@@ -62,4 +68,7 @@ const mapStateToProps = ({ location, app }) => ({
   width: app.viewport.w
 });
 
-export default connect(mapStateToProps)(Header);
+export default connect(
+  mapStateToProps,
+  { toggleShowMenu: toggleCollapsibleMenu }
+)(Header);

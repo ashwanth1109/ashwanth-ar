@@ -112,13 +112,15 @@ export const HamburgerMenu = styled.img`
 
 export const CollapsibleMenu = styled.div`
   position: absolute;
-  z-index: 0;
-  top: 76px;
+  z-index: -1;
+  top: ${ifProp("showMenu", "76px", "-228px")};
+  transition: 1s ease-in-out top;
   right: 0px;
   width: 200px;
-  height: 300px;
   background: ${colors.darkNight};
-  border: 2px solid ${colors.pureWhite};
+  border-bottom: 2px solid ${colors.pureWhite};
+  border-left: 2px solid ${colors.pureWhite};
+  border-right: 2px solid ${colors.pureWhite};
 `;
 
 export const HamburgerMenuOption = styled(MenuOption)`
