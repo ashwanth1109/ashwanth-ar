@@ -50,8 +50,8 @@ const Header = ({ currentPage, width }: Props) => {
               ))}
             </Menu>
           )}
+          {width <= 500 && <Collapsible currentPage={currentPage} />}
         </VisibleHeader>
-        {width <= 500 && <Collapsible currentPage={currentPage} />}
       </StyledHeader>
     </>
   );

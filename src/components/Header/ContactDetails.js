@@ -1,6 +1,7 @@
 // @flow
 
 import React from "react";
+import { connect } from "react-redux";
 
 import { Contact, Tray, IconContainer, IconTitle, Icon } from "./styles";
 
@@ -8,19 +9,20 @@ import { iconPack0 } from "assets/icons";
 import { Container } from "styles";
 
 type Props = {
-  show: boolean
+  show: boolean,
+  width: Number
 };
 
-const ContactDetails = ({ show }: Props) => {
+const ContactDetails = ({ show, width }: Props) => {
   return (
     <Contact show={show}>
-      <Tray show={show}>
-        <Container justify="space-around">
+      <Tray show={show} smallText={width < 600}>
+        <Container justify={width > 600 ? "space-around" : "center"}>
           Connect with me:
           {iconPack0.map((icon, id) => (
             <IconContainer key={id}>
               <Icon src={icon.src} />
-              <IconTitle>{icon.name}</IconTitle>
+              {width > 600 && <IconTitle>{icon.name}</IconTitle>}
             </IconContainer>
           ))}
         </Container>
@@ -29,4 +31,8 @@ const ContactDetails = ({ show }: Props) => {
   );
 };
 
-export default ContactDetails;
+const mapStateToProps = ({ app }) => ({
+  width: app.viewport.w
+});
+
+export default connect(mapStateToProps)(ContactDetails);

@@ -79,13 +79,14 @@ export const Tray = styled.div`
   height: 60px;
   top: ${ifProp("show", "0px", "-60px")};
   transition: 0.5s ease-in-out top;
-  font-size: 32px;
+  font-size: ${ifProp("smallText", "20px", "32px")};
   font-family: ${fonts.primary};
   display: flex;
   align-items: center;
 `;
 
 export const IconContainer = styled.div`
+  margin-left: 16px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -104,7 +105,7 @@ export const HamburgerMenu = styled.img`
   height: 30px;
   cursor: pointer;
   position: absolute;
-  top: 32px;
+  top: 24px;
   right: 16px;
   z-index: 2;
 `;
