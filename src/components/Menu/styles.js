@@ -1,7 +1,6 @@
 // @flow
 
 import styled from "styled-components";
-import { colors, fonts } from "styles/constants";
 
 import { Button } from "styles";
 
