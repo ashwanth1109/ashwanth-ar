@@ -5,6 +5,8 @@ import { connectRoutes } from "redux-first-router";
 
 import page from "./pageReducer";
 
+import app from "reducers";
+
 const routesMap = {
   HOME: "/",
   ABOUT: "/about",
@@ -17,7 +19,8 @@ const routesMap = {
 export default function configureStore(preloadedState) {
   const { reducer, middleware, enhancer } = connectRoutes(routesMap);
 
-  const rootReducer = combineReducers({ page, location: reducer });
+  console.log(app);
+  const rootReducer = combineReducers({ page, location: reducer, app });
   const middlewares = applyMiddleware(middleware);
 
   // For devtools extension
