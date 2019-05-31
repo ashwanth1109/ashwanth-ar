@@ -16,42 +16,50 @@ import logo from "assets/logo.svg";
 import { headerOptions } from "data";
 import { string } from "utils";
 import ContactDetails from "./ContactDetails";
+import Collapsible from "./Collapsible";
 
 type Props = {
-  currentPage: string
+  currentPage: string,
+  width: Number
 };
 
-const Header = ({ currentPage }: Props) => {
+const Header = ({ currentPage, width }: Props) => {
   const [contactMenu, setContactMenu] = useState(false);
+  console.log(width);
+
   return (
     <>
       <StyledHeader>
         <ContactDetails show={contactMenu} />
         <Logo src={logo} onClick={() => setContactMenu(prev => !prev)} />
         <VisibleHeader>
-          <Menu>
-            {headerOptions.map((option, id) => (
-              <Link
-                key={id}
-                to={{
-                  type: option.id,
-                  payload: {}
-                }}
-              >
-                <MenuOption selected={option.id === currentPage}>
-                  {string.capitalizeString(option.id)}
-                </MenuOption>
-              </Link>
-            ))}
-          </Menu>
+          {width > 500 && (
+            <Menu>
+              {headerOptions.map((option, id) => (
+                <Link
+                  key={id}
+                  to={{
+                    type: option.id,
+                    payload: {}
+                  }}
+                >
+                  <MenuOption selected={option.id === currentPage}>
+                    {string.capitalizeString(option.id)}
+                  </MenuOption>
+                </Link>
+              ))}
+            </Menu>
+          )}
         </VisibleHeader>
+        {width <= 500 && <Collapsible currentPage={currentPage} />}
       </StyledHeader>
     </>
   );
 };
 
-const mapStateToProps = ({ location }) => ({
-  currentPage: location.type
+const mapStateToProps = ({ location, app }) => ({
+  currentPage: location.type,
+  width: app.viewport.w
 });
 
 export default connect(mapStateToProps)(Header);

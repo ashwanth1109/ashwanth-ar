@@ -19,7 +19,6 @@ const routesMap = {
 export default function configureStore(preloadedState) {
   const { reducer, middleware, enhancer } = connectRoutes(routesMap);
 
-  console.log(app);
   const rootReducer = combineReducers({ page, location: reducer, app });
   const middlewares = applyMiddleware(middleware);
 

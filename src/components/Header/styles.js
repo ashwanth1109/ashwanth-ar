@@ -10,9 +10,13 @@ export const Header = styled.div`
   width: 100%;
   position: fixed;
   background: ${colors.darkNight};
+  z-index: 1;
 `;
 
 export const VisibleHeader = styled.div`
+  position: relative;
+  z-index: 1;
+  background: ${colors.darkNight};
   height: 76px;
   display: flex;
   justify-content: flex-end;
@@ -21,6 +25,7 @@ export const VisibleHeader = styled.div`
 `;
 
 export const Logo = styled(StyledLogo)`
+  z-index: 2;
   width: 60px;
   height: 60px;
   margin-top: 8px;
@@ -93,4 +98,34 @@ export const Icon = styled.img`
 
 export const IconTitle = styled.div`
   text-decoration: underline;
+`;
+
+export const HamburgerMenu = styled.img`
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  z-index: 2;
+`;
+
+export const CollapsibleMenu = styled.div`
+  position: absolute;
+  z-index: 0;
+  top: 76px;
+  right: 0px;
+  width: 200px;
+  height: 300px;
+  background: ${colors.darkNight};
+  border: 2px solid ${colors.pureWhite};
+`;
+
+export const HamburgerMenuOption = styled(MenuOption)`
+  width: 100%;
+  height: 60px;
+  border-bottom: 0px;
+  color: ${ifProp("selected", colors.goldenYellow, colors.pureWhite)};
+  :hover {
+    background-color: ${colors.slabGray};
+  }
 `;
