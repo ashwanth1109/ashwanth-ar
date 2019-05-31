@@ -11,7 +11,7 @@ import eventful from "assets/projects/eventful.png";
 
 export const titleText = "Hello, I'm Ashwanth";
 
-export const typewriter = ["DEVELOPER", "PIANIST", "DESIGNER", "ENTREPRENEUR"];
+export const typewriter = ["DEVELOPER", "PIANIST", "DESIGNER", "INTRAPRENEUR"];
 
 export const menuOptions = [
   {
