@@ -1,6 +1,7 @@
 // @flow
 
 import React, { useCallback } from "react";
+import Link from "redux-first-router-link";
 
 import { Menu as StyledMenu, Option } from "./styles";
 
@@ -11,15 +12,22 @@ type Props = {
 };
 
 const Menu = ({ options }: Props) => {
-  const changeRoute = useCallback(link => {
-    window.location.href = link;
-  }, []);
+  // const changeRoute = useCallback(link => {
+  //   window.location.href = link;
+  // }, []);
 
   return (
     <StyledMenu>
       {options.map(option => (
         <Container key={option.id}>
-          <Option onClick={() => changeRoute(option.link)}>{option.id}</Option>
+          <Link
+            to={{
+              type: option.id,
+              payload: {}
+            }}
+          >
+            <Option>{option.id}</Option>
+          </Link>
         </Container>
       ))}
     </StyledMenu>
