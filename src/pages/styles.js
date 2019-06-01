@@ -21,9 +21,23 @@ export const AboutPage = styled(ContentPage)`
 export const TechPage = styled(ContentPage)`
   padding-top: 16px;
   display: flex;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
   flex-direction: column;
+  max-width: 1000px;
+  width: 90vw;
+`;
+
+export const TechArticlePage = styled(ContentPage)`
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
 `;
 
 export const MusicPage = styled(ContentPage)`

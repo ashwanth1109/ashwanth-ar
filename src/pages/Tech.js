@@ -8,7 +8,7 @@ import { Heading } from "styles";
 import MiniApps from "components/MiniApps";
 import BlogPost from "components/BlogPost";
 
-import { techArticles } from "data";
+import { bigPicturePosts, codePosts } from "data";
 
 // type Props = {
 //   //
@@ -18,11 +18,11 @@ const Tech = () => {
   return (
     <TechPage>
       <Heading>THE DEVIL IS IN THE DETAILS</Heading>
-      {techArticles.map((article, id) => (
+      {codePosts.map((article, id) => (
         <BlogPost key={id} article={article} />
       ))}
       <Heading>THE BIGGER PICTURE</Heading>
-      {techArticles.map((article, id) => (
+      {bigPicturePosts.map((article, id) => (
         <BlogPost key={id} article={article} />
       ))}
       <MiniApps />

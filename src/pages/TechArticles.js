@@ -1,34 +1,51 @@
 // @flow
 
 import React, { useEffect, useState } from "react";
+import { connect } from "react-redux";
 import marked from "marked";
 import Highlight from "react-highlight";
 
-import { AboutPage } from "./styles";
+import { TechArticlePage } from "./styles";
 
+import { techArticles } from "data";
 import { Article } from "styles";
 
 type Props = {
-  test: any
+  article: string
 };
 
-const TechArticles = ({ test }: Props) => {
+const TechArticles = ({ article }: Props) => {
   const [markdown, setMarkdown] = useState("");
-  useEffect(() => {
-    const readmePath = require("../articles/DevOps-vs-SRE.md");
-    fetch(readmePath)
-      .then(res => res.text())
-      .then(text => setMarkdown(marked(text)));
-  }, []);
+  const { content, component } = techArticles[article] || {};
 
-  console.log(markdown);
-  return (
-    <AboutPage>
-      <Article>
-        <Highlight innerHTML={true}>{markdown}</Highlight>
-      </Article>
-    </AboutPage>
-  );
+  useEffect(() => {
+    if (content) {
+      fetch(content)
+        .then(res => res.text())
+        .then(text => setMarkdown(marked(text)));
+    } else setMarkdown("NOT_FOUND");
+  }, [content]);
+
+  const renderComponent = () => {
+    if (component) return component();
+    return null;
+  };
+
+  if (markdown !== "NOT_FOUND") {
+    return (
+      <TechArticlePage>
+        {renderComponent()}
+        <Article>
+          <Highlight innerHTML={true}>{markdown}</Highlight>
+        </Article>
+      </TechArticlePage>
+    );
+  }
+  return <TechArticlePage>Article Not Found</TechArticlePage>;
 };
 
-export default TechArticles;
+const mapStateToProps = ({ location }) => ({
+  article: location.payload.article
+});
+
+export default connect(mapStateToProps)(TechArticles);
