@@ -1,40 +1,74 @@
 // @flow
 
 import React from "react";
+import { connect } from "react-redux";
 import Youtube from "react-youtube";
 
-import { MusicPage, VideoGrid, VideoCell } from "./styles";
-import { Heading, SubHeading } from "styles";
+import {
+  MusicPage,
+  VideoGridL,
+  VideoCellL,
+  VideoContentL,
+  VideoGridM,
+  VideoContentS
+} from "./styles";
 
-// type Props = {
-//   //
-// };
+import { Heading, Container } from "styles";
 
-const opts = {
-  width: "400",
-  height: "240"
+type Props = {
+  width: Number
 };
 
-const Music = () => {
+const Music = ({ width }: Props) => {
+  console.log(width);
+  const renderContent = () => (
+    <>
+      <VideoCellL>
+        <VideoContentL>
+          <Heading>River flows in you - Yiruma</Heading>
+          <Youtube videoId="O4mouZ35z7U" />
+        </VideoContentL>
+      </VideoCellL>
+      <VideoCellL>
+        <VideoContentL>
+          <Heading>Light of the seven - Ramin Djawadi</Heading>
+          <Youtube videoId="zIJf9nQ50-Q" />
+        </VideoContentL>
+      </VideoCellL>
+    </>
+  );
+
+  if (width > 1000) {
+    return (
+      <MusicPage>
+        <VideoGridL>{renderContent()}</VideoGridL>
+      </MusicPage>
+    );
+  } else if (width > 600) {
+    return (
+      <MusicPage>
+        <VideoGridM>{renderContent()}</VideoGridM>
+      </MusicPage>
+    );
+  }
   return (
     <MusicPage>
-      <Heading>River Flows In You - Yiruma</Heading>
-      <VideoGrid>
-        <VideoCell>
-          <SubHeading>Iteration 1</SubHeading>
-          <Youtube opts={opts} videoId="hHANuNDUAo8" />
-        </VideoCell>
-        <VideoCell>
-          <SubHeading>Iteration 2</SubHeading>
-          <Youtube opts={opts} videoId="ZLwcfGW1Dow" />
-        </VideoCell>
-        <VideoCell>
-          <SubHeading>Iteration 3</SubHeading>
-          <Youtube opts={opts} videoId="jNQBEcAj0Do" />
-        </VideoCell>
-      </VideoGrid>
+      <Container flex="column">
+        <VideoContentS>
+          <Heading>River flows in you - Yiruma</Heading>
+          <Youtube videoId="O4mouZ35z7U" />
+        </VideoContentS>
+        <VideoContentS>
+          <Heading>Light of the seven - Ramin Djawadi</Heading>
+          <Youtube videoId="zIJf9nQ50-Q" />
+        </VideoContentS>
+      </Container>
     </MusicPage>
   );
 };
 
-export default Music;
+const mapStateToProps = ({ app }) => ({
+  width: app.viewport.w
+});
+
+export default connect(mapStateToProps)(Music);

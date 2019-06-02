@@ -1,6 +1,7 @@
 // @flow
 
 import styled, { keyframes } from "styled-components";
+
 import { Page } from "styles";
 
 export const HomePage = styled(Page)`
@@ -42,24 +43,54 @@ export const TechArticlePage = styled(ContentPage)`
 
 export const MusicPage = styled(ContentPage)`
   display: flex;
-  flex-direction: column;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const CredoPage = styled(ContentPage)`
   padding: 32px;
 `;
 
-export const VideoGrid = styled.div`
+export const VideoGridL = styled.div`
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 32px;
 `;
 
-export const VideoCell = styled.div`
-  width: 100%;
+export const VideoGridM = styled.div`
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+`;
+
+export const VideoCellL = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const VideoContentL = styled.div`
+  width: 480px;
+  iframe {
+    width: 480px;
+    height: 270px;
+    margin-top: 16px;
+  }
+`;
+
+export const VideoContentS = styled.div`
+  width: 100vw;
+  iframe {
+    width: 100vw;
+    height: 270px;
+    margin-top: 16px;
+  }
 `;
 
 const rotate = keyframes`
