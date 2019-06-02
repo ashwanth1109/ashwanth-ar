@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { PhilosophyPage } from "./styles";
+import { CredoPage } from "./styles";
 
 import { Heading, Quote } from "styles";
 
@@ -10,15 +10,15 @@ import { Heading, Quote } from "styles";
 //   //
 // };
 
-const Philosophy = () => {
+const Credo = () => {
   return (
-    <PhilosophyPage>
+    <CredoPage>
       <Heading>
         <Quote>“The unexamined life is not worth living”</Quote>{" "}
         <span style={{ marginRight: "16px" }}>-</span> Socrates.
       </Heading>
-    </PhilosophyPage>
+    </CredoPage>
   );
 };
 
-export default Philosophy;
+export default Credo;

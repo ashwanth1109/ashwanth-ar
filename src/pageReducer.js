@@ -5,7 +5,7 @@ const components = {
   ABOUT: "About",
   TECH: "Tech",
   MUSIC: "Music",
-  PHILOSOPHY: "Philosophy",
+  CREDO: "Credo",
   TECH_ARTICLES: "TechArticles",
   [NOT_FOUND]: "NotFound"
 };

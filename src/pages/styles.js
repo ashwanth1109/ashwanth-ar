@@ -45,7 +45,7 @@ export const MusicPage = styled(ContentPage)`
   flex-direction: column;
 `;
 
-export const PhilosophyPage = styled(ContentPage)`
+export const CredoPage = styled(ContentPage)`
   padding: 32px;
 `;
 

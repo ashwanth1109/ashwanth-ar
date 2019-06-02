@@ -9,7 +9,7 @@ const routesMap = {
   TECH: "/tech",
   TECH_ARTICLES: "/tech/:article",
   MUSIC: "/music",
-  PHILOSOPHY: "/philosophy"
+  CREDO: "/credo"
 };
 
 const options = {

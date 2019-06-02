@@ -32,8 +32,8 @@ export const menuOptions = [
     link: "/music"
   },
   {
-    id: "PHILOSOPHY",
-    link: "/philosophy"
+    id: "CREDO",
+    link: "/credo"
   }
 ];
 
