@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useReducer, useCallback } from "react";
+import React, { useReducer, useCallback, useEffect, useState } from "react";
 
 import { Slide, Carousel } from "./styles";
 
@@ -39,6 +39,19 @@ const SlideshowCarousel = ({ test }: Props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   console.log(state);
   const { positions, transitions, slideIds } = state;
+
+  const [loadedCount, setLoadedCount] = useState(0);
+
+  useEffect(() => {
+    slides.map(slide => {
+      const img = new Image();
+      img.src = slide;
+      img.onload = () => {
+        setLoadedCount(prev => prev + 1);
+      };
+      return null;
+    });
+  }, []);
 
   const getNextSlideIds = useCallback(
     () => [slideIds[1], slideIds[1] < slides.length - 1 ? slideIds[1] + 1 : 0],
@@ -90,6 +103,9 @@ const SlideshowCarousel = ({ test }: Props) => {
     changeSlides();
   }, 3000);
 
+  if (loadedCount !== slides.length) {
+    return <div>Images are still loading</div>;
+  }
   return (
     <Carousel>
       {/* SLIDE 1 - USUALLY CURRENT SLIDE */}
