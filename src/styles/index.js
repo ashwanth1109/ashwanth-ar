@@ -1,7 +1,7 @@
 // @flow
 
 import styled from "styled-components";
-import { prop } from "styled-tools";
+import { prop, ifProp } from "styled-tools";
 import { colors, fonts } from "styles/constants";
 
 export const Title = styled.h1`
@@ -87,6 +87,7 @@ export const Article = styled.div`
     align-items: center;
     font-family: ${fonts.secondary};
     font-weight: bold;
+    font-size: ${ifProp("smallDevice", "24px", "32px")};
   }
   h2 {
     font-family: ${fonts.primary};
