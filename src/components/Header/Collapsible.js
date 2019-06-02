@@ -7,18 +7,20 @@ import Link from "redux-first-router-link";
 import { CollapsibleMenu, HamburgerMenuOption } from "./styles";
 import { headerOptions } from "data";
 import { string } from "utils";
+import { toggleCollapsibleMenu } from "actions/ui";
 
 type Props = {
   currentPage: any,
-  showMenu: boolean
+  showMenu: boolean,
+  toggleMenu: Function
 };
 
-const Collapsible = ({ currentPage, showMenu }: Props) => {
+const Collapsible = ({ currentPage, showMenu, toggleMenu }: Props) => {
   return (
     <>
       <CollapsibleMenu showMenu={showMenu}>
         {headerOptions.map((option, id) => (
-          <Link to={{ type: option.id, payload: {} }}>
+          <Link to={{ type: option.id, payload: {} }} onClick={toggleMenu}>
             <HamburgerMenuOption selected={option.id === currentPage}>
               {string.capitalizeString(option.id)}
             </HamburgerMenuOption>
@@ -33,4 +35,7 @@ const mapStateToProps = ({ app }) => ({
   showMenu: app.ui.collapsibleMenu
 });
 
-export default connect(mapStateToProps)(Collapsible);
+export default connect(
+  mapStateToProps,
+  { toggleMenu: toggleCollapsibleMenu }
+)(Collapsible);
