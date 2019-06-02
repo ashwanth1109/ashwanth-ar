@@ -2,10 +2,15 @@
 
 import React, { useReducer, useCallback, useEffect, useState } from "react";
 
-import { Slide, Carousel } from "./styles";
+import { Slide, Carousel, LoadingInfo, Dots, Dot } from "./styles";
 
 import starWars1 from "assets/slideshow/starWars1.jpg";
 import batman1 from "assets/slideshow/batman1.jpg";
+import deadpool1 from "assets/slideshow/deadpool1.jpg";
+
+import Loader from "components/Loader";
+
+import { Container } from "styles";
 
 import { useInterval } from "hooks";
 
@@ -13,7 +18,7 @@ type Props = {
   test: any
 };
 
-const slides = [starWars1, batman1];
+const slides = [starWars1, batman1, deadpool1];
 
 const initialState = {
   positions: ["0%", "100%"],
@@ -37,10 +42,10 @@ const reducer = (state, { type, payload }) => {
 
 const SlideshowCarousel = ({ test }: Props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log(state);
   const { positions, transitions, slideIds } = state;
 
   const [loadedCount, setLoadedCount] = useState(0);
+  const [selectedDot, setSelectedDot] = useState(0);
 
   useEffect(() => {
     slides.map(slide => {
@@ -66,6 +71,9 @@ const SlideshowCarousel = ({ test }: Props) => {
         positions: ["-100%", "0%"]
       }
     });
+
+    setSelectedDot(slideIds[1]);
+
     setTimeout(() => {
       dispatch({
         type: "SET_TRANSITION",
@@ -73,14 +81,12 @@ const SlideshowCarousel = ({ test }: Props) => {
           transitions: [false, false]
         }
       });
-      console.log("slide ids were changed");
       dispatch({
         type: "SET_SLIDE",
         payload: {
           slideIds: getNextSlideIds()
         }
       });
-      console.log("position was swapped");
       dispatch({
         type: "SET_POSITION",
         payload: {
@@ -88,7 +94,6 @@ const SlideshowCarousel = ({ test }: Props) => {
         }
       });
       setTimeout(() => {
-        console.log("turn on transiitions");
         dispatch({
           type: "SET_TRANSITION",
           payload: {
@@ -97,15 +102,23 @@ const SlideshowCarousel = ({ test }: Props) => {
         });
       }, 0);
     }, 1500);
-  }, [getNextSlideIds]);
+  }, [getNextSlideIds, slideIds]);
 
   useInterval(() => {
     changeSlides();
   }, 3000);
 
   if (loadedCount !== slides.length) {
-    return <div>Images are still loading</div>;
+    return (
+      <Carousel>
+        <Container flex="column">
+          <LoadingInfo>Hold on, we're loading assets</LoadingInfo>
+          <Loader />
+        </Container>
+      </Carousel>
+    );
   }
+
   return (
     <Carousel>
       {/* SLIDE 1 - USUALLY CURRENT SLIDE */}
@@ -120,6 +133,12 @@ const SlideshowCarousel = ({ test }: Props) => {
         position={positions[1]}
         transition={transitions[1]}
       />
+
+      <Dots>
+        {slides.map((slide, id) => (
+          <Dot selected={selectedDot === id} />
+        ))}
+      </Dots>
     </Carousel>
   );
 };
