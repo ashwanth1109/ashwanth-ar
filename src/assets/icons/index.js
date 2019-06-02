@@ -23,8 +23,12 @@ import jquery from "./jquery.svg";
 import sketch from "./sketch.svg";
 
 export const iconPack0 = [
-  { name: "github", src: github },
-  { name: "linkedin", src: linkedin }
+  { name: "github", src: github, link: "https://github.com/ashwanth1109" },
+  {
+    name: "linkedin",
+    src: linkedin,
+    link: "https://www.linkedin.com/in/ashwanth-a-r/"
+  }
 ];
 
 export const iconPack1 = [

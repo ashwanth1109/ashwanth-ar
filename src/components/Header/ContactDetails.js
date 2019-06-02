@@ -20,7 +20,10 @@ const ContactDetails = ({ show, width }: Props) => {
         <Container justify={width > 600 ? "space-around" : "center"}>
           Connect with me:
           {iconPack0.map((icon, id) => (
-            <IconContainer key={id}>
+            <IconContainer
+              key={id}
+              onClick={() => window.open(icon.link, "_blank")}
+            >
               <Icon src={icon.src} />
               {width > 600 && <IconTitle>{icon.name}</IconTitle>}
             </IconContainer>
