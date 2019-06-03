@@ -28,12 +28,20 @@ const initialState = {
 
 const reducer = (state, { type, payload }) => {
   switch (type) {
-    case "SET_POSITION":
-    case "SET_TRANSITION":
-    case "SET_SLIDE":
+    case "MERGE_STATE":
       return {
         ...state,
         ...payload
+      };
+    case "TURN_OFF_TRANSITIONS":
+      return {
+        ...state,
+        transitions: [false, false]
+      };
+    case "TURN_ON_TRANSITIONS":
+      return {
+        ...state,
+        transitions: [true, true]
       };
     default:
       return state;
@@ -65,47 +73,50 @@ const SlideshowCarousel = ({ test }: Props) => {
 
   const changeSlides = useCallback(() => {
     // start slide show here
+    // slide 1 moves left out of view
+    // slide 2 moves left into view
     dispatch({
-      type: "SET_POSITION",
+      type: "MERGE_STATE",
       payload: {
         positions: ["-100%", "0%"]
       }
     });
-
+    // selected dot changes to next dot
     setSelectedDot(slideIds[1]);
+  }, [slideIds]);
 
+  const transitionEnded = useCallback(() => {
+    // wait for the sliding transition to end
+    // turn off transition animations
+    dispatch({
+      type: "TURN_OFF_TRANSITIONS",
+      payload: {}
+    });
+    // set timeout to wait for state to update
     setTimeout(() => {
+      // once transitions are turned off,
+      // move slide 1 back to original position with slide 2's id
+      // move slide 2 out of view with the next slide loaded in
       dispatch({
-        type: "SET_TRANSITION",
+        type: "MERGE_STATE",
         payload: {
-          transitions: [false, false]
-        }
-      });
-      dispatch({
-        type: "SET_SLIDE",
-        payload: {
-          slideIds: getNextSlideIds()
-        }
-      });
-      dispatch({
-        type: "SET_POSITION",
-        payload: {
+          slideIds: getNextSlideIds(),
           positions: ["0%", "100%"]
         }
       });
+      // set timeout to wait for state to update
       setTimeout(() => {
+        // turn transitions back on for next interval
         dispatch({
-          type: "SET_TRANSITION",
-          payload: {
-            transitions: [true, true]
-          }
+          type: "TURN_ON_TRANSITIONS",
+          payload: {}
         });
       }, 0);
-    }, 1500);
-  }, [getNextSlideIds, slideIds]);
+    }, 0);
+  }, [getNextSlideIds]);
 
   useInterval(() => {
-    console.log("use interval triggered");
+    // if images have been loaded, change slides every 3 seconds
     if (loadedCount === slides.length) {
       changeSlides();
     }
@@ -129,6 +140,7 @@ const SlideshowCarousel = ({ test }: Props) => {
         src={slides[slideIds[0]]}
         position={positions[0]}
         transition={transitions[0]}
+        onTransitionEnd={transitionEnded}
       />
       {/* SLIDE 2 - USUALLY NEXT SLIDE */}
       <Slide
@@ -139,7 +151,7 @@ const SlideshowCarousel = ({ test }: Props) => {
 
       <Dots>
         {slides.map((slide, id) => (
-          <Dot selected={selectedDot === id} />
+          <Dot selected={selectedDot === id} key={id} />
         ))}
       </Dots>
     </Carousel>
