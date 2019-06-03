@@ -72,6 +72,11 @@ const SlideshowCarousel = ({ test }: Props) => {
   );
 
   const changeSlides = useCallback(() => {
+    // enable transition animation
+    dispatch({
+      type: "TURN_ON_TRANSITIONS",
+      payload: {}
+    });
     // start slide show here
     // slide 1 moves left out of view
     // slide 2 moves left into view
@@ -92,8 +97,10 @@ const SlideshowCarousel = ({ test }: Props) => {
       type: "TURN_OFF_TRANSITIONS",
       payload: {}
     });
-    // set timeout to wait for state to update
-    setTimeout(() => {
+  }, []);
+
+  useEffect(() => {
+    if (!transitions[0] && !transitions[1] && positions[1] === "0%") {
       // once transitions are turned off,
       // move slide 1 back to original position with slide 2's id
       // move slide 2 out of view with the next slide loaded in
@@ -104,16 +111,8 @@ const SlideshowCarousel = ({ test }: Props) => {
           positions: ["0%", "100%"]
         }
       });
-      // set timeout to wait for state to update
-      setTimeout(() => {
-        // turn transitions back on for next interval
-        dispatch({
-          type: "TURN_ON_TRANSITIONS",
-          payload: {}
-        });
-      }, 0);
-    }, 0);
-  }, [getNextSlideIds]);
+    }
+  }, [transitions, getNextSlideIds, positions]);
 
   useInterval(() => {
     // if images have been loaded, change slides every 3 seconds
