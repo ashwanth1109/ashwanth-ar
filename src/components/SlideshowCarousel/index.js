@@ -105,7 +105,8 @@ const SlideshowCarousel = ({ test }: Props) => {
   }, [getNextSlideIds, slideIds]);
 
   useInterval(() => {
-    if (loadedCount !== slides.length) {
+    console.log("use interval triggered");
+    if (loadedCount === slides.length) {
       changeSlides();
     }
   }, 3000);
