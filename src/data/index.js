@@ -111,10 +111,11 @@ const devOpsVsSRE = {
 
 const automaticSlideshow = {
   component: () => <Slideshow />,
-  title: "Automatic Slideshow Carousel in React",
-  link: "automatic-slideshow-in-react",
+  title: "Mastering React Hooks with an Automatic Slideshow Carousel",
+  link: "automatic-slideshow-carousel-with-hooks",
   date: "June 1, 2019",
-  description: "An automatic slideshow carousel built with react hooks",
+  description:
+    "A step by step code article that explains how I built an automatic slideshow carousel component using several commonly used hooks and a custom hook ",
   length: "5 min read",
   content: require("articles/Slideshow-Carousel.md")
 };
@@ -125,5 +126,5 @@ export const codePosts = [automaticSlideshow];
 
 export const techArticles = {
   "dev-ops-vs-sre": devOpsVsSRE,
-  "automatic-slideshow-in-react": automaticSlideshow
+  "automatic-slideshow-carousel-with-hooks": automaticSlideshow
 };
