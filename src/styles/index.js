@@ -73,8 +73,9 @@ export const Article = styled.div`
   flex-direction: column;
   padding: 0 16px;
   width: 100%;
+  letter-spacing: 0.05em;
   a {
-    color: ${colors.pureWhite};
+    color: #56b6c2;
     text-decoration: underline;
   }
   h1 {
@@ -116,6 +117,9 @@ export const Article = styled.div`
     border-radius: 10px;
     width: 100%;
     background: ${colors.slabGray};
+  }
+  blockquote {
+    font-size: ${ifProp("smallDevice", "16px", "24px")};
   }
 `;
 
