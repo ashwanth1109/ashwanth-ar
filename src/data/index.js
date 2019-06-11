@@ -96,6 +96,9 @@ export const miniApps = [
   }
 ];
 
+// CREDO
+export const credo = require("articles/Credo.md");
+
 // THE BIGGER PICTURE
 
 const devOpsVsSRE = {
