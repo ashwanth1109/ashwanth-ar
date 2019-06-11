@@ -1,24 +1,41 @@
 // @flow
 
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { connect } from "react-redux";
+import ReactMarkdown from "react-markdown";
 
 import { CredoPage } from "./styles";
 
-import { Heading, Quote } from "styles";
+import { credo } from "data";
+import { Article } from "styles";
 
-// type Props = {
-//   //
-// };
+type Props = {
+  width: number
+};
 
-const Credo = () => {
+const Credo = ({ width }: Props) => {
+  const [markdown, setMarkdown] = useState("");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetch(credo)
+        .then(res => res.text())
+        .then(text => setMarkdown(text));
+    };
+    fetchData();
+  });
+
   return (
     <CredoPage>
-      <Heading>
-        <Quote>“The unexamined life is not worth living”</Quote>{" "}
-        <span style={{ marginRight: "16px" }}>-</span> Socrates.
-      </Heading>
+      <Article smallDevice={width < 500}>
+        <ReactMarkdown source={markdown} escapeHtml={false} />
+      </Article>
     </CredoPage>
   );
 };
 
-export default Credo;
+const mapStateToProps = ({ app }) => ({
+  width: app.viewport.w
+});
+
+export default connect(mapStateToProps)(Credo);
