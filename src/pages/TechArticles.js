@@ -2,8 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import marked from "marked";
-import Highlight from "react-highlight";
+import ReactMarkdown from "react-markdown";
+
+import CodeBlock from "../CodeBlock";
 
 import { TechArticlePage } from "./styles";
 
@@ -24,7 +25,7 @@ const TechArticles = ({ article, width }: Props) => {
       const fetchData = async () => {
         await fetch(content)
           .then(res => res.text())
-          .then(text => setMarkdown(marked(text)));
+          .then(text => setMarkdown(text));
       };
       fetchData();
     } else setMarkdown("NOT_FOUND");
@@ -40,11 +41,12 @@ const TechArticles = ({ article, width }: Props) => {
       <TechArticlePage>
         {renderComponent()}
         <Article smallDevice={width < 500}>
-          <Highlight innerHTML={true}>{markdown}</Highlight>
+          <ReactMarkdown source={markdown} renderers={{ code: CodeBlock }} />
         </Article>
       </TechArticlePage>
     );
   }
+
   return <TechArticlePage>Article Not Found</TechArticlePage>;
 };
 
