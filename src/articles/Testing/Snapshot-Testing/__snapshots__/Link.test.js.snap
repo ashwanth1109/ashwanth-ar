@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link changes the status when hovered 1`] = `
+<a
+  className="normal"
+  href="http://ashwanth-ar.web.app"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Ashwanth's Site
+</a>
+`;
+
+exports[`Link changes the status when hovered 2`] = `
+<a
+  className="hovered"
+  href="http://ashwanth-ar.web.app"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Ashwanth's Site
+</a>
+`;
+
+exports[`Link changes the status when hovered 3`] = `
+<a
+  className="normal"
+  href="http://ashwanth-ar.web.app"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Ashwanth's Site
+</a>
+`;

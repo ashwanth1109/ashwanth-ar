@@ -87,7 +87,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "react-test-renderer": "^16.8.6"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
