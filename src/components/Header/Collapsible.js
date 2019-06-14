@@ -20,7 +20,11 @@ const Collapsible = ({ currentPage, showMenu, toggleMenu }: Props) => {
     <>
       <CollapsibleMenu showMenu={showMenu}>
         {headerOptions.map((option, id) => (
-          <Link to={{ type: option.id, payload: {} }} onClick={toggleMenu}>
+          <Link
+            key={id}
+            to={{ type: option.id, payload: {} }}
+            onClick={toggleMenu}
+          >
             <HamburgerMenuOption selected={option.id === currentPage}>
               {string.capitalizeString(option.id)}
             </HamburgerMenuOption>

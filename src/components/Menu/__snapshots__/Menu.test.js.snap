@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu renders correctly 1`] = `
+<div
+  className="sc-gqjmRU bVympT"
+>
+  <div
+    className="sc-bwzfXH loAYuZ"
+  >
+    <a
+      href="/about"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-iwsKbI sc-VigVT dEhlFv"
+      >
+        ABOUT
+      </div>
+    </a>
+  </div>
+  <div
+    className="sc-bwzfXH loAYuZ"
+  >
+    <a
+      href="/tech"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-iwsKbI sc-VigVT dEhlFv"
+      >
+        TECH
+      </div>
+    </a>
+  </div>
+  <div
+    className="sc-bwzfXH loAYuZ"
+  >
+    <a
+      href="/music"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-iwsKbI sc-VigVT dEhlFv"
+      >
+        MUSIC
+      </div>
+    </a>
+  </div>
+  <div
+    className="sc-bwzfXH loAYuZ"
+  >
+    <a
+      href="/credo"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-iwsKbI sc-VigVT dEhlFv"
+      >
+        CREDO
+      </div>
+    </a>
+  </div>
+</div>
+`;

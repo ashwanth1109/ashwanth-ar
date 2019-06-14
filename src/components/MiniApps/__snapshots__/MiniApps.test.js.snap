@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiniApps renders correctly 1`] = `
+Array [
+  <div
+    className="sc-htoDjs cCSpmk"
+  >
+    MINI-APPLICATIONS
+  </div>,
+  <div
+    className="sc-bdVaJa igeBIh"
+  >
+    <div
+      className="sc-bwzfXH jwfMIB"
+    >
+      <div
+        className="sc-htoDjs cCSpmk"
+      >
+        REALTIME CHAT
+      </div>
+      <img
+        className="sc-htpNat fydxEw"
+        src="jlChat.png"
+      />
+      <div
+        className="sc-bxivhb cDFCAd"
+      >
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          LIVE SITE
+        </div>
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          GITHUB LINK
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH jwfMIB"
+    >
+      <div
+        className="sc-htoDjs cCSpmk"
+      >
+        CHECKERS
+      </div>
+      <img
+        className="sc-htpNat fydxEw"
+        src="checkers.png"
+      />
+      <div
+        className="sc-bxivhb cDFCAd"
+      >
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          LIVE SITE
+        </div>
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          GITHUB LINK
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH jwfMIB"
+    >
+      <div
+        className="sc-htoDjs cCSpmk"
+      >
+        TO DO APP
+      </div>
+      <img
+        className="sc-htpNat fydxEw"
+        src="taskIt.png"
+      />
+      <div
+        className="sc-bxivhb cDFCAd"
+      >
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          LIVE SITE
+        </div>
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          GITHUB LINK
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH jwfMIB"
+    >
+      <div
+        className="sc-htoDjs cCSpmk"
+      >
+        SLIDER
+      </div>
+      <img
+        className="sc-htpNat fydxEw"
+        src="slider.png"
+      />
+      <div
+        className="sc-bxivhb cDFCAd"
+      >
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          LIVE SITE
+        </div>
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          GITHUB LINK
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH jwfMIB"
+    >
+      <div
+        className="sc-htoDjs cCSpmk"
+      >
+        FLASH CARDS
+      </div>
+      <img
+        className="sc-htpNat fydxEw"
+        src="greflash.png"
+      />
+      <div
+        className="sc-bxivhb cDFCAd"
+      >
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          LIVE SITE
+        </div>
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          GITHUB LINK
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH jwfMIB"
+    >
+      <div
+        className="sc-htoDjs cCSpmk"
+      >
+        REPO SEARCH
+      </div>
+      <img
+        className="sc-htpNat fydxEw"
+        src="gitSearch.png"
+      />
+      <div
+        className="sc-bxivhb cDFCAd"
+      >
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          LIVE SITE
+        </div>
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          GITHUB LINK
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH jwfMIB"
+    >
+      <div
+        className="sc-htoDjs cCSpmk"
+      >
+        HASH DOCKET
+      </div>
+      <img
+        className="sc-htpNat fydxEw"
+        src="hashdocket.png"
+      />
+      <div
+        className="sc-bxivhb cDFCAd"
+      >
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          LIVE SITE
+        </div>
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          GITHUB LINK
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH jwfMIB"
+    >
+      <div
+        className="sc-htoDjs cCSpmk"
+      >
+        EVENTFUL
+      </div>
+      <img
+        className="sc-htpNat fydxEw"
+        src="eventful.png"
+      />
+      <div
+        className="sc-bxivhb cDFCAd"
+      >
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          LIVE SITE
+        </div>
+        <div
+          className="sc-jTzLTM cqPUsw"
+          onClick={[Function]}
+        >
+          GITHUB LINK
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Project renders correctly 1`] = `
+<div
+  className="sc-bwzfXH jwfMIB"
+>
+  <div
+    className="sc-htoDjs cCSpmk"
+  >
+    CHECKERS
+  </div>
+  <img
+    className="sc-htpNat fydxEw"
+    src="checkers.png"
+  />
+  <div
+    className="sc-bxivhb cDFCAd"
+  >
+    <div
+      className="sc-jTzLTM cqPUsw"
+      onClick={[Function]}
+    >
+      LIVE SITE
+    </div>
+    <div
+      className="sc-jTzLTM cqPUsw"
+      onClick={[Function]}
+    >
+      GITHUB LINK
+    </div>
+  </div>
+</div>
+`;

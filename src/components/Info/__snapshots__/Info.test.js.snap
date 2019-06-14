@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info renders correctly 1`] = `
+<div
+  className="sc-bdVaJa gnwlyl"
+>
+  <img
+    alt="profile picture"
+    className="sc-bwzfXH kjKCKK"
+    src="profile-photo.jpg"
+  />
+  <p
+    className="sc-htpNat bLEZyE"
+  >
+    I'm a full stack Javascript developer with a focus on the MERN stack. I love all things React and my core competencies are in front end development. I design my own wireframes and UI in Sketch. I have experience developing in the React Native framework for the mobile as well.
+  </p>
+  <p
+    className="sc-htpNat bLEZyE"
+  >
+    I love binging on problems from CodeWars, HackerRank or Project Euler. In my free time, I look for pieces to learn and play on the piano from youtube, hdpiano or flowkey. I am a Beatlemaniac and Ramin Djawadi's music is my bible for music theory.
+  </p>
+</div>
+`;

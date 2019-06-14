@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapsible renders correctly 1`] = `
+<div
+  className="sc-jAaTju iXRHdH"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-iAyFgw sc-jDwBTQ kZbTRC"
+      selected={false}
+    >
+      Home
+    </div>
+  </a>
+  <a
+    href="/about"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-iAyFgw sc-jDwBTQ kZbTRC"
+      selected={false}
+    >
+      About
+    </div>
+  </a>
+  <a
+    href="/tech"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-iAyFgw sc-jDwBTQ kZbTRC"
+      selected={false}
+    >
+      Tech
+    </div>
+  </a>
+  <a
+    href="/music"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-iAyFgw sc-jDwBTQ kZbTRC"
+      selected={false}
+    >
+      Music
+    </div>
+  </a>
+  <a
+    href="/credo"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-iAyFgw sc-jDwBTQ kZbTRC"
+      selected={false}
+    >
+      Credo
+    </div>
+  </a>
+</div>
+`;
+
+exports[`ContactDetails renders correctly 1`] = `
+<div
+  className="sc-hSdWYo fufjhz"
+>
+  <div
+    className="sc-eHgmQL bJSUZN"
+  >
+    <div
+      className="sc-bwzfXH loAYuZ"
+    >
+      Connect with me:
+      <div
+        className="sc-cvbbAY iXcTdC"
+        onClick={[Function]}
+      >
+        <img
+          className="sc-jWBwVP NHLKx"
+          src="github.svg"
+        />
+      </div>
+      <div
+        className="sc-cvbbAY iXcTdC"
+        onClick={[Function]}
+      >
+        <img
+          className="sc-jWBwVP NHLKx"
+          src="linkedin.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header renders correctly 1`] = `
+<div
+  className="sc-eNQAEJ eTFuzd"
+>
+  <div
+    className="sc-hSdWYo dVIlZw"
+  >
+    <div
+      className="sc-eHgmQL dTDcYH"
+    >
+      <div
+        className="sc-bwzfXH loAYuZ"
+      >
+        Connect with me:
+        <div
+          className="sc-cvbbAY iXcTdC"
+          onClick={[Function]}
+        >
+          <img
+            className="sc-jWBwVP NHLKx"
+            src="github.svg"
+          />
+        </div>
+        <div
+          className="sc-cvbbAY iXcTdC"
+          onClick={[Function]}
+        >
+          <img
+            className="sc-jWBwVP NHLKx"
+            src="linkedin.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    className="sc-ckVGcZ sc-kEYyzF eKxdWv"
+    onClick={[Function]}
+    src="logo.svg"
+  />
+  <div
+    className="sc-hMqMXs ggocWj"
+  />
+</div>
+`;

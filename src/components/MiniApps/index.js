@@ -9,17 +9,13 @@ import Project from "./Project";
 import { Heading } from "styles";
 import { miniApps } from "data";
 
-type Props = {
-  test: any
-};
-
-const MiniApps = ({ test }: Props) => {
+const MiniApps = () => {
   return (
     <>
       <Heading>MINI-APPLICATIONS</Heading>
       <Projects>
-        {miniApps.map(app => (
-          <Project app={app} />
+        {miniApps.map((app, id) => (
+          <Project app={app} key={id} />
         ))}
       </Projects>
     </>

@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skills renders correctly 1`] = `
+<div
+  className="sc-bZQynM fAcEir"
+>
+  <div
+    className="sc-dnqmqq fThudL"
+  >
+    THINGS I KNOW PRETTY WELL
+  </div>
+  <div
+    className="sc-bdVaJa jAKVfj"
+  >
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="html.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        html5
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="css.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        css3
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="js.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        javascript
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="react.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        react
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="redux.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        redux
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="firebase.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        firebase
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="saga.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        saga
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-dnqmqq fThudL"
+  >
+    THINGS I THINK I KNOW
+  </div>
+  <div
+    className="sc-bdVaJa jAKVfj"
+  >
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="git.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        git
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="node.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        node
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="express.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        express
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="mongo.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        mongo
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="next.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        next
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="jquery.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        jquery
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ"
+    >
+      <div
+        className="sc-bwzfXH cusHsC"
+      >
+        <img
+          className="sc-htpNat hdMUAD"
+          src="sketch.svg"
+        />
+      </div>
+      <div
+        className="sc-bxivhb gphwzh"
+      >
+        sketch
+      </div>
+    </div>
+  </div>
+</div>
+`;

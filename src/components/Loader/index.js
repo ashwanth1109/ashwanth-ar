@@ -6,11 +6,7 @@ import { Dot } from "./styles";
 
 import { Container } from "styles";
 
-type Props = {
-  test: any
-};
-
-const Loader = ({ test }: Props) => {
+const Loader = () => {
   return (
     <Container height="initial">
       <Dot delay={0} />

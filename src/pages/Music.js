@@ -20,7 +20,6 @@ type Props = {
 };
 
 const Music = ({ width }: Props) => {
-  console.log(width);
   const renderContent = () => (
     <>
       <VideoCellL>

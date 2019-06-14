@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPost renders correctly 1`] = `
+<div
+  className="sc-bdVaJa cyoKBg"
+>
+  <a
+    href="/tech/www.google.com"
+    onClick={[Function]}
+  >
+    <h1
+      className="sc-bwzfXH fQVJdj"
+    >
+      Test
+    </h1>
+  </a>
+  <div
+    className="sc-gzVnrw gydepl"
+  >
+    <div
+      className="sc-htpNat jLOfwi"
+    >
+      14 JUNE
+    </div>
+    <img
+      className="sc-bxivhb OsKxP"
+      src="clock.svg"
+    />
+    <div
+      className="sc-ifAKCX cMdPAE"
+    >
+      3 min read
+    </div>
+  </div>
+  <div
+    className="sc-EHOje byWSPc"
+  >
+    testing with jest
+  </div>
+</div>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlideshowCarousel renders correctly 1`] = `
+<div
+  className="sc-bwzfXH hmckme"
+>
+  <div
+    className="sc-gzVnrw hKYDxd"
+  >
+    <div
+      className="sc-htpNat kbgLWE"
+    >
+      Hold on, we're loading assets
+    </div>
+    <div
+      className="sc-gzVnrw eVzmuA"
+      height="initial"
+    >
+      <div
+        className="sc-EHOje dgxjmP"
+      />
+      <div
+        className="sc-EHOje hbxQZE"
+      />
+      <div
+        className="sc-EHOje huIkbl"
+      />
+    </div>
+  </div>
+</div>
+`;

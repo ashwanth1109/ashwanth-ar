@@ -12,11 +12,7 @@ import {
 import { Container, Heading } from "styles";
 import { iconPack1, iconPack2 } from "assets/icons";
 
-type Props = {
-  test: any
-};
-
-const Skills = ({ test }: Props) => {
+const Skills = () => {
   return (
     <Container flex="column" margin="16px">
       <Heading>THINGS I KNOW PRETTY WELL</Heading>

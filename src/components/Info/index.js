@@ -5,11 +5,7 @@ import React from "react";
 import { Card, ProfilePicture, Para } from "./styles";
 import profile from "assets/profile-photo.jpg";
 
-type Props = {
-  test: any
-};
-
-const Info = ({ test }: Props) => {
+const Info = () => {
   return (
     <Card>
       <ProfilePicture src={profile} alt="profile picture" />

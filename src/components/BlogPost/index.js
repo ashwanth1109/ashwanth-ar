@@ -14,7 +14,6 @@ type Props = {
 };
 
 const BlogPost = ({ article }: Props) => {
-  console.log(article);
   const { title, link, date, description, length } = article;
   return (
     <Post>

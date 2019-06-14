@@ -8,10 +8,10 @@ import { Menu as StyledMenu, Option } from "./styles";
 import { Container } from "styles";
 
 type Props = {
-  options: Array<string>
+  options: Array<Object>
 };
 
-const Menu = ({ options, width }: Props) => {
+const Menu = ({ options }: Props) => {
   return (
     <StyledMenu>
       {options.map(option => (

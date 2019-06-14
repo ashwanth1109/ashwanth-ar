@@ -14,10 +14,6 @@ import { Container } from "styles";
 
 import { useInterval } from "hooks";
 
-type Props = {
-  test: any
-};
-
 const slides = [starWars1, batman1, deadpool1];
 
 const initialState = {
@@ -48,7 +44,7 @@ const reducer = (state, { type, payload }) => {
   }
 };
 
-const SlideshowCarousel = ({ test }: Props) => {
+const SlideshowCarousel = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { positions, transitions, slideIds } = state;
 

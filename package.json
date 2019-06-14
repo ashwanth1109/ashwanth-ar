@@ -95,6 +95,10 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.d.ts"
     ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],

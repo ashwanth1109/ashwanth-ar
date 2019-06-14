@@ -30,7 +30,6 @@ type Props = {
 
 const Header = ({ currentPage, width, toggleShowMenu }: Props) => {
   const [contactMenu, setContactMenu] = useState(false);
-  console.log(width);
 
   return (
     <>
