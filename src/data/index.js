@@ -110,6 +110,15 @@ const devOpsVsSRE = {
   content: require("articles/DevOps-vs-SRE.md")
 };
 
+const reactInternals = {
+  title: "REACT INTERNALS",
+  link: "react-internals",
+  date: "June 16, 2019",
+  description: "A deep dive into React's source code",
+  length: "10 min read",
+  content: require("articles/ReactInternals.md")
+};
+
 // THE DEVIL IS IN THE DETAILS
 
 const automaticSlideshow = {
@@ -123,11 +132,12 @@ const automaticSlideshow = {
   content: require("articles/Slideshow-Carousel.md")
 };
 
-export const bigPicturePosts = [devOpsVsSRE];
+export const bigPicturePosts = [reactInternals, devOpsVsSRE];
 
 export const codePosts = [automaticSlideshow];
 
 export const techArticles = {
   "dev-ops-vs-sre": devOpsVsSRE,
-  "automatic-slideshow-carousel-with-hooks": automaticSlideshow
+  "automatic-slideshow-carousel-with-hooks": automaticSlideshow,
+  "react-internals": reactInternals
 };
