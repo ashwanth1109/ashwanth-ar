@@ -116,7 +116,6 @@ export const Article = styled.div`
     padding: 16px;
     border-radius: 10px;
     width: 100%;
-    background: ${colors.slabGray};
   }
   blockquote {
     font-size: ${ifProp("smallDevice", "16px", "24px")};
