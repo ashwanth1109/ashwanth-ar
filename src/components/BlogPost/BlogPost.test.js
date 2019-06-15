@@ -4,7 +4,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import renderer from "react-test-renderer";
 
-import BlogPost from "./";
+import BlogPost from ".";
 import configureStore from "reducers/configureStore";
 
 const { act } = renderer;
