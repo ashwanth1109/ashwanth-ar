@@ -10,6 +10,8 @@ I have been excited about hooks since their release. But I must admit, it gets e
 
 This is the crux (the jsx) of the component. I will explain the hooks as I go long. If you don't need the explanation, you can jump straight to the end of the article to read the full code.
 
+The component basically comprises of two slides that keep transitioning and a set of dots that represent the image that is being currently shown. Images are loaded and cycled with just these two slides which makes this a very resource efficient way to build this component.
+
 ```jsx
 const SlideshowCarousel = () => {
   return (
@@ -54,9 +56,51 @@ export const Carousel = styled.div`
 `;
 ```
 
+### The Slide
+
+The slide is a styled image component which is absolutely positioned with relation to the carousel. It can change position with or without a transition animation based on the props it receives.
+
+```jsx
+export const Slide = styled.img`
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: ${prop("position")};
+  transition: ${ifProp({ transition: true }, "1s ease-in-out left", null)};
+`;
+```
+
+### The Dots
+
+The Dots container displays three Dot divs which are 12px in size if selected and 6px if its not. We also set a transition on the dot so that it feels seamless as a dot gets selected or unselected.
+
+```jsx
+export const Dots = styled.div`
+  position: absolute;
+  display: flex;
+  width: 100%;
+  background: ${colors.slabGray + "80"};
+  height: 24px;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Dot = styled.div`
+  width: ${ifProp("selected", "12px", "6px")};
+  height: ${ifProp("selected", "12px", "6px")};
+  border-radius: ${ifProp("selected", "6px", "3px")};
+  transition: 1s ease-in-out;
+  background: ${colors.pureWhite};
+  margin: 0 4px;
+`;
+```
+
 ### Loading State - useState & useEFfect Hooks
 
-In order to improve the user experience, we want to show a loading state while the images are being fetched.
+Before we jump in to making the slides change, lets make a small user experience improvement. We want to show a loading state while the images are being fetched.
 
 ```jsx
 if (loadedCount !== slides.length) {
@@ -101,7 +145,7 @@ The loading of images can be seen as an effect that needs to be triggered when t
 
 ### Changing Slides - useInterval custom hook
 
-Changing slides is primarily what happens in the slideshow carousel and this effect needs to be triggered once every N seconds (3 in this case).
+Changing slides is primarily what happens in the slideshow carousel and this effect needs to be triggered once every N seconds (3 in this case). We call our useInterval custom hook as follows.
 
 ```jsx
 useInterval(() => {
@@ -112,7 +156,7 @@ useInterval(() => {
 }, 3000);
 ```
 
-We want our custom hook, called useInterval, to trigger the changeSlide effect only once the images have all been loaded.
+We want useInterval to trigger the changeSlide effect only once the images have all been loaded.
 
 ### The internals of useInterval - useEffect & useRef hooks
 
@@ -174,7 +218,7 @@ useEffect(() => {
 
 Our second useEffect contains our setInterval calls. At each interval tick, we call the callback in our saved ref with a delay of N seconds. The return function cleans up the interval once the effect needs to stop triggering.
 
-### The internals of changeSlides function - useCallback hook
+### The internals of changeSlides function - useCallback & useReducer hooks
 
 ```jsx
 const changeSlides = useCallback(() => {
@@ -197,4 +241,80 @@ const changeSlides = useCallback(() => {
 }, [slideIds]);
 ```
 
-What changeSlides() does is, it transitions SLIDE 1 out of view while simultaneously transitioning SLIDE 2 into view. Before I get into what dispatch does (spoiler: remember redux??), let me first explain why we need the useCallback function.
+What changeSlides() does is, it transitions SLIDE 1 out of view while simultaneously transitioning SLIDE 2 into view. We also change the selected dot to the dot that represents the next slide. Before I get into what dispatch does (spoiler: remember redux??), let me first explain why we need the useCallback function.
+
+Conventionally, class components define functions as: `this.yourFunction = () => {}`
+
+However, if we define functions in a stateless component, the function gets re-initialized on every render. What useCallback does is, it returns a memoized version of the callback which doesn't get redefined on every render. If you pass in an array of dependencies, then the memoized callback updates when the any of the dependencies changes.
+
+On triggering this function, we dispatch two actions. These action dispatchers are pretty much the same as the ones you use in redux. How is this possible you ask? With the useReducer hook of course!
+
+```jsx
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+
+```jsx
+const reducer = (state, { type, payload }) => {
+  switch (type) {
+    case "MERGE_STATE":
+      return {
+        ...state,
+        ...payload
+      };
+    case "TURN_OFF_TRANSITIONS":
+      return {
+        ...state,
+        transitions: [false, false]
+      };
+    case "TURN_ON_TRANSITIONS":
+      return {
+        ...state,
+        transitions: [true, true]
+      };
+    default:
+      return state;
+  }
+};
+```
+
+In order to use the useReducer hook, we need a reducer function along with the initial state we need for the component. The reducer function above should seem familiar if you use redux. Using the reducer above, you can dispatch one of three actions - (1) MERGE_STATE which lets you override any part of the state (or the entire state if you so choose). (2) TURN_OFF_TRANSITIONS which turns off the transition animations on the slides. (3) TURN_ON_TRANSITIONS to, well you guessed it, turn on transitions.
+
+Honestly, I could have just used MERGE_STATE for transitions as well, but I just chose to do it this way. Call it a whim.
+
+```jsx
+const initialState = {
+  positions: ["0%", "100%"],
+  transitions: [true, true],
+  slideIds: [0, 1]
+};
+```
+
+For the initial state that we will be loading, we want our first slide at position "0%" and shown on screen. The second slide is off screen to the right at position "100%". Transitions are turned on (although our change slides function will turn transitions on anyway). We will initially show the first two images in our array as represented by slideIds.
+
+### Turning off transitions
+
+```jsx
+<Slide
+  src={slides[slideIds[0]]}
+  position={positions[0]}
+  transition={transitions[0]}
+  onTransitionEnd={transitionEnded}
+/>
+```
+
+We want to turn transitions off as soon as the slide transiton ends. So we use the `onTransitionEnd` event handler to trigger our transitionEnded callback shown below.
+
+```jsx
+const transitionEnded = useCallback(() => {
+  // wait for the sliding transition to end
+  // turn off transition animations
+  dispatch({
+    type: "TURN_OFF_TRANSITIONS",
+    payload: {}
+  });
+}, []);
+```
+
+### The Slide Swap
+
+Once the transition is complete and transition has been turned off, we want to move slide 1 and slide 2 back into their original positions while swapping the contents of slide 2 into slide 1.
