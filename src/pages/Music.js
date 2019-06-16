@@ -14,6 +14,7 @@ import {
 } from "./styles";
 
 import { Heading, Container } from "styles";
+import { musicVideos } from "data";
 
 type Props = {
   width: Number
@@ -22,18 +23,14 @@ type Props = {
 const Music = ({ width }: Props) => {
   const renderContent = () => (
     <>
-      <VideoCellL>
-        <VideoContentL>
-          <Heading>River flows in you - Yiruma</Heading>
-          <Youtube videoId="O4mouZ35z7U" />
-        </VideoContentL>
-      </VideoCellL>
-      <VideoCellL>
-        <VideoContentL>
-          <Heading>Light of the seven - Ramin Djawadi</Heading>
-          <Youtube videoId="zIJf9nQ50-Q" />
-        </VideoContentL>
-      </VideoCellL>
+      {musicVideos.map(video => (
+        <VideoCellL key={video.id}>
+          <VideoContentL>
+            <Heading>{video.title}</Heading>
+            <Youtube videoId={video.id} />
+          </VideoContentL>
+        </VideoCellL>
+      ))}
     </>
   );
 
@@ -53,14 +50,12 @@ const Music = ({ width }: Props) => {
   return (
     <MusicPage>
       <Container flex="column">
-        <VideoContentS>
-          <Heading>River flows in you - Yiruma</Heading>
-          <Youtube videoId="O4mouZ35z7U" />
-        </VideoContentS>
-        <VideoContentS>
-          <Heading>Light of the seven - Ramin Djawadi</Heading>
-          <Youtube videoId="zIJf9nQ50-Q" />
-        </VideoContentS>
+        {musicVideos.map(video => (
+          <VideoContentS key={video.id}>
+            <Heading>{video.title}</Heading>
+            <Youtube videoId={video.id} />
+          </VideoContentS>
+        ))}
       </Container>
     </MusicPage>
   );
