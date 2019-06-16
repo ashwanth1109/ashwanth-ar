@@ -11,4 +11,5 @@ jobs: # a collection of steps
       - run: yarn install # install dependencies
       - run: yarn build # generate production build
       - run: yarn add firebase-tools # install firebase tools
-      - run: firebase deploy --only hosting --token=${FIREBASE_TOKEN} --non-interactive
+      - run: ./node_modules/.bin/firebase --version
+      # - run: firebase deploy --only hosting --token=${FIREBASE_TOKEN} --non-interactive
