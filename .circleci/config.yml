@@ -1,8 +1,20 @@
-version: 2.1
-jobs:
-  build:
+version: 2.1 # use CircleCI 2.1
+jobs: # a collection of steps
+  build: # entry point for build job
     docker: # use the docker executor type; machine and macos executors are also supported
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
+      - run:
+        name: "Check current version of node"
+        command: node -v
+      - run:
+        name: "Install dependencies"
+        command: yarn install
+      - run:
+        name: "Build to generate production ready code"
+        command: yarn build
+      - run:
+        name: "Firebase deploy"
+        command: firebase deploy --only hosting --token=${FIREBASE_TOKEN} --non-interactive
