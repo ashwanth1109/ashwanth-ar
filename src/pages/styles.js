@@ -46,6 +46,7 @@ export const MusicPage = styled(ContentPage)`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 32px;
 `;
 
 export const CredoPage = styled(ContentPage)`
