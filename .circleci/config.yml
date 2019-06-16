@@ -10,4 +10,4 @@ jobs: # a collection of steps
       - run: yarn -v # logging yarn version
       - run: yarn install # install dependencies
       - run: yarn build # generate production build
-      - run: echo ${FIREBASE_TOKEN} # log to see if firebase token exists
+      - run: firebase deploy --only hosting --token=${FIREBASE_TOKEN} --non-interactive
