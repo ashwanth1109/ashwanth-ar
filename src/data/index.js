@@ -160,8 +160,8 @@ export const musicVideos = [
     id: "O4mouZ35z7U"
   },
   {
-    title: "River flows in you - Yiruma",
-    id: "zIJf9nQ50"
+    title: "Light of the seven - Ramin Djawadi",
+    id: "zIJf9nQ50-Q"
   },
   {
     title: "River flows in you - Yiruma (Background noise removed)",
