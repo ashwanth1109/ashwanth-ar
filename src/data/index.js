@@ -111,11 +111,11 @@ const devOpsVsSRE = {
 };
 
 const reactInternals = {
-  title: "REACT INTERNALS",
+  title: "React Internals - A deep dive into React's source code",
   link: "react-internals",
   date: "June 16, 2019",
-  description: "A deep dive into React's source code",
-  length: "10 min read",
+  description: "My notes on the react source code",
+  length: "XX min read",
   content: require("articles/ReactInternals.md")
 };
 
@@ -124,7 +124,7 @@ const cicd = {
   link: "cicd-circleci",
   date: "June 16, 2019",
   description: "Setting up a React Firebase App for CICD using CircleCI",
-  length: "10 min read",
+  length: "XX min read",
   content: require("articles/CICD.md")
 };
 
@@ -137,7 +137,7 @@ const automaticSlideshow = {
   date: "June 1, 2019",
   description:
     "A step by step code article that explains how I built an automatic slideshow carousel component using several commonly used hooks and a custom hook ",
-  length: "5 min read",
+  length: "10 min read",
   content: require("articles/Slideshow-Carousel.md")
 };
 
