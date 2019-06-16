@@ -14,19 +14,19 @@ const TypeWriter = ({ words }: Props) => {
   const [word, setWord] = useState(0);
   const [message, setMessage] = useState("");
   const [increasing, setIncreasing] = useState(true);
-  const [delay, setDelay] = useState(100);
+  const [delay, setDelay] = useState(50);
 
   useInterval(() => {
     if (increasing) {
       if (message.length < words[word].length) {
         setMessage(words[word].slice(0, message.length + 1));
       } else {
-        setDelay(3000);
+        setDelay(2000);
         setIncreasing(false);
       }
     } else {
       if (message.length > 0) {
-        setDelay(100);
+        setDelay(50);
         setMessage(words[word].slice(0, message.length - 1));
       } else {
         setIncreasing(true);
