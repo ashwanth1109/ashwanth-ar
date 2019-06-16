@@ -10,7 +10,7 @@ const Info = () => {
     <Card>
       <ProfilePicture src={profile} alt="profile picture" />
       <Para>
-        ’m a full stack javascript developer, a calm and methodical problem
+        I’m a full stack javascript developer, a calm and methodical problem
         solver with high potential for picking up new technologies rapidly. I
         thrive in high-pressure situations and revel in conquering tough
         obstacles.
