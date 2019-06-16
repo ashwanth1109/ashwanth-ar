@@ -75,8 +75,12 @@ export const Article = styled.div`
   width: 100%;
   letter-spacing: 0.05em;
   a {
-    color: #56b6c2;
     text-decoration: underline;
+    color: ${colors.pureWhite};
+  }
+  li {
+    margin: 10px 0;
+    font-family: ${fonts.secondary};
   }
   h1 {
     width: 100%;
@@ -100,6 +104,9 @@ export const Article = styled.div`
   p {
     font-family: ${fonts.secondary};
     font-size: 16px;
+    > code {
+      color: ${colors.goldenYellow};
+    }
   }
   img {
     display: block;
