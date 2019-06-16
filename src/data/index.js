@@ -151,3 +151,20 @@ export const techArticles = {
   "react-internals": reactInternals,
   "cicd-circleci": cicd
 };
+
+// MUSIC VIDEOS
+
+export const musicVideos = [
+  {
+    title: "River flows in you - Yiruma",
+    id: "O4mouZ35z7U"
+  },
+  {
+    title: "River flows in you - Yiruma",
+    id: "zIJf9nQ50"
+  },
+  {
+    title: "River flows in you - Yiruma (Background noise removed)",
+    id: "rTIQu44oe9g"
+  }
+];
