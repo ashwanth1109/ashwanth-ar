@@ -35,3 +35,78 @@ workflows:
     jobs:
       - hello/hello-build
 ```
+
+- Commit and push changes to trigger your build
+
+At this point I was wondering a couple of things.
+
+- Why is version 2.1?
+
+- What are orbs, workflows and jobs?
+
+- Where are the runtime env vars being stored as shown in the build logs?
+
+### Why the version?
+
+Although it seems fairly obvious now, it took me a while to realize that the version here refers to the version of circleci that you would like to use in your workflow.
+
+### ORBS
+
+Orbs are packages of config that you can either import by name or configure inline to simplify your config, share and reuse config within and across projects. Orbs are also considered best practices for setting up your config.
+
+```yml
+orbs:
+  hello: circleci/hello-build@0.0.7 # uses the circleci/buildpack-deps Docker image
+```
+
+In the example above, we invoke the hello_build orb from the CircleCI namespace. Orbs are comprised of - commands, jobs and executors.
+
+- Commands: reusable sets of steps that you can invoke with specific parameters within an existing job.
+
+```yml
+version: 2.1
+jobs:
+  myjob:
+    docker:
+      - image: "circleci/node:9.6.1"
+    steps:
+      - myorb/sayhello: # sayhello command
+          to: "Lev" # parameter for command
+```
+
+- Jobs: a set of steps, and the environment they should be defined in. They are defined in your build configuration or in an orbs configuration.
+
+- Executors: defines the environment in which the steps of a job will be run. Any job that we declare will define the environment that the job will be run in (such as docker, machine etc.) It also defines your env variables, shell to run in and what size resource_class to use.
+
+```yml
+version: 2.1
+executors:
+  my-executor:
+    docker:
+      - image: circleci/ruby:2.4.0
+jobs:
+  my-job:
+    executor:
+      name: my-executor
+    steps:
+      - run: echo outside the executor
+```
+
+Orbs can either be published in as a development orb or a semantically versioned production orb. Development orbs are mutable and expire after 90 days whereas production orbs. All orbs are open sourced.
+
+### Echo Hello World
+
+```yml
+version: 2.1
+jobs:
+  build:
+    docker: # use the docker executor type; machine and macos executors are also supported
+      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+    steps:
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
+```
+
+### JOBS
+
+Jobs are a collection of steps. All the steps are executed in a separate container or VM. Jobs and steps provides you, with greater control over the build process, a framework for workflows, status on each phase with feedback.
