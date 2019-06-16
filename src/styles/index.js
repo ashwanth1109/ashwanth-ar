@@ -116,6 +116,7 @@ export const Article = styled.div`
     padding: 16px;
     border-radius: 10px;
     width: 100%;
+    font-family: "Fira Code", monospace;
   }
   blockquote {
     font-size: ${ifProp("smallDevice", "16px", "24px")};
