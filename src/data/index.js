@@ -114,7 +114,7 @@ const reactInternals = {
   title: "React Internals - A deep dive into React's source code",
   link: "react-internals",
   date: "June 16, 2019",
-  description: "My notes on the react source code",
+  description: "My notes on the react repo's source code",
   length: "XX min read",
   content: require("articles/ReactInternals.md")
 };
