@@ -119,6 +119,15 @@ const reactInternals = {
   content: require("articles/ReactInternals.md")
 };
 
+const cicd = {
+  title: "Continuous Integration and Deployment: Automation through CircleCI",
+  link: "cicd-circleci",
+  date: "June 16, 2019",
+  description: "Setting up a React Firebase App for CICD using CircleCI",
+  length: "10 min read",
+  content: require("articles/CICD.md")
+};
+
 // THE DEVIL IS IN THE DETAILS
 
 const automaticSlideshow = {
@@ -132,12 +141,13 @@ const automaticSlideshow = {
   content: require("articles/Slideshow-Carousel.md")
 };
 
-export const bigPicturePosts = [reactInternals, devOpsVsSRE];
+export const bigPicturePosts = [reactInternals, cicd, devOpsVsSRE];
 
 export const codePosts = [automaticSlideshow];
 
 export const techArticles = {
   "dev-ops-vs-sre": devOpsVsSRE,
   "automatic-slideshow-carousel-with-hooks": automaticSlideshow,
-  "react-internals": reactInternals
+  "react-internals": reactInternals,
+  "cicd-circleci": cicd
 };
