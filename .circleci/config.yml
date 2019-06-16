@@ -9,12 +9,3 @@ jobs: # a collection of steps
       - run:
         name: "Check current version of node"
         command: node -v
-      - run:
-        name: "Install dependencies"
-        command: yarn install
-      - run:
-        name: "Build to generate production ready code"
-        command: yarn build
-      - run:
-        name: "Firebase deploy"
-        command: firebase deploy --only hosting --token=${FIREBASE_TOKEN} --non-interactive
