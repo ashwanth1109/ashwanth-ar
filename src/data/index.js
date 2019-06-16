@@ -157,7 +157,7 @@ export const techArticles = {
 export const musicVideos = [
   {
     title: "River flows in you - Yiruma",
-    id: "O4mouZ35z7U"
+    id: "6JkbpphdFak"
   },
   {
     title: "Light of the seven - Ramin Djawadi",
@@ -166,5 +166,9 @@ export const musicVideos = [
   {
     title: "River flows in you - Yiruma (Background noise removed)",
     id: "rTIQu44oe9g"
+  },
+  {
+    title: "Canon in D - Pachelbel (re-record this)",
+    id: "u3WGkNQ71Iw"
   }
 ];
