@@ -168,7 +168,7 @@ export const musicVideos = [
     id: "rTIQu44oe9g"
   },
   {
-    title: "Canon in D - Pachelbel (re-record this)",
-    id: "u3WGkNQ71Iw"
+    title: "Canon in D - Pachelbel",
+    id: "RdW2qAqSXQY"
   }
 ];
