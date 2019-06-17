@@ -1,3 +1,6 @@
+// imports
+const { Component } = require("react");
+
 // Object Creation using constructors
 
 function SuperHero(fName, lName) {
@@ -13,3 +16,6 @@ const hero1 = new SuperHero("Bruce", "Wayne");
 const hero2 = new SuperHero("Barry", "Allen");
 
 console.log({ hero1: hero1.getName(), hero2: hero2.getName() });
+
+// Checking what isReactComponent logs
+console.log(Component.prototype.isReactComponent);
