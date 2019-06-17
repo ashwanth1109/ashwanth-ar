@@ -1,6 +1,6 @@
 # A Deep Dive into React Internals
 
-Understanding the Source Code: Dated June 16 2019
+Understanding the Source Code: Forked on June 16 2019
 
 ReactVersion: 16.8.6
 
@@ -46,14 +46,27 @@ function Component(props, context, updater) {
 }
 ```
 
-##### Prototypes
+The component function takes in props, context and an updater as params. Where do these props come from? The renderer?
+
+```jsx
+const emptyObject = {};
+if (__DEV__) {
+  Object.freeze(emptyObject);
+}
+```
+
+`Object.freeze()` => A frozen object can no longer be changed, freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. Freeze returns the same object that was passed in.
+
+`Why are we using freeze and seal? And why __DEV__ only specifically?`
+
+```jsx
+Component.prototype.isReactComponent = {};
+```
 
 Prototypes => property of the Object constructor
 Also the end of a prototype chain. It is not writable, configurable or enumerable. A typical object inherits properties and methods from Object.prototype, although these properties may be overridden.
 
 Prototypes in javascript help with Object Oriented Programming.
-
-##### Why Prototypes?
 
 ```jsx
 // Object Creation using constructors
@@ -77,36 +90,23 @@ When we use a constructor as shown above to create object instances, each of tho
 
 When a function is created in JavaScript, the JS engine adds a prototype property to the function.
 
-```jsx
-Component.prototype.isReactComponent = {};
-```
+On logging the imported Component class's prototype, we get the following output.
 
 ```jsx
-/**
- * Sets a subset of the state. Always use this to mutate
- * state. You should treat `this.state` as immutable.
- *
- * There is no guarantee that `this.state` will be immediately updated, so
- * accessing `this.state` after calling this method may return the old value.
- *
- * There is no guarantee that calls to `setState` will run synchronously,
- * as they may eventually be batched together.  You can provide an optional
- * callback that will be executed when the call to setState is actually
- * completed.
- *
- * When a function is provided to setState, it will be called at some point in
- * the future (not synchronously). It will be called with the up to date
- * component arguments (state, props, context). These values can be different
- * from this.* because your function may be called after receiveProps but before
- * shouldComponentUpdate, and this new state, props, and context will not yet be
- * assigned to this.
- *
- * @param {object|function} partialState Next partial state or function to
- *        produce next partial state to be merged with current state.
- * @param {?function} callback Called after state is updated.
- * @final
- * @protected
- */
+const { Component } = require("react");
+
+console.log(Component.prototype);
+// output =>
+Component {
+  isReactComponent: {},
+  setState: [Function],
+  forceUpdate: [Function]
+}
+```
+
+On logging just the class, we get => `[Function: Component]`
+
+```jsx
 Component.prototype.setState = function(partialState, callback) {
   invariant(
     typeof partialState === "object" ||
@@ -119,22 +119,63 @@ Component.prototype.setState = function(partialState, callback) {
 };
 ```
 
+Important notes for setState:
+
+- Treat "this.state" as immutable and always use "setState" to mutate state
+- partialState can either be of type object, function or null (Need to experiment with function and null to see what happens)
+- what is invariant? its coming from:
+
+`import invariant from 'shared/invariant';`
+
+- updated is being set in as a class property as shown below
+
 ```jsx
-/**
- * Forces an update. This should only be invoked when it is known with
- * certainty that we are **not** in a DOM transaction.
- *
- * You may want to call this when you know that some deeper aspect of the
- * component's state has changed but `setState` was not called.
- *
- * This will not invoke `shouldComponentUpdate`, but it will invoke
- * `componentWillUpdate` and `componentDidUpdate`.
- *
- * @param {?function} callback Called after update is complete.
- * @final
- * @protected
- */
+// We initialize the default updater but the real one gets injected by the
+// renderer.
+this.updater = updater || ReactNoopUpdateQueue;
+```
+
+Force Update
+
+```jsx
 Component.prototype.forceUpdate = function(callback) {
   this.updater.enqueueForceUpdate(this, callback, "forceUpdate");
 };
 ```
+
+This forces an update and should be invoked only when it is known with certainty that we are NOT in a DOM transaction.
+
+You MAY want to call this when some deep aspect of component's state has changed but `setState` was not called.
+
+Does not invoke `shouldComponentUpdate` but invokes `componentWillUpdate` and `componentDidUpdate`.
+
+### PureComponent
+
+```jsx
+/**
+ * Convenience component with default shallow equality check for sCU.
+ */
+function PureComponent(props, context, updater) {
+  this.props = props;
+  this.context = context;
+  // If a component has string refs, we will assign a different object later.
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+}
+
+const pureComponentPrototype = (PureComponent.prototype = new ComponentDummy());
+pureComponentPrototype.constructor = PureComponent;
+// Avoid an extra prototype jump for these methods.
+Object.assign(pureComponentPrototype, Component.prototype);
+pureComponentPrototype.isPureReactComponent = true;
+```
+
+PureComponent is similar to Component except that Component does not have `shouldComponentUpdate()` but PureComponent implements it with a shallow prop and state comparison.
+
+If your props contain deeply nested data structures, using PureComponent can produce false negatives. Only extend PureComponent for simple props and state.
+
+Alternatively you can use the `forceUpdate()` method when you know deep data structures have changed.
+
+Alternatively, you can also consider using immutable objects to facilitate faster comparisons of nested data.
+
+Furthermore, PureComponent's `shouldComponentUpdate()` skips prop updates for the whole component subtree. So make sure all children components are also pure.
