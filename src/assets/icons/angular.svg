@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="126px" viewBox="0 0 120 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>angularjs-plain</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1365.000000, -32.000000)" fill-rule="nonzero" fill="#F4B400">
+            <g id="angularjs-plain" transform="translate(1365.000000, 32.000000)">
+                <path d="M48.864,63 L72.144,63 L59.769,37.123 L48.864,63 Z M59.81,0.026 L0.553,20.88 L9.916,98.517 L59.873,125.974 L110.087,98.146 L119.447,20.511 L59.81,0.026 L59.81,0.026 Z M44.044,74 L36.779,92.176 L23.198,92.232 L59.806,11.153 L59.736,11 L59.672,11 L59.673,10.867 L59.736,11 L59.877,11 L60,10.726 L60,11 L59.876,11 L59.807,11.153 L97.996,92.57 L84.922,92.283 L76.88,73.703 L59.707,73.785 L44.044,74 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

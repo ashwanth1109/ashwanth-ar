@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="126px" viewBox="0 0 114 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>webpack-plain</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1411.000000, -353.000000)" fill-rule="nonzero" fill="#F4B400">
+            <g id="webpack-plain" transform="translate(1411.000000, 353.000000)">
+                <path d="M110.29,97.1 L59.24,126 L59.24,103.49 L91,86 L110.29,97.1 Z M113.79,93.94 L113.79,33.55 L95.11,44.35 L95.11,83.16 L113.78,93.93 L113.79,93.94 Z M3.71,97.1 L54.71,125.98 L54.71,103.49 L22.94,86 L3.71,97.1 Z M0.21,93.94 L0.21,33.55 L18.89,44.35 L18.89,83.16 L0.21,93.94 Z M2.4,29.64 L54.76,0 L54.76,21.76 L21.21,40.21 L20.94,40.36 L2.4,29.64 Z M111.58,29.64 L59.24,0 L59.24,21.76 L92.79,40.2 L93.06,40.35 L111.6,29.64 L111.58,29.64 Z" id="Shape"></path>
+                <path d="M54.76,98.37 L23.37,81.1 L23.37,46.92 L54.76,65 L54.76,98.37 Z M59.24,98.37 L90.63,81.12 L90.63,46.92 L59.24,65 L59.24,98.37 Z M25.5,43 L57,25.66 L88.5,43 L57,61.16 L25.5,43 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

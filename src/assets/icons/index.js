@@ -21,6 +21,19 @@ import mongo from "./mongo.svg";
 import next from "./next.svg";
 import jquery from "./jquery.svg";
 import sketch from "./sketch.svg";
+import heroku from "./heroku.svg";
+import postgres from "./postgres.svg";
+import ruby from "./ruby.svg";
+import rails from "./rails.svg";
+import android from "./android.svg";
+import angular from "./angular.svg";
+import babel from "./babel.svg";
+import bootstrap from "./bootstrap.svg";
+import jest from "./jest.svg";
+import npm from "./npm.svg";
+import sass from "./sass.svg";
+import webpack from "./webpack.svg";
+import wordpress from "./wordpress.svg";
 
 export const iconPack0 = [
   { name: "github", src: github, link: "https://github.com/ashwanth1109" },
@@ -48,5 +61,18 @@ export const iconPack2 = [
   { name: "mongo", src: mongo },
   { name: "next", src: next },
   { name: "jquery", src: jquery },
-  { name: "sketch", src: sketch }
+  { name: "sketch", src: sketch },
+  { name: "heroku", src: heroku },
+  { name: "postgres", src: postgres },
+  { name: "ruby", src: ruby },
+  { name: "rails", src: rails },
+  { name: "android", src: android },
+  { name: "angular", src: angular },
+  { name: "jest", src: jest },
+  { name: "babel", src: babel },
+  { name: "webpack", src: webpack },
+  { name: "npm", src: npm },
+  { name: "sass", src: sass },
+  { name: "bootstrap", src: bootstrap },
+  { name: "wordpress", src: wordpress }
 ];

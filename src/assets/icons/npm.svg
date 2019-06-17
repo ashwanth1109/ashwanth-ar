@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="52px" viewBox="0 0 124 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>npm-original-wordmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-992.000000, -383.000000)" fill-rule="nonzero" fill="#F4B400">
+            <g id="npm-original-wordmark" transform="translate(992.000000, 383.000000)">
+                <path d="M0,0.5 L124,0.5 L124,44.21 L62,44.21 L62,51.5 L34.44,51.5 L34.44,44.21 L0,44.21 L0,0.5 Z M6.89,36.93 L20.67,36.93 L20.67,15.07 L27.56,15.07 L27.56,36.93 L34.45,36.93 L34.45,7.79 L6.89,7.79 L6.89,36.93 Z M41.33,7.79 L41.33,44.21 L55.11,44.21 L55.11,36.93 L68.89,36.93 L68.89,7.79 L41.33,7.79 Z M55.11,15.08 L62,15.08 L62,29.64 L55.11,29.64 L55.11,15.08 Z M75.78,7.79 L75.78,36.93 L89.56,36.93 L89.56,15.07 L96.45,15.07 L96.45,36.93 L103.34,36.93 L103.34,15.07 L110.23,15.07 L110.23,36.93 L117.12,36.93 L117.12,7.79 L75.78,7.79 Z" id="original-wordmark"></path>
+            </g>
+        </g>
+    </g>
+</svg>
