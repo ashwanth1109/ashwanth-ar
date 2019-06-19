@@ -3,28 +3,28 @@
 import React from "react";
 
 import { TechPage } from "./styles";
-import { Heading } from "styles";
 
+import Accordion from "components/Accordion";
 import MiniApps from "components/MiniApps";
 import BlogPost from "components/BlogPost";
 
 import { bigPicturePosts, codePosts } from "data";
 
-// type Props = {
-//   //
-// };
-
 const Tech = () => {
   return (
     <TechPage>
-      <Heading>THE DEVIL IS IN THE DETAILS</Heading>
-      {codePosts.map((article, id) => (
-        <BlogPost key={id} article={article} />
-      ))}
-      <Heading>THE BIGGER PICTURE</Heading>
-      {bigPicturePosts.map((article, id) => (
-        <BlogPost key={id} article={article} />
-      ))}
+      <Accordion title="THE DEVIL IS IN THE DETAILS">
+        <div>
+          {codePosts.map((article, id) => (
+            <BlogPost key={id} article={article} />
+          ))}
+        </div>
+      </Accordion>
+      <Accordion title="THE BIGGER PICTURE">
+        {bigPicturePosts.map((article, id) => (
+          <BlogPost key={id} article={article} />
+        ))}
+      </Accordion>
       <MiniApps />
     </TechPage>
   );
