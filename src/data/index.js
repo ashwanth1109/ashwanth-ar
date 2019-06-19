@@ -49,50 +49,50 @@ export const miniApps = [
   {
     name: "REALTIME CHAT",
     image: jlChat,
-    github: "",
-    live: ""
+    github: "https://github.com/ashwanth1109/react-test-1",
+    live: "https://jl-chat-app.herokuapp.com/"
   },
   {
     name: "CHECKERS",
     image: checkers,
-    github: "",
-    live: ""
+    github: "https://github.com/ashwanth1109/CheckersApp",
+    live: "https://ashwanth1109.github.io/CheckersApp/"
   },
   {
     name: "TO DO APP",
     image: taskIt,
-    github: "",
-    live: ""
+    github: "https://github.com/ashwanth1109/task-it",
+    live: "https://task-it-now.herokuapp.com/"
   },
   {
     name: "SLIDER",
     image: slider,
-    github: "",
-    live: ""
+    github: "https://github.com/ashwanth1109/showcase-slider",
+    live: "https://showcase-slider.herokuapp.com/"
   },
   {
     name: "FLASH CARDS",
     image: greflash,
-    github: "",
-    live: ""
+    github: "https://github.com/ashwanth1109/GREFlashCards",
+    live: "https://greflash.herokuapp.com/"
   },
   {
     name: "REPO SEARCH",
     image: gitSearch,
-    github: "",
-    live: ""
+    github: "https://github.com/ashwanth1109/react-test",
+    live: "https://ashwanth1109.github.io/react-test/"
   },
   {
     name: "HASH DOCKET",
     image: hashdocket,
-    github: "",
-    live: ""
+    github: "https://github.com/ashwanth1109/HashDocket",
+    live: "https://hashdocket.herokuapp.com/"
   },
   {
     name: "EVENTFUL",
     image: eventful,
-    github: "",
-    live: ""
+    github: "https://github.com/ashwanth1109/EventfulRails",
+    live: "https://eventful-rails.herokuapp.com/"
   }
 ];
 
