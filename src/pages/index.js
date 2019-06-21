@@ -1,6 +1,5 @@
 // @flow
 
-import React from "react";
 import Home from "./Home";
 import About from "./About";
 import Tech from "./Tech";
@@ -10,7 +9,7 @@ import Credo from "./Credo";
 import TechArticles from "./TechArticles";
 import ReactInternals from "./ReactInternals";
 
-const NotFound = () => <h3>404</h3>;
+import NotFound from "./NotFound";
 
 export {
   Home,
