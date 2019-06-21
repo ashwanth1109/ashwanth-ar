@@ -1,5 +1,6 @@
 {
   "projects": {
-    "portfolio": "ashwanth-ar"
+    "portfolio": "ashwanth-ar",
+    "default": "ashwanth-ar"
   }
 }
