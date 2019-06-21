@@ -8,21 +8,24 @@ import Accordion from "components/Accordion";
 import MiniApps from "components/MiniApps";
 import BlogPost from "components/BlogPost";
 
-import { bigPicturePosts, codePosts } from "data";
+import { bigPicturePosts, codePosts, reactInternalsPosts } from "data";
 
 const Tech = () => {
   return (
     <TechPage>
       <Accordion title="THE DEVIL IS IN THE DETAILS">
-        <div>
-          {codePosts.map((article, id) => (
-            <BlogPost key={id} article={article} />
-          ))}
-        </div>
+        {codePosts.map((article, id) => (
+          <BlogPost key={id} article={article} route="TECH_ARTICLES" />
+        ))}
       </Accordion>
       <Accordion title="THE BIGGER PICTURE">
         {bigPicturePosts.map((article, id) => (
-          <BlogPost key={id} article={article} />
+          <BlogPost key={id} article={article} route="TECH_ARTICLES" />
+        ))}
+      </Accordion>
+      <Accordion title="REACT INTERNALS">
+        {reactInternalsPosts.map((article, id) => (
+          <BlogPost key={id} article={article} route="REACT_INTERNALS" />
         ))}
       </Accordion>
       <MiniApps />

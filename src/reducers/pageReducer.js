@@ -7,6 +7,7 @@ const components = {
   MUSIC: "Music",
   CREDO: "Credo",
   TECH_ARTICLES: "TechArticles",
+  REACT_INTERNALS: "ReactInternals",
   [NOT_FOUND]: "NotFound"
 };
 

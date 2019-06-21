@@ -110,13 +110,21 @@ const devOpsVsSRE = {
   content: require("articles/DevOps-vs-SRE.md")
 };
 
-const reactInternals = {
-  title: "React Internals - A deep dive into React's source code",
+const reactInternals1 = {
+  title: "React Internals Part 1 - A deep dive into React's source code",
   link: "react-internals",
   date: "June 16, 2019",
   description: "My notes on the react repo's source code",
   length: "XX min read",
-  content: require("articles/ReactInternals.md")
+  content: require("articles/ReactInternals1.md")
+};
+
+const reactInternals2 = {
+  title: "React Internals Part 2 - A deep dive into React's source code",
+  link: "part-2",
+  date: "June 16, 2019",
+  description: "My notes on the react repo's source code",
+  length: "XX min read"
 };
 
 const cicd = {
@@ -141,15 +149,18 @@ const automaticSlideshow = {
   content: require("articles/Slideshow-Carousel.md")
 };
 
-export const bigPicturePosts = [reactInternals, cicd, devOpsVsSRE];
+export const bigPicturePosts = [reactInternals1, cicd, devOpsVsSRE];
 
 export const codePosts = [automaticSlideshow];
+
+export const reactInternalsPosts = [reactInternals2];
 
 export const techArticles = {
   "dev-ops-vs-sre": devOpsVsSRE,
   "automatic-slideshow-carousel-with-hooks": automaticSlideshow,
-  "react-internals": reactInternals,
-  "cicd-circleci": cicd
+  "cicd-circleci": cicd,
+  "react-internals": reactInternals1,
+  "react-internals-2": reactInternals2
 };
 
 // MUSIC VIDEOS

@@ -10,16 +10,17 @@ import { Container } from "styles";
 import clock from "assets/clock.svg";
 
 type Props = {
-  article: any
+  article: any,
+  route: string
 };
 
-const BlogPost = ({ article }: Props) => {
+const BlogPost = ({ article, route }: Props) => {
   const { title, link, date, description, length } = article;
   return (
     <Post>
       <Link
         to={{
-          type: "TECH_ARTICLES",
+          type: route,
           payload: {
             article: link
           }

@@ -8,7 +8,17 @@ import Music from "./Music";
 import Credo from "./Credo";
 
 import TechArticles from "./TechArticles";
+import ReactInternals from "./ReactInternals";
 
 const NotFound = () => <h3>404</h3>;
 
-export { Home, About, Tech, Music, Credo, TechArticles, NotFound };
+export {
+  Home,
+  About,
+  Tech,
+  Music,
+  Credo,
+  TechArticles,
+  ReactInternals,
+  NotFound
+};
