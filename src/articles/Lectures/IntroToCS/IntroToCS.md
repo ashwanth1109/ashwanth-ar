@@ -542,7 +542,7 @@ print(palin('racecar'))  # True
 print(palin('test'))  # False
 ```
 
-### DICTIONARIES
+### Dictionaries
 
 - keys need to be unique
 - keys need to immutable type
@@ -600,3 +600,92 @@ def fib(n):
 
 print(fib(20))  # 6765
 ```
+
+## Lecture 7 - Testing, Debugging, Exceptions and Assertions
+
+### Defensive Programming
+
+- Modularize your code & write specifications for these functions
+- Provide your module with a bunch of inputs and confirm if you get the output you expect (assertions)
+
+### Testing/Validation
+
+- Compare input/output pairs to specification
+- Think along the lines of 'How can I break my program?'
+
+### Debugging
+
+- Study events leading up to an error
+- Think along the lines of 'Why did it break and how do I fix it?'
+
+### Classes of Tests
+
+- Unit Testing: (1) validate each piece of program (2) test each functions separately
+- Regression Testing: (1) add tests for bugs as you find them (2) catch reintroduced errors that were previously fixed
+- Integration Testing: does the overall program work?
+
+### Testing Approaches
+
+- Intuition about natural boundaries to the problem. Look for extremes that you think should be tested
+- Random Testing. More tests mean more assurance.
+- Black Box Testing: Explore paths through specification
+- Glass Box Testing: Explore paths through code
+
+### Glass Box Testing
+
+- Use the code to guide your test cases
+- testing is considered path-complete if all paths have been tested for
+- conditionals: cover all parts
+- loops: no loop, one loop, many loops cases
+- drawbacks - there could be missing paths
+
+### Exceptions
+
+```py
+# EXCEPTIONS
+
+try:
+    a = int(input('Enter number 1: '))
+    b = int(input('Enter number 2: '))
+    print('sum', a+b)
+except ValueError:
+    print('enter a number')
+except:
+    print('something went wrong')
+
+# NO EXCEPTION HANDLING
+
+c = int(input('Enter number 1: '))
+d = int(input('Enter number 2: '))
+print('sum', c+d)
+
+'''
+Traceback (most recent call last):
+  File "exceptions.py", line 11, in <module>
+    c = int(input('Enter number 1: '))
+ValueError: invalid literal for int() with base 10: 's'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+    from apport.fileutils import likely_packaged, get_recent_crashes
+  File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+    from apport.report import Report
+  File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+    import apport.fileutils
+  File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+    from apport.packaging_impl import impl as packaging
+  File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 24, in <module>
+    import apt
+  File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+    import apt_pkg
+ModuleNotFoundError: No module named 'apt_pkg'
+
+Original exception was:
+Traceback (most recent call last):
+  File "exceptions.py", line 11, in <module>
+    c = int(input('Enter number 1: '))
+ValueError: invalid literal for int() with base 10: 's'
+'''
+```
+
+You can also have `else` and `finally` clauses. Else executes when the try body completes with no exceptions. Finally always executes after everything else is done.
