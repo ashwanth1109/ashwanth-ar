@@ -157,7 +157,7 @@ const introToCS = {
   date: "June 23, 2019",
   description: "Lecture Material from MIT OCW",
   length: "XX min read",
-  content: require("articles/Lectures/IntroToCS.md")
+  content: require("articles/Lectures/IntroToCS/IntroToCS.md")
 };
 
 export const bigPicturePosts = [reactInternals1, cicd, devOpsVsSRE];

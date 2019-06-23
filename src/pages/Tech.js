@@ -33,7 +33,7 @@ const Tech = () => {
           <BlogPost key={id} article={article} route="REACT_INTERNALS" />
         ))}
       </Accordion>
-      <Accordion title="BUILDING BLOCKS">
+      <Accordion title="BUILDING BLOCKS - MIT OCW LECTURE NOTES">
         {buildingBlocks.map((article, id) => (
           <BlogPost key={id} article={article} route="TECH_ARTICLES" />
         ))}
