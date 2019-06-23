@@ -8,7 +8,12 @@ import Accordion from "components/Accordion";
 import MiniApps from "components/MiniApps";
 import BlogPost from "components/BlogPost";
 
-import { bigPicturePosts, codePosts, reactInternalsPosts } from "data";
+import {
+  bigPicturePosts,
+  codePosts,
+  reactInternalsPosts,
+  buildingBlocks
+} from "data";
 
 const Tech = () => {
   return (
@@ -26,6 +31,11 @@ const Tech = () => {
       <Accordion title="REACT INTERNALS">
         {reactInternalsPosts.map((article, id) => (
           <BlogPost key={id} article={article} route="REACT_INTERNALS" />
+        ))}
+      </Accordion>
+      <Accordion title="BUILDING BLOCKS">
+        {buildingBlocks.map((article, id) => (
+          <BlogPost key={id} article={article} route="TECH_ARTICLES" />
         ))}
       </Accordion>
       <MiniApps />
