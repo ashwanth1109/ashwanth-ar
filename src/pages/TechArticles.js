@@ -41,7 +41,11 @@ const TechArticles = ({ article, width }: Props) => {
       <TechArticlePage>
         {renderComponent()}
         <Article smallDevice={width < 500}>
-          <ReactMarkdown source={markdown} renderers={{ code: CodeBlock }} />
+          <ReactMarkdown
+            source={markdown}
+            renderers={{ code: CodeBlock }}
+            escapeHtml={false}
+          />
         </Article>
       </TechArticlePage>
     );
