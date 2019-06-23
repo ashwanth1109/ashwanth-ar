@@ -149,18 +149,32 @@ const automaticSlideshow = {
   content: require("articles/Slideshow-Carousel.md")
 };
 
+// BUILDING BLOCKS
+
+const introToCS = {
+  title: "Introduction to Computer Science (using python)",
+  link: "intro-to-cs-using-python",
+  date: "June 23, 2019",
+  description: "Lecture Material from MIT OCW",
+  length: "XX min read",
+  content: require("articles/Lectures/IntroToCS.md")
+};
+
 export const bigPicturePosts = [reactInternals1, cicd, devOpsVsSRE];
 
 export const codePosts = [automaticSlideshow];
 
 export const reactInternalsPosts = [reactInternals2];
 
+export const buildingBlocks = [introToCS];
+
 export const techArticles = {
   "dev-ops-vs-sre": devOpsVsSRE,
   "automatic-slideshow-carousel-with-hooks": automaticSlideshow,
   "cicd-circleci": cicd,
   "react-internals": reactInternals1,
-  "react-internals-2": reactInternals2
+  "react-internals-2": reactInternals2,
+  "intro-to-cs-using-python": introToCS
 };
 
 // MUSIC VIDEOS
