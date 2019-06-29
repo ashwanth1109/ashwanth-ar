@@ -6,7 +6,19 @@ While I understand the pivotal role that religion plays in the lives of many, st
 
 But I do have a strong belief system that governs my actions on a daily basis. This system is my truth. It is the way I perceive the world. We each have our own. A system that evolves for each of us over the entire course of our lives. Sometimes faster, sometimes slower. Up until the age of 23, I was constantly gathering wisdom from those around me. I consider myself fortunate to have met the erudite mentors and peers that I have had in life. My beliefs constantly fluctuated but this was a journey that had to pan out in its own time and there would be no rushing it.
 
-2018 was an interesting year in my life. It was in January of that year that I decided to forge my beliefs based on my experiences thus far, leading up to that moment. At the time, I was reading a number of books which granularly coalesced my beliefs into principles of concrete substance. Through my readings (and several re-readings) of these books, I had put together my core beliefs. Unlike the ever fleeting beliefs from my past these remained unchanged. It has undergone a few natural tweaks that stemmed from my discussions of these beliefs with others but I'm convinced in my way of life. This page summarizes the bible I live by and is my record of continuing to fervently stick to its beliefs while keeping an open mind to criticism & change from those around me.
+## The antithesis of my very being
+
+2018 was an interesting year in my life. Alongside fluctuating beliefs, I had been incredibly indecisive about my career path. I had a degree in Electronics Engineering and a masters in Management Studies. A few fundamental computer science classes had revealed a sliver of a programmer in me during my first year in undergraduate. Against what conventional wisdom would seem to suggest, I chose to become a computer engineer although I knew very little about the field. Clearly if I had to justify this as a career choice, I had a lot of catching up to do to even think about being at par with those who have studied computers for 4 years.
+
+As a personal hobby, I chose to learn the piano (or a keyboard if I was being technically accurate). I took a few classes as a kid, classes so obscure that my knowledge in music theory was almost non-existential up until that point. If you'd ask anyone who I've gone to school with (and that's over 19 years of education mind you), they'd say they had never even seen me close to a piano, let alone play it and they'd be right.
+
+I cannot justify why or how I made these choices. It could have very well been a flip of the coin and these choices were made for me. It was as if I had prepared for something up until that point and then I decided to erase the chalkboard and got all set to start again.
+
+It felt like the antithesis of my very being. . .
+
+But as bizarre as my choices seemed at the time, the one thing that I was certain about is - this is what I want to do and there would be no changing my mind. Atleast I had a decision made which was more than what I could say about my past.
+
+It was in January of that year that I decided to forge my beliefs based on my experiences thus far, centered around these choices. I started reading a few books which granularly coalesced my beliefs into principles of concrete substance. Through my readings (and several re-readings) of these books, I had put together my core beliefs. Unlike the ever fleeting beliefs from my past these remained unchanged. It has undergone a few natural tweaks that stemmed from my discussions of these beliefs with others but I'm convinced in my way of life. This page summarizes the bible I live by and is my record of continuing to fervently stick to its beliefs while keeping an open mind to criticism & change from those around me.
 
 ## The 10,000 hour goal and how I sold my soul to the Devil
 
