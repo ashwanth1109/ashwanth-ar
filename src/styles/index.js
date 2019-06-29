@@ -43,10 +43,10 @@ export const Heading = styled.div`
   padding: 20px;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-family: ${fonts.secondary};
+  font-family: ${fonts.primary};
   font-weight: bold;
+  font-size: calc(10px + 1vw);
 `;
 
 export const Spacer = styled.div`
