@@ -8,21 +8,23 @@ But I do have a strong belief system that governs my actions on a daily basis. T
 
 ## The antithesis of my very being
 
-2018 was an interesting year in my life. Alongside fluctuating beliefs, I had been incredibly indecisive about my career path. I had a degree in Electronics Engineering and a masters in Management Studies. A few fundamental computer science classes had revealed a sliver of a programmer in me during my first year in undergraduate. Against what conventional wisdom would seem to suggest, I chose to become a computer engineer although I knew very little about the field. Clearly if I had to justify this as a career choice, I had a lot of catching up to do to even think about being at par with those who have studied computers for 4 years.
+2018 was an interesting year in my life. Alongside fluctuating beliefs, I had been incredibly indecisive about my career path. I had a degree in Electronics Engineering and a masters in Management Studies. But I wanted to do something else.
 
-As a personal hobby, I chose to learn the piano (or a keyboard if I was being technically accurate). I took a few classes as a kid, classes so obscure that my knowledge in music theory was almost non-existential up until that point. If you'd ask anyone who I've gone to school with (and that's over 19 years of education mind you), they'd say they had never even seen me close to a piano, let alone play it and they'd be right.
+A few fundamental computer science classes had revealed a sliver of a programmer in me during my undergraduate. Against what conventional wisdom would seem to suggest, I chose to become a software engineer although my background didn't fully correlate with this decision.
 
-I cannot justify why or how I made these choices. It could have very well been a flip of the coin and these choices were made for me. It was as if I had prepared for something up until that point and then I decided to erase the chalkboard and got all set to start again.
+As a personal hobby, I chose to learn the piano (or a keyboard if I was being technically accurate). I took classes as a kid, however if you'd ask anyone who I've gone to school with (and that's over 19 years of education mind you), they'd say they had never even seen me close to a piano, let alone play it and they'd be right.
 
-It felt like the antithesis of my very being. . .
+One could say it might as well have been a flip of the coin that I based these choices off of. That's how random it felt. It was like I decided to render all my previous experiences pointless and start all over again. It felt like the antithesis of my very being. But it wasn't.
 
-But as bizarre as my choices seemed at the time, the one thing that I was certain about is - this is what I want to do and there would be no changing my mind. Atleast I had a decision made which was more than what I could say about my past.
+I enjoyed programming and had even pursued a minor in computer science in college. With my piano classes as a kid, I had a basic background in music theory. Neither enough to enable my choices, but it was a start. As bizarre as my choices seemed at the time, it was the only thing that I was certain about. Atleast I had a decision made, which was more than what I could say about my past.
 
-It was in January of that year that I decided to forge my beliefs based on my experiences thus far, centered around these choices. I started reading a few books which granularly coalesced my beliefs into principles of concrete substance. Through my readings (and several re-readings) of these books, I had put together my core beliefs. Unlike the ever fleeting beliefs from my past these remained unchanged. It has undergone a few natural tweaks that stemmed from my discussions of these beliefs with others but I'm convinced in my way of life. This page summarizes the bible I live by and is my record of continuing to fervently stick to its beliefs while keeping an open mind to criticism & change from those around me.
+It was in January of that year that I decided to forge my beliefs based on my experiences thus far, centered around these choices. I started reading a few books which granularly coalesced my beliefs into principles of concrete substance. Through my readings (and several re-readings) of these books, I had put together my core beliefs. Unlike the ever fleeting beliefs from my past, these ones remain unchanged. It has undergone a few natural tweaks that stemmed from my discussions of these beliefs with others but I'm convinced in my way of life.
+
+This page summarizes the bible I live by and is my record of continuing to fervently stick to its beliefs while keeping an open mind to criticism & change from those around me.
 
 ## The 10,000 hour goal and how I sold my soul to the Devil
 
-It has been a year and a half (at the time of writing this) since the creation of this version of my beliefs. A friend of mine who I hadn't met in almost 4 years said that working in a startup had made me soulless. While I do admit that the startup culture and its toxically fervent requirement to HUSTLE ALL THE FREAKIN TIME has played a part in this, I promise you, it goes beyond this.
+It has been almost two years (at the time of writing this) since the formulation of my beliefs. A friend of mine who I hadn't met in almost 4 years said that I had changed and that working in a startup had made me soulless. While I do admit that the startup culture and its toxically fervent requirement to HUSTLE ALL THE FREAKIN TIME has played a part in this, I promise you, it goes beyond this.
 
 Outliers by Malcolm Gladwell is a book that has played a pivotal role in my philosophy. Not all chapters in a book are made equal. While there are parts of the book I occasionally skim through to entertain my whims and fancies, the 2nd chapter of the book, titled 'The 10,000 hour rule' is etched into my memory (well, atleast the principles of it are). Of the stories that the author illustrates to make his point, the ones I would like to recollect below are that of Bill Joy and that of the Beatles.
 
@@ -52,3 +54,5 @@ The Beatles travelled to Hamburg 5 times between 1960 and 1962. On the 1st trip,
 
 By the time they had their first commercial success in 1964, they had performed live 1200 times. They had not only had a significant jump in their stamina, they had also learnt an incredible number of covers and were more disciplined on stage after their Hamburg crucible. It was the making of them.
 </Accordion>
+
+### Stay tuned for updates . . .
