@@ -15,7 +15,6 @@ It has been a year and a half (at the time of writing this) since the creation o
 Outliers by Malcolm Gladwell is a book that has played a pivotal role in my philosophy. Not all chapters in a book are made equal. While there are parts of the book I occasionally skim through to entertain my whims and fancies, the 2nd chapter of the book, titled 'The 10,000 hour rule' is etched into my memory (well, atleast the principles of it are). Of the stories that the author illustrates to make his point, the ones I would like to recollect below are that of Bill Joy and that of the Beatles.
 
 <Accordion title="Bill Joy: The Edison of the internet">
-![Bill Joy Quotes](https://quotefancy.com/media/wallpaper/3840x2160/3163059-Bill-Joy-Quote-Well-limbo-is-not-a-good-place-to-be.jpg)
 
 Bill Joy was a computer programmer who took on the task of rewriting UNIX which is an operating system and his verion of the OS still runs in millions of computers. He cofounded Sun Microsystems and was a major contributor to Java. Often called the Edison of the internet, he is regarded as one of the most influential people in the history of computing. He is an established pioneer but his journey to getting there provides some interesting insights to chew on.
 
@@ -27,7 +26,6 @@ At Michigan Joy was programming eight or ten hours a day. Programming in earnest
 </Accordion>
 
 <Accordion title="The Beatles & the Hamburg crucible">
-![The Beatles](https://media.udiscovermusic.com/img/artist-toppers/the-beatles-artist-topper.jpg)
 
 The Beatles were an English rock band, considered one of the most influential bands of all time. In 1960, they were a struggling high school rock band without a drummer comprising John Lennon, Paul McCartney, George Harrison and Stuart Sutcliffe.
 
