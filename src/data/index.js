@@ -185,12 +185,12 @@ export const musicVideos = [
     id: "6JkbpphdFak"
   },
   {
-    title: "Light of the seven - Ramin Djawadi",
+    title: "Light of the Seven - Ramin Djawadi",
     id: "zIJf9nQ50-Q"
   },
   {
-    title: "River flows in you - Yiruma (Background noise removed)",
-    id: "rTIQu44oe9g"
+    title: "Westworld Theme - Ramin Djawadi",
+    id: "QD4a8V3LKTI"
   },
   {
     title: "Canon in D - Pachelbel",
