@@ -149,6 +149,15 @@ const automaticSlideshow = {
   content: require("articles/Slideshow-Carousel.md")
 };
 
+const simpleColorHash = {
+  title: "Simple Color Hash - My first npm package",
+  link: "simple-color-hash",
+  date: "June 29, 2019",
+  description: "An intro into color theory and publishing npm packages",
+  length: "xx min read",
+  content: require("articles/ColorHash.md")
+};
+
 // BUILDING BLOCKS
 
 const introToCS = {
@@ -162,7 +171,7 @@ const introToCS = {
 
 export const bigPicturePosts = [reactInternals1, cicd, devOpsVsSRE];
 
-export const codePosts = [automaticSlideshow];
+export const codePosts = [simpleColorHash, automaticSlideshow];
 
 export const reactInternalsPosts = [reactInternals2];
 
@@ -174,7 +183,8 @@ export const techArticles = {
   "cicd-circleci": cicd,
   "react-internals": reactInternals1,
   "react-internals-2": reactInternals2,
-  "intro-to-cs-using-python": introToCS
+  "intro-to-cs-using-python": introToCS,
+  "simple-color-hash": simpleColorHash
 };
 
 // MUSIC VIDEOS

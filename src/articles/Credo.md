@@ -12,11 +12,10 @@ But I do have a strong belief system that governs my actions on a daily basis. T
 
 It has been a year and a half (at the time of writing this) since the creation of this version of my beliefs. A friend of mine who I hadn't met in almost 4 years said that working in a startup had made me soulless. While I do admit that the startup culture and its toxically fervent requirement to HUSTLE ALL THE FREAKIN TIME has played a part in this, I promise you, it goes beyond this.
 
-Outliers by Malcolm Gladwell is a book that has played a pivotal role in my philosophy. Not all chapters in a book are made equal. While there are parts of the book I occasionally skim through to entertain my whims and fancies, the 2nd chapter of the book, titled 'The 10,000 hour rule' is etched into my memory (well, atleast the principles of it are). Gladwell goes on to illustrate his idea with 3 primary stories from the lives of - (1) Bill Joy (2) The Beatles and (3) Bill Gates. If you've read the book feel free to skip the next 3 subsections since they are my abridged recollection of these stories from the book.
+Outliers by Malcolm Gladwell is a book that has played a pivotal role in my philosophy. Not all chapters in a book are made equal. While there are parts of the book I occasionally skim through to entertain my whims and fancies, the 2nd chapter of the book, titled 'The 10,000 hour rule' is etched into my memory (well, atleast the principles of it are). Of the stories that the author illustrates to make his point, the ones I would like to recollect below are that of Bill Joy and that of the Beatles.
 
+<Accordion title="Bill Joy: The Edison of the internet">
 ![Bill Joy Quotes](https://quotefancy.com/media/wallpaper/3840x2160/3163059-Bill-Joy-Quote-Well-limbo-is-not-a-good-place-to-be.jpg)
-
-### Bill Joy
 
 Bill Joy was a computer programmer who took on the task of rewriting UNIX which is an operating system and his verion of the OS still runs in millions of computers. He cofounded Sun Microsystems and was a major contributor to Java. Often called the Edison of the internet, he is regarded as one of the most influential people in the history of computing. He is an established pioneer but his journey to getting there provides some interesting insights to chew on.
 
@@ -24,4 +23,22 @@ In the early 1970s, at the time when Joy was looking to apply to college, comput
 
 It was exactly at this point of time that computers got powerful enough to handle hundreds of tasks in real time through the advent of a concept called time sharing. The school that Joy went to, Michigan, was one of probably only 3 other schools that had these new computers. Joy found his happy place when he accidentally upon a unique opportunity that only a handful in the world got. To program on a time sharing computer. While student time on these machines was limited to a fixed amount of money every student got, he found a bug in the system that let him extend his time without ever getting charged. He spent more time in the Computer Centre than his classes, staying up all night at the Centre.
 
-At Michigan Joy was programming eight or ten hours a day. Programming in earnest by sophomore year. Add in the summers, and his first year at Berkley (where he was a graduate student). By the time he had started writing proficient code, he had accumulated 10,000 hours of practice.
+At Michigan Joy was programming eight or ten hours a day. Programming in earnest by sophomore year. Add in the summers, and his first year at Berkley (where he was a graduate student). By the time he had started writing proficient code during his 2nd year at Berkley, he had accumulated 10,000 hours of practice.
+</Accordion>
+
+<Accordion title="The Beatles & the Hamburg crucible">
+![The Beatles](https://media.udiscovermusic.com/img/artist-toppers/the-beatles-artist-topper.jpg)
+
+The Beatles were an English rock band, considered one of the most influential bands of all time. In 1960, they were a struggling high school rock band without a drummer comprising John Lennon, Paul McCartney, George Harrison and Stuart Sutcliffe.
+
+At the time, their booking agent, Allan Williams, a 29 year old Liverpool businessman and promoter met with Bruno Koschmider, the owner of the Indra club down in Hamburg. Bruno had the idea of bringing in bands to play down at his strip club. The format would be a non stop show, hour after hour, as the bands tried to catch the passing traffic to prompt clientele to lurch in and out.
+
+Williams wanted to send Rory Storm and the Hurricanes (of which Ringo Starr was a member before joining the Beatles towards the end of 1962), but they were committed to another offer. So, he decided to send the Beatles down with the intention of finding a better musical group to replace them. Looking for a drummer, they found Pete Best, who was regarded as a steady drummer with the capability to play the bass on all 4 beats. With this new makeshift group, they made the journey to Hamburg.
+
+So what was special about Hamburg that made this ragtag group of misfits into the band that started a music revolution with the onset of Beatlemania? It wasn't that the acoustics were fantastic, it wasn't. Or that the audience was savvy and appreciative, they weren't. It was the sheer amount of time the band was forced to play. As Lennon recollects their experience in Hamburg, "We got better and got more confidence. We couldn't help it with all the experience playing all night long. In Hamburg, we had to play for 8 hours."
+As their reputation grew and the clubs started packing crowds, they were playing 7 nights a week.
+
+The Beatles travelled to Hamburg 5 times between 1960 and 1962. On the 1st trip, they played a 106 nights, 5 or more hours a night. On the 2nd, they played 92 nights and on the 3rd, they played 48 nights, gradually increasing the number of hours over this period. Their last 2 Hamburg gigs involved another 90 hours over 2 months. In a year and a half, they had performed for a total of 270 nights in just a year and a half.
+
+By the time they had their first commercial success in 1964, they had performed live 1200 times. They had not only had a significant jump in their stamina, they had also learnt an incredible number of covers and were more disciplined on stage after their Hamburg crucible. It was the making of them.
+</Accordion>
