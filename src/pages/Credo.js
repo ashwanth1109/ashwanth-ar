@@ -2,9 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import ReactMarkdown from "react-markdown";
+import Markdown from "markdown-to-jsx";
 
 import { CredoPage } from "./styles";
+import Accordion from "components/Accordion";
 
 import { credo } from "data";
 import { Article } from "styles";
@@ -28,7 +29,16 @@ const Credo = ({ width }: Props) => {
   return (
     <CredoPage>
       <Article smallDevice={width < 500}>
-        <ReactMarkdown source={markdown} escapeHtml={false} />
+        <Markdown
+          children={markdown}
+          options={{
+            overrides: {
+              Accordion: {
+                component: Accordion
+              }
+            }
+          }}
+        />
       </Article>
     </CredoPage>
   );
