@@ -13,6 +13,7 @@ import eventful from "assets/projects/eventful.png";
 
 // COMPONENTS
 import Slideshow from "components/SlideshowCarousel";
+import HSLColorWheel from "components/HSLColorWheel";
 
 export const titleText = "Hello, I'm Ashwanth";
 
@@ -150,6 +151,7 @@ const automaticSlideshow = {
 };
 
 const simpleColorHash = {
+  component: () => <HSLColorWheel />,
   title: "Simple Color Hash - My first npm package",
   link: "simple-color-hash",
   date: "June 29, 2019",
