@@ -22,9 +22,9 @@ It was in January of that year that I decided to forge my beliefs based on my ex
 
 This page summarizes the bible I live by and is my record of continuing to fervently stick to its beliefs while keeping an open mind to criticism & change from those around me.
 
-## The 10,000 hour goal and how I sold my soul to the Devil
+## The 10,000 hour goal
 
-It has been almost two years (at the time of writing this) since the formulation of my beliefs. A friend of mine who I hadn't met in almost 4 years said that I had changed and that working in a startup had made me soulless. While I do admit that the startup culture and its toxically fervent requirement to HUSTLE ALL THE FREAKIN TIME has played a part in this, I promise you, it goes beyond this.
+It has been almost two years (at the time of writing this) since the formulation of my beliefs. A friend of mine who I hadn't met in almost 4 years said that I had changed and that working in a startup had made me soulless. While I do admit that the startup culture and its contagious requirement to HUSTLE ALL THE FREAKIN TIME has played a part in this, I promise you, it goes beyond this.
 
 Outliers by Malcolm Gladwell is a book that has played a pivotal role in my philosophy. Not all chapters in a book are made equal. While there are parts of the book I occasionally skim through to entertain my whims and fancies, the 2nd chapter of the book, titled 'The 10,000 hour rule' is etched into my memory (well, atleast the principles of it are). Of the stories that the author illustrates to make his point, the ones I would like to recollect below are that of Bill Joy and that of the Beatles.
 
