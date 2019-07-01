@@ -171,11 +171,11 @@ const introToCS = {
   content: require("articles/Lectures/IntroToCS/IntroToCS.md")
 };
 
-export const bigPicturePosts = [reactInternals1, cicd, devOpsVsSRE];
+export const bigPicturePosts = [cicd, devOpsVsSRE];
 
 export const codePosts = [simpleColorHash, automaticSlideshow];
 
-export const reactInternalsPosts = [reactInternals2];
+export const reactInternalsPosts = [reactInternals1];
 
 export const buildingBlocks = [introToCS];
 
