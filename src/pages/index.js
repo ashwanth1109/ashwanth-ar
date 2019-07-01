@@ -8,6 +8,7 @@ import Credo from "./Credo";
 
 import TechArticles from "./TechArticles";
 import ReactInternals from "./ReactInternals";
+import MusicArticles from "./MusicArticles";
 
 import NotFound from "./NotFound";
 
@@ -19,5 +20,6 @@ export {
   Credo,
   TechArticles,
   ReactInternals,
+  MusicArticles,
   NotFound
 };

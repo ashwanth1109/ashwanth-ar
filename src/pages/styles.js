@@ -41,7 +41,7 @@ export const TechArticlePage = styled(ContentPage)`
   margin-bottom: 32px;
 `;
 
-export const MusicPage = styled(ContentPage)`
+export const MusicPage = styled.div`
   display: flex;
   max-width: 1000px;
   margin-left: auto;
@@ -51,6 +51,12 @@ export const MusicPage = styled(ContentPage)`
 
 export const CredoPage = styled(ContentPage)`
   padding: 32px;
+`;
+
+export const MusicArticles = styled.div`
+  width: 90vw;
+  max-width: 1000px;
+  margin: 90px auto 0 auto;
 `;
 
 export const VideoGridL = styled.div`
@@ -91,6 +97,17 @@ export const VideoContentS = styled.div`
     width: 100vw;
     height: 270px;
     margin-top: 16px;
+  }
+`;
+
+export const MusicVideo = styled.div`
+  display: flex;
+  justify-content: center;
+  div,
+  video {
+    max-width: 640px;
+    width: 100vw;
+    height: ${props => props.height};
   }
 `;
 

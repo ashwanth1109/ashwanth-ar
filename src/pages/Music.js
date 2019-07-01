@@ -10,17 +10,30 @@ import {
   VideoCellL,
   VideoContentL,
   VideoGridM,
-  VideoContentS
+  VideoContentS,
+  MusicArticles
 } from "./styles";
 
+import Accordion from "components/Accordion";
+import BlogPost from "components/BlogPost";
 import { Heading, Container } from "styles";
-import { musicVideos } from "data";
+import { musicVideos, classicalPosts } from "data";
 
 type Props = {
   width: Number
 };
 
 const Music = ({ width }: Props) => {
+  const renderArticles = () => (
+    <MusicArticles>
+      <Accordion title="CLASSICAL LESSONS">
+        {classicalPosts.map((article, id) => (
+          <BlogPost key={id} article={article} route="MUSIC_ARTICLES" />
+        ))}
+      </Accordion>
+    </MusicArticles>
+  );
+
   const renderContent = () => (
     <>
       {musicVideos.map(video => (
@@ -36,28 +49,37 @@ const Music = ({ width }: Props) => {
 
   if (width > 1000) {
     return (
-      <MusicPage>
-        <VideoGridL>{renderContent()}</VideoGridL>
-      </MusicPage>
+      <>
+        {renderArticles()}
+        <MusicPage>
+          <VideoGridL>{renderContent()}</VideoGridL>
+        </MusicPage>
+      </>
     );
   } else if (width > 600) {
     return (
-      <MusicPage>
-        <VideoGridM>{renderContent()}</VideoGridM>
-      </MusicPage>
+      <>
+        {renderArticles()}
+        <MusicPage>
+          <VideoGridM>{renderContent()}</VideoGridM>
+        </MusicPage>
+      </>
     );
   }
   return (
-    <MusicPage>
-      <Container flex="column">
-        {musicVideos.map(video => (
-          <VideoContentS key={video.id}>
-            <Heading>{video.title}</Heading>
-            <Youtube videoId={video.id} />
-          </VideoContentS>
-        ))}
-      </Container>
-    </MusicPage>
+    <>
+      {renderArticles()}
+      <MusicPage>
+        <Container flex="column">
+          {musicVideos.map(video => (
+            <VideoContentS key={video.id}>
+              <Heading>{video.title}</Heading>
+              <Youtube videoId={video.id} />
+            </VideoContentS>
+          ))}
+        </Container>
+      </MusicPage>
+    </>
   );
 };
 

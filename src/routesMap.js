@@ -10,6 +10,7 @@ const routesMap = {
   REACT_INTERNALS: "/react-internals/:article",
   TECH_ARTICLES: "/tech/:article",
   MUSIC: "/music",
+  MUSIC_ARTICLES: "/music/:article",
   CREDO: "/credo"
 };
 

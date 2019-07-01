@@ -188,7 +188,22 @@ export const techArticles = {
   "intro-to-cs-using-python": introToCS,
   "simple-color-hash": simpleColorHash
 };
+// MUSIC ARTICLES
 
+const preludeCMajor = {
+  title: "Prelude in C Major - Johann Sebastian Bach",
+  link: "prelude-in-c-major",
+  date: "July 1, 2019",
+  description: "Chord progressions and musical patterns in Prelude in C Major",
+  length: "xx min read",
+  content: require("articles/Music/PreludeCMajor.md")
+};
+
+export const classicalPosts = [preludeCMajor];
+
+export const musicArticles = {
+  "prelude-in-c-major": preludeCMajor
+};
 // MUSIC VIDEOS
 
 export const musicVideos = [
