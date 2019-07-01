@@ -2,6 +2,8 @@
 
 <Youtube videoId="frxT2qB1POQ"/>
 
+Credits to Rousseau for creating the video tutorial
+
 ## Chord Progression 1 - 3 bars
 
 C Major: C3 E3 (G3 C4 E4) (G3 C4 E4) \* 2
