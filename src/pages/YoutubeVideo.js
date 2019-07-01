@@ -10,7 +10,7 @@ type Props = {
   videoId: string
 };
 
-const YoutubeVideo = ({ width, videoId }) => {
+const YoutubeVideo = ({ width, videoId }: Props) => {
   let calcHeight;
   if (width < 640) {
     calcHeight = "initial";
