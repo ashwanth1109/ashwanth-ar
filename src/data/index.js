@@ -107,7 +107,7 @@ const devOpsVsSRE = {
   link: "dev-ops-vs-sre",
   date: "May 30, 2019",
   description: "To build, maintain and run production systems at scale",
-  length: "5 min read",
+  length: "10 min read",
   content: require("articles/DevOps-vs-SRE.md")
 };
 
@@ -116,8 +116,17 @@ const reactInternals1 = {
   link: "react-internals",
   date: "June 16, 2019",
   description: "My notes on the react repo's source code",
-  length: "XX min read",
-  content: require("articles/ReactInternals1.md")
+  length: "10 min read",
+  content: require("articles/React/ReactInternals1.md")
+};
+
+const reactInternals2 = {
+  title: "React Internals Part 2 - A deep dive into React's source code",
+  link: "react-internals-2",
+  date: "July 3, 2019",
+  description: "My notes on the react repo's source code",
+  length: "10 min read",
+  content: require("articles/React/ReactInternals2.md")
 };
 
 const cicd = {
@@ -125,7 +134,7 @@ const cicd = {
   link: "cicd-circleci",
   date: "June 16, 2019",
   description: "Setting up a React Firebase App for CICD using CircleCI",
-  length: "XX min read",
+  length: "5 min read",
   content: require("articles/CICD.md")
 };
 
@@ -138,7 +147,7 @@ const automaticSlideshow = {
   date: "June 1, 2019",
   description:
     "A step by step code article that explains how I built an automatic slideshow carousel component using several commonly used hooks and a custom hook ",
-  length: "10 min read",
+  length: "20 min read",
   content: require("articles/Slideshow-Carousel.md")
 };
 
@@ -148,7 +157,7 @@ const simpleColorHash = {
   link: "simple-color-hash",
   date: "June 29, 2019",
   description: "An intro into color theory and publishing npm packages",
-  length: "xx min read",
+  length: "10 min read",
   content: require("articles/ColorHash.md")
 };
 
@@ -159,7 +168,7 @@ const introToCS = {
   link: "intro-to-cs-using-python",
   date: "June 23, 2019",
   description: "Lecture Material from MIT OCW",
-  length: "XX min read",
+  length: "20 min read",
   content: require("articles/Lectures/IntroToCS/IntroToCS.md")
 };
 
@@ -167,7 +176,7 @@ export const bigPicturePosts = [cicd, devOpsVsSRE];
 
 export const codePosts = [simpleColorHash, automaticSlideshow];
 
-export const reactInternalsPosts = [reactInternals1];
+export const reactInternalsPosts = [reactInternals1, reactInternals2];
 
 export const buildingBlocks = [introToCS];
 
@@ -176,6 +185,7 @@ export const techArticles = {
   "automatic-slideshow-carousel-with-hooks": automaticSlideshow,
   "cicd-circleci": cicd,
   "react-internals": reactInternals1,
+  "react-internals-2": reactInternals2,
   "intro-to-cs-using-python": introToCS,
   "simple-color-hash": simpleColorHash
 };

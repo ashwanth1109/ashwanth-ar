@@ -165,3 +165,5 @@ const hslToRgb = (H, S, L) => {
 ```
 
 These conversions are done using the basic formulas that are used to convert from one color system to the other so there isn't much to explain here except look at the formulas. And that's the gist of the color hash function.
+
+### To be continued
