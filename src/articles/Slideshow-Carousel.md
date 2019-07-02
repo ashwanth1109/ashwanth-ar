@@ -318,3 +318,5 @@ const transitionEnded = useCallback(() => {
 ### The Slide Swap
 
 Once the transition is complete and transition has been turned off, we want to move slide 1 and slide 2 back into their original positions while swapping the contents of slide 2 into slide 1.
+
+### To be continued
