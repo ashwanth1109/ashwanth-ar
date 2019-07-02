@@ -6,31 +6,6 @@ ReactVersion: 16.8.6
 
 ## React Base Classes
 
-### createRef
-
-```jsx
-// an immutable object with a single mutable value
-export function createRef(): RefObject {
-  const refObject = {
-    current: null
-  };
-  if (__DEV__) {
-    Object.seal(refObject);
-  }
-  return refObject;
-}
-```
-
-`__DEV__` => global variable to track whether development or production
-
-`Object.seal()` => This method seals an object preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.
-
-```jsx
-export type RefObject = {|
-  current: any
-|};
-```
-
 ### Component
 
 ```jsx
