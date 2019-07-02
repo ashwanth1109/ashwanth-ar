@@ -16,7 +16,7 @@ As a personal hobby, I chose to learn the piano (or a keyboard if I was being te
 
 One could say it might as well have been a flip of the coin that I based these choices off of. That's how random it felt. It was like I decided to render all my previous experiences pointless and start all over again. It felt like the antithesis of my very being. But it wasn't.
 
-I enjoyed programming and had even pursued a minor in computer science in college. With my piano classes as a kid, I had a basic background in music theory. Neither enough to enable my choices, but it was a start. As bizarre as my choices seemed at the time, it was the only thing that I was certain about. Atleast I had a decision made, which was more than what I could say about my past.
+I enjoyed programming and had even pursued a minor in computer science in college. With my piano classes as a kid, I had a basic background in music theory. Neither enough to enable my choices, and I would have to be a self-taught programmer and pianist, but it was a start. Enough of a start to be able to recognize and source good content to progress in these respective fields. As bizarre as my choices seemed (professionally speaking I mean) at the time, it was the only thing that I was certain about. Atleast I had a decision made, which was more than what I could say about my past.
 
 It was in January of that year that I decided to forge my beliefs based on my experiences thus far, centered around these choices. I started reading a few books which granularly coalesced my beliefs into principles of concrete substance. Through my readings (and several re-readings) of these books, I had put together my core beliefs. Unlike the ever fleeting beliefs from my past, these ones remain unchanged. It has undergone a few natural tweaks that stemmed from my discussions of these beliefs with others but I'm convinced in my way of life.
 
@@ -24,7 +24,7 @@ This page summarizes the bible I live by and is my record of continuing to ferve
 
 ## The 10,000 hour goal
 
-It has been almost two years (at the time of writing this) since the formulation of my beliefs. A friend of mine who I hadn't met in almost 4 years said that I had changed and that working in a startup had made me soulless. While I do admit that the startup culture and its contagious requirement to HUSTLE ALL THE FREAKIN TIME has played a part in this, I promise you, it goes beyond this.
+It has been a year and a half (at the time of writing this which is July 2019) since the formulation of my beliefs. As someone trying to play catch up against those with more background than me, I had no choice but to spend more time than your average developer (pretty big assumption here). More so, because my generation and especially those immersed in the startup stew believe wholeheartedly in the hustle. While I do admit that the startup culture and its contagious requirement to HUSTLE ALL THE FREAKIN TIME has played a part in this, I promise you, it goes beyond this.
 
 Outliers by Malcolm Gladwell is a book that has played a pivotal role in my philosophy. Not all chapters in a book are made equal. While there are parts of the book I occasionally skim through to entertain my whims and fancies, the 2nd chapter of the book, titled 'The 10,000 hour rule' is etched into my memory (well, atleast the principles of it are). Of the stories that the author illustrates to make his point, the ones I would like to recollect below are that of Bill Joy and that of the Beatles.
 
