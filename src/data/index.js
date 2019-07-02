@@ -120,14 +120,6 @@ const reactInternals1 = {
   content: require("articles/ReactInternals1.md")
 };
 
-const reactInternals2 = {
-  title: "React Internals Part 2 - A deep dive into React's source code",
-  link: "part-2",
-  date: "June 16, 2019",
-  description: "My notes on the react repo's source code",
-  length: "XX min read"
-};
-
 const cicd = {
   title: "Continuous Integration and Deployment: Automation through CircleCI",
   link: "cicd-circleci",
