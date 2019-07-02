@@ -112,10 +112,10 @@ const devOpsVsSRE = {
 };
 
 const reactInternals1 = {
-  title: "React Internals Part 1 - A deep dive into React's source code",
+  title: "React Internals Part 1 - React Base Classes",
   link: "react-internals",
   date: "June 16, 2019",
-  description: "My notes on the react repo's source code",
+  description: "A deep dive into react's source code: Component, PureComponent",
   length: "10 min read",
   content: require("articles/React/ReactInternals1.md")
 };
@@ -124,8 +124,9 @@ const reactInternals2 = {
   title: "React Internals Part 2 - A deep dive into React's source code",
   link: "react-internals-2",
   date: "July 3, 2019",
-  description: "My notes on the react repo's source code",
-  length: "10 min read",
+  description:
+    "A deep dive into react's source code: createRef, ReactCreateEventComponent, React Children",
+  length: "xx min read",
   content: require("articles/React/ReactInternals2.md")
 };
 
