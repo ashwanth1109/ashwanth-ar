@@ -8,7 +8,6 @@ const components = {
   CREDO: "Credo",
   TECH_ARTICLES: "TechArticles",
   MUSIC_ARTICLES: "MusicArticles",
-  REACT_INTERNALS: "ReactInternals",
   [NOT_FOUND]: "NotFound"
 };
 

@@ -7,7 +7,6 @@ import Music from "./Music";
 import Credo from "./Credo";
 
 import TechArticles from "./TechArticles";
-import ReactInternals from "./ReactInternals";
 import MusicArticles from "./MusicArticles";
 
 import NotFound from "./NotFound";
@@ -19,7 +18,6 @@ export {
   Music,
   Credo,
   TechArticles,
-  ReactInternals,
   MusicArticles,
   NotFound
 };

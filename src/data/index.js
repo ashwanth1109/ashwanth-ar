@@ -184,7 +184,6 @@ export const techArticles = {
   "automatic-slideshow-carousel-with-hooks": automaticSlideshow,
   "cicd-circleci": cicd,
   "react-internals": reactInternals1,
-  "react-internals-2": reactInternals2,
   "intro-to-cs-using-python": introToCS,
   "simple-color-hash": simpleColorHash
 };

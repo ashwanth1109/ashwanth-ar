@@ -30,7 +30,7 @@ const Tech = () => {
       </Accordion>
       <Accordion title="REACT INTERNALS">
         {reactInternalsPosts.map((article, id) => (
-          <BlogPost key={id} article={article} route="REACT_INTERNALS" />
+          <BlogPost key={id} article={article} route="TECH_ARTICLES" />
         ))}
       </Accordion>
       <Accordion title="BUILDING BLOCKS - MIT OCW LECTURE NOTES">

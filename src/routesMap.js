@@ -7,7 +7,6 @@ const routesMap = {
   HOME: "/",
   ABOUT: "/about",
   TECH: "/tech",
-  REACT_INTERNALS: "/react-internals/:article",
   TECH_ARTICLES: "/tech/:article",
   MUSIC: "/music",
   MUSIC_ARTICLES: "/music/:article",
