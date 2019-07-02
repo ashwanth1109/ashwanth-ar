@@ -110,3 +110,20 @@ jobs:
 ### JOBS
 
 Jobs are a collection of steps. All the steps are executed in a separate container or VM. Jobs and steps provides you, with greater control over the build process, a framework for workflows, status on each phase with feedback.
+
+### Setting up circle ci with firebase
+
+```yml
+version: 2.1 # use CircleCI 2.1
+jobs: # a collection of steps
+  build: # entry point for build job
+    docker: # use the docker executor type; machine and macos executors are also supported
+      - image: circleci/node:10.15.3 # the primary container, where your job's commands are run
+    steps:
+      - checkout # check out the code in the project directory
+      - run: yarn install # install dependencies
+      - run: cd functions && yarn install && cd ../
+      - run: yarn build # generate production build
+      - run: ./node_modules/.bin/firebase --version # logging firebase version
+      - run: ./node_modules/.bin/firebase deploy --token=${FIREBASE_TOKEN} --non-interactive
+```
