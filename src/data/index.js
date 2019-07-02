@@ -121,7 +121,7 @@ const reactInternals1 = {
 };
 
 const reactInternals2 = {
-  title: "React Internals Part 2 - A deep dive into React's source code",
+  title: "React Internals Part 2",
   link: "react-internals-2",
   date: "July 3, 2019",
   description:
