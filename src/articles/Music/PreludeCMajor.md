@@ -93,8 +93,9 @@ C Major7: C1 C2 (G2 A#2 E3) (G2 A#2 E3) \* 2
 ## Coda
 
 F Major: C1 C2 F2 A2 C3 F3 C3 A2 C3 A2 F2 A2 F2 D2 F2 D2
+
 B dim: C1 B1 B3 D4 F4 D4 B3 D4 B3 G3
 
 B3 D3 F3 - (F3 E3 F3 E3) D3
 
-Chord: C1-C2-E3-G3-C4
+Final Chord: C1-C2-E3-G3-C4
