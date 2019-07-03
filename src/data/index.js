@@ -141,6 +141,15 @@ const cicd = {
 
 // THE DEVIL IS IN THE DETAILS
 
+const regularExpressions = {
+  title: "Regular Expressions - Patterns to match character combinations",
+  link: "regular-expressions",
+  date: "July 3, 2019",
+  description: "Getting your feet wet with Regex",
+  length: "5 min read",
+  content: require("articles/Regex.md")
+};
+
 const automaticSlideshow = {
   component: () => <Slideshow />,
   title: "Mastering React Hooks with an Automatic Slideshow Carousel",
@@ -175,7 +184,11 @@ const introToCS = {
 
 export const bigPicturePosts = [cicd, devOpsVsSRE];
 
-export const codePosts = [simpleColorHash, automaticSlideshow];
+export const codePosts = [
+  simpleColorHash,
+  automaticSlideshow,
+  regularExpressions
+];
 
 export const reactInternalsPosts = [reactInternals1, reactInternals2];
 
@@ -188,7 +201,8 @@ export const techArticles = {
   "react-internals": reactInternals1,
   "react-internals-2": reactInternals2,
   "intro-to-cs-using-python": introToCS,
-  "simple-color-hash": simpleColorHash
+  "simple-color-hash": simpleColorHash,
+  "regular-expressions": regularExpressions
 };
 // MUSIC ARTICLES
 
