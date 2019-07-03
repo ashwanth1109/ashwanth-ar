@@ -14,6 +14,7 @@ import eventful from "assets/projects/eventful.png";
 // COMPONENTS
 import Slideshow from "components/SlideshowCarousel";
 import HSLColorWheel from "components/HSLColorWheel";
+import SheetMusic from "components/SheetMusic";
 
 export const titleText = "Hello, I'm Ashwanth";
 
@@ -207,6 +208,7 @@ export const techArticles = {
 // MUSIC ARTICLES
 
 const preludeCMajor = {
+  component: () => <SheetMusic />,
   title: "Prelude in C Major - Johann Sebastian Bach",
   link: "prelude-in-c-major",
   date: "July 1, 2019",

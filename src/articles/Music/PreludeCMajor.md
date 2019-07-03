@@ -1,4 +1,4 @@
-# PRELUDE IN C MAJOR - JOHANN SEBASTIAN BACH
+## Prelude in C Major
 
 <Youtube videoId="frxT2qB1POQ"/>
 

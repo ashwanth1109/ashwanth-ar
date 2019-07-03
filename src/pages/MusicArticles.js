@@ -16,7 +16,7 @@ type Props = {
 
 const MusicArticles = ({ article, width }: Props) => {
   const [markdown, setMarkdown] = useState("");
-  const { content } = musicArticles[article] || {};
+  const { content, component } = musicArticles[article] || {};
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,8 +27,14 @@ const MusicArticles = ({ article, width }: Props) => {
     fetchData();
   });
 
+  const renderComponent = () => {
+    if (component) return component();
+    return null;
+  };
+
   return (
     <CredoPage>
+      {renderComponent()}
       <Article smallDevice={width < 500}>
         <Markdown
           children={markdown}
