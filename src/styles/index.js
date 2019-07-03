@@ -100,6 +100,7 @@ export const Article = styled.div`
   }
   h3 {
     font-family: ${fonts.primary};
+    color: ${colors.goldenYellow};
   }
   p {
     font-family: ${fonts.secondary};
@@ -118,6 +119,7 @@ export const Article = styled.div`
   }
   pre {
     display: flex;
+    border-left: 5px solid ${colors.goldenYellow};
   }
   code {
     padding: 16px;
