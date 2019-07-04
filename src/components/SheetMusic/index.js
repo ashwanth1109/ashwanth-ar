@@ -28,18 +28,19 @@ type Props = {
 const music2 = `
 X:1
 T: Prelude in C Major
+T: as interpreted by Ashwanth A R (prone to mistakes, read at your own risk)
 C: J S Bach
 M:4/4
 L:1/16
 R: Andante
-%%stretchlast .7
-Q:1/4
-%%staves {(PianoRightHand) (PianoLeftHand)}
-V:PianoRightHand clef=treble
-V:PianoLeftHand clef=bass
-K:C
-[V: PianoRightHand] ! ! |
-[V: PianoLeftHand] c3e3|
+K: C
+"C"C E Gce Gce C E Gce Gce | "Dm7"C D Adf Adf C D Adf Adf |
+M: 4/4
+"G7"B, D Gdf Gdf B, D Gdf Gdf | "C"C E Gce Gce C E Gce Gce |
+M: 4/4
+"Am"C E Aea Aea C E Aea Aea | "D7"C D ^FAd ^FAd C D ^FAd ^FAd |
+M: 4/4
+"G"G, B, DGB DGB G, B, DGB DGB | "C7"B, C EGc EGc B, C EGc EGc |
 `;
 
 // const old = `
