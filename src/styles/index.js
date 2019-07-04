@@ -97,6 +97,7 @@ export const Article = styled.div`
   h2 {
     font-family: ${fonts.primary};
     font-size: 32px;
+    color: ${colors.goldenYellow};
   }
   h3 {
     font-family: ${fonts.primary};
