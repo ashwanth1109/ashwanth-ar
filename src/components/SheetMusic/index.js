@@ -1,35 +1,42 @@
 // @flow
 
-import React from "react";
-import abcjs from "abcjs";
+import React, { useEffect, useRef } from "react";
+import "font-awesome/css/font-awesome.min.css";
+import "abcjs/abcjs-midi.css";
+import abcjs from "abcjs/midi";
 
+import { colors } from "styles/constants";
 import { Sheet } from "./styles";
 
 type Props = {
   test: any
 };
 
-// const music1 = `
-// X: 39
-// T:Pretty Little Liza
-// C:Paul Rosen
-// S:Copyright 2005, Paul Rosen
-// M:4/4
-// L:1/8
-// Q:1/2=106
-// R:old time
-// K:Am
-// "Am"A2AA c2dd|e2eg e2dc|A2AA c2dd|e2cc A2cc|"Em (G)"B2BB B2BB|
-// B2BB B2BB|"Am"A2AA c2dd|e2eg e2c2|"D"d2dd d2dd|d2dd d2cd|
-// "Am"e2cc A2c2|"G"BAG2 BAG2|"Am"A2AA A2AA|A2AA A2AA|:"Am"e4 a3e|"G"g2d2- d2eg|
-// "Am"a2aa ged2|"Em"e2ee e2ee|"Am"e4 a3e|"G"g2d2- d2Bc|"Em"d2e2 dcB2|"Am"A2AA A2AA:|
-// `;
+const music1 = `
+X:1
+T: Prelude in C Major
+T: as interpreted by Ashwanth A R (prone to mistakes, read at your own risk)
+C: J S Bach
+Q:70
+M:4/4
+L:1/16
+R: Andante
+K: C
+C E Gce Gce C E Gce Gce | C D Adf Adf C D Adf Adf |
+M: 4/4
+B, D Gdf Gdf B, D Gdf Gdf | C E Gce Gce C E Gce Gce |
+M: 4/4
+C E Aea Aea C E Aea Aea | C D ^FAd ^FAd C D ^FAd ^FAd |
+M: 4/4
+G, B, DGB DGB G, B, DGB DGB | B, C EGc EGc B, C EGc EGc |
+`;
 
 const music2 = `
 X:1
 T: Prelude in C Major
 T: as interpreted by Ashwanth A R (prone to mistakes, read at your own risk)
 C: J S Bach
+Q:70
 M:4/4
 L:1/16
 R: Andante
@@ -43,18 +50,69 @@ M: 4/4
 "G"G, B, DGB DGB G, B, DGB DGB | "C7"B, C EGc EGc B, C EGc EGc |
 `;
 
-// const old = `
-// [V: PianoRightHand] !mp!e2f2 e2d2 c2B2 A4|!>(!B2d2 g4 c6 !>)!e2|!p![G4e4] z4 A4 G4|c12 z4|[A12f12] [g4d4]|z4 !<(!B4 !<)![A8c8]|
-// !mf!A4 z4 d8|B8 [G4c4] z4|f2A2 c4 f4 g4|[f12d12] e4|!<(!A4 A4 c2e2 !<)!g4|!f!e8 z8|
-// [A4d4] z4 A8|BcBA G4 c4 G2B2|A2G2 A2B2 c4 B2G2|c12 z4|]
-// [V: PianoLeftHand] [E,12C,12] F,4|[G,8D,8] [C,8E,8]|G,4 C,4 C,4 B,,A,,C,B,,|A,,12 z4|A,,4 B,,4 C,2D,2 B,,C,D,E,|C,2E,2 G,4 E,2F,2 G,4|
-// F,4 A,4 [A,8F,8]|G,2F,2 E,2D,2 [C,4E,4] z4|[F,8A,8] [D,4A,4] z4|F,2G,2 A,2F,2 D,2F,2 C,2B,,2|C,4 F,A,D,F, E,4 z4|C,8 z8|
-// F,4 E,4 F,4 A,4|[D,8G,8] E,4 z4|C,4 [C,4F,4] z4 G,4|C,12 z4|]
-// `;
-
 const SheetMusic = ({ test }: Props) => {
-  abcjs.renderAbc("sheet1", music2);
-  return <Sheet id="sheet1" />;
+  const sheet1 = useRef();
+  // const tunes = new abcjs.TuneBook(music2);
+  const tunes = abcjs.renderAbc("sheet1", music2, {
+    responsive: "resize",
+    add_classes: true
+  });
+
+  console.log(colors);
+  abcjs.renderMidi("midi", music1, {
+    animate: {
+      listener: function(abcjsElement, currentEvent, context) {
+        // console.log(currentEvent);
+        const { elements: newElements } = currentEvent || { elements: [] };
+        const { elements: oldElements } = abcjsElement || { elements: [] };
+        if (oldElements && oldElements.length > 0 && oldElements[0]) {
+          if (oldElements[0].length > 0) {
+            oldElements[0].forEach(element => {
+              if (element && element.nodeName === "path") {
+                element.classList.add("abcjs-note");
+                element.classList.remove("abcjs-note-highlight");
+                // element.setAttribute("fill", "#000");
+              }
+            });
+          }
+        }
+        if (newElements && newElements.length > 0 && newElements[0]) {
+          // console.log(newElements);
+          if (newElements[0].length > 0) {
+            newElements[0].forEach(element => {
+              // console.log(element.nodeName);
+              if (element && element.nodeName === "path") {
+                console.log(element);
+                element.classList.remove("abcjs-note");
+                element.classList.add("abcjs-note-highlight");
+                // console.log(element.getAttribute("fill"));
+
+                // element.setAttribute("fill", "#fff");
+              }
+            });
+          }
+        }
+      },
+      target: tunes[0],
+      qpm: 70
+    }
+  });
+
+  // abcjs.renderMidi("midi-id", music2, {
+  //   animate: {
+  //     listener: function(abcjsElement, currentEvent, context) {},
+  //     target: music2,
+  //     qpm: 120
+  //   }
+  // });
+
+  // abcjs.midi.startPlaying(document.querySelector("#midi"));
+  return (
+    <div>
+      <div id="midi" />
+      <Sheet id="sheet1" ref={sheet1} />
+    </div>
+  );
 };
 
 export default SheetMusic;
