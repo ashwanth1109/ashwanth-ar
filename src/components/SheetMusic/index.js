@@ -1,11 +1,10 @@
 // @flow
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "font-awesome/css/font-awesome.min.css";
 import "abcjs/abcjs-midi.css";
 import abcjs from "abcjs/midi";
 
-import { colors } from "styles/constants";
 import { Sheet } from "./styles";
 
 type Props = {
@@ -51,18 +50,14 @@ M: 4/4
 `;
 
 const SheetMusic = ({ test }: Props) => {
-  const sheet1 = useRef();
-  // const tunes = new abcjs.TuneBook(music2);
   const tunes = abcjs.renderAbc("sheet1", music2, {
     responsive: "resize",
     add_classes: true
   });
 
-  console.log(colors);
   abcjs.renderMidi("midi", music1, {
     animate: {
       listener: function(abcjsElement, currentEvent, context) {
-        // console.log(currentEvent);
         const { elements: newElements } = currentEvent || { elements: [] };
         const { elements: oldElements } = abcjsElement || { elements: [] };
         if (oldElements && oldElements.length > 0 && oldElements[0]) {
@@ -71,23 +66,17 @@ const SheetMusic = ({ test }: Props) => {
               if (element && element.nodeName === "path") {
                 element.classList.add("abcjs-note");
                 element.classList.remove("abcjs-note-highlight");
-                // element.setAttribute("fill", "#000");
               }
             });
           }
         }
         if (newElements && newElements.length > 0 && newElements[0]) {
-          // console.log(newElements);
           if (newElements[0].length > 0) {
             newElements[0].forEach(element => {
-              // console.log(element.nodeName);
               if (element && element.nodeName === "path") {
                 console.log(element);
                 element.classList.remove("abcjs-note");
                 element.classList.add("abcjs-note-highlight");
-                // console.log(element.getAttribute("fill"));
-
-                // element.setAttribute("fill", "#fff");
               }
             });
           }
@@ -98,19 +87,10 @@ const SheetMusic = ({ test }: Props) => {
     }
   });
 
-  // abcjs.renderMidi("midi-id", music2, {
-  //   animate: {
-  //     listener: function(abcjsElement, currentEvent, context) {},
-  //     target: music2,
-  //     qpm: 120
-  //   }
-  // });
-
-  // abcjs.midi.startPlaying(document.querySelector("#midi"));
   return (
     <div>
       <div id="midi" />
-      <Sheet id="sheet1" ref={sheet1} />
+      <Sheet id="sheet1" />
     </div>
   );
 };
