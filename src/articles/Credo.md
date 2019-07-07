@@ -55,4 +55,24 @@ The Beatles travelled to Hamburg 5 times between 1960 and 1962. On the 1st trip,
 By the time they had their first commercial success in 1964, they had performed live 1200 times. They had not only had a significant jump in their stamina, they had also learnt an incredible number of covers and were more disciplined on stage after their Hamburg crucible. It was the making of them.
 </Accordion>
 
+As is evident in these stories, one aspect of achieving success is spending an incredible amount of time (quantified as 10000 hours) getting better at your craft. If you do read the entire book, what you would also realize is that along with the sheer number of hours that you put in, there are other factors that influence the ability of someone to achieve world-class success. Most of these factors might not necesarrily be under your control. But what is under your control, is how you choose to spend your time.
+
+## Creating your buckets
+
+Having chosen my craft as a computer scientist and musician, it became a lot easier to stop myself from running the wrong race. The most important shift in perspective that I have had is the ability to pause every day and ask myself how am I spending my hours today. I visualize two buckets in my head, one for computer science and one for music. The way I see it, these buckets fill up at 10,000 hours and the goal is to try and fill up these two buckets as much as possible.
+
+Over a year of spending my time in activities that strengthen my familiarity with computer science and music, you get to a point where you start enjoying these habits. This was crucial to my philosophy. From forcing myself to spend time on these activities, I went to losing track of how much time I was spending on these activities. While this exercise has been incredibly helpful for me to focus, I've also run into some issues with the method. I have struggled with trying to find a balance between my buckets, getting a physical workout, socializing with friends and the daily drudgery of life-supporting activities (such as making your bed, laundry etc.) Oftentimes, I find it very easy to convince myself to put off a non bucketed activity for a bucketed activity because that's how I have identified my priorities. I am trying to experiment with a miscellaneous bucket to help accomplish necessary daily activities but I havent refined this theory yet.
+
+## Defining success criteria - Where Cal Newport comes in
+
+[Add thoughts about deep work]
+
+## Reconciling Malcolm Gladwell with Tim Ferriss
+
+[Contrasting 10000 hours with the 4 hour work week]
+
+## Look to underachieve in the short term and overachieve in the long term
+
+[Thoughts on tracking progress]
+
 ### Stay tuned for updates . . .
