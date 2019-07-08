@@ -73,7 +73,7 @@ Putting in long hours was easy on some days and it wasn't easy on others. But I 
 
 ### We have a tendancy to underachieve in the short term and a tendancy to overachieve in the long term.
 
-Another interesting pattern I noticed while accumulating these hours was that I would always set harsh targets with the intention of pushing my limits. I almost always never met them. There were always days I felt demotivated about underachieving in comparison to what I believed was my potential. But at every stretch of the way when I look back at how far I've come in comparison to my previous version from two years ago, I see tremondous progress. And this is where I derive my motivation from. Whenever I've felt the imposter syndrome strike, I would take a moment to look back at projects I've worked on and pieces I've learnt. This self-appreciation and acknowledgement of my own efforts always gets me up and at it again.
+Another interesting pattern I noticed while accumulating these hours was that I would set harsh time-bound targets to achieve with the intention of pushing my limits. I almost always never met them. There were days I felt demotivated about constantly underachieving in comparison to what I believed was my potential. But at every stretch of the way when I look back at how far I've come in comparison to my previous version from two years ago, I see tremondous progress. And this is where I derive my motivation from. Whenever I've felt the imposter syndrome strike, I would take a moment to look back at projects I've worked on and the piano pieces I've learnt. This self-appreciation and acknowledgement of my own efforts gets me up and at it again.
 
 ## Defining success criteria - Where Cal Newport comes in
 
