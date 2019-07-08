@@ -1,26 +1,34 @@
 ### The unexamined life is a life not worth living - Socrates
 
-The word credo originates from Middle English Latin, in which the word means 'I believe'. The word creed has similar roots and refers to a system of religious beliefs or a faith. 'Credo' refers to a statement of beliefs or aims which guides someone's actions.
+The word **credo** originates from Middle English Latin, in which the word means 'I believe'. The word creed has similar roots and refers to a system of religious beliefs or a faith. **'Credo' refers to a statement of beliefs or aims which guides someone's actions**.
 
 While I understand the pivotal role that religion plays in the lives of many, stricken by their faiths and gods, I've never been a particularly religious person. Perhaps there is a higher entity that governs the whims of the universe, but that is beyond the comprehension of us mortal beings. So, I leave it at that and that is the extent of my belief in the supernatural.
 
-But I do have a strong belief system that governs my actions on a daily basis. This system is my truth. It is the way I perceive the world. We each have our own. A system that evolves for each of us over the entire course of our lives. Sometimes faster, sometimes slower. Up until the age of 23, I was constantly gathering wisdom from those around me. I consider myself fortunate to have met the erudite mentors and peers that I have had in life. My beliefs constantly fluctuated but this was a journey that had to pan out in its own time and there would be no rushing it.
+But I do have a strong belief system that governs my actions on a daily basis.
+
+This system is my truth.
+
+**It is the way I perceive the world**.
+
+We each have our own. A system that evolves for each of us over the entire course of our lives. Sometimes faster, sometimes slower. Up until I was 23, I never had concrete principles of my own and I was heavily influenced by the principles of those I hung out with. I consider myself fortunate to have met the erudite mentors and peers that I have had in life. My beliefs constantly fluctuated, but this was a journey that had to pan out in its own time. There would be no rushing it.
 
 ## The antithesis of my very being
 
-2018 was an interesting year in my life. Alongside fluctuating beliefs, I had been incredibly indecisive about my career path. I had a degree in Electronics Engineering and a masters in Management Studies. But I wanted to do something else.
+The year I turned 23 was an interesting year in my life. Alongside fluctuating beliefs, I had been incredibly indecisive about my career path. I had a degree in Electronics Engineering and a masters in Management Studies. But I wanted to do something else.
 
-A few fundamental computer science classes had revealed a sliver of a programmer in me during my undergraduate. Against what conventional wisdom would seem to suggest, I chose to become a software engineer although my background didn't fully correlate with this decision.
+I wanted to be a professional **programmer** and a hobby **pianist**.
 
-As a personal hobby, I chose to learn the piano (or a keyboard if I was being technically accurate). I took classes as a kid, however if you'd ask anyone who I've gone to school with (and that's over 19 years of education mind you), they'd say they had never even seen me close to a piano, let alone play it and they'd be right.
+No one would have referred to me as a solid programmer in college, albeit I wasn't bad. If you'd ask anyone I had gone to school with (and that's over 19 years of education mind you), they'd say they had never even seen me close to a piano, let alone play it and they'd be right.
 
-One could say it might as well have been a flip of the coin that I based these choices off of. That's how random it felt. It was like I decided to render all my previous experiences pointless and start all over again. It felt like the antithesis of my very being. But it wasn't.
+One could say it might as well have been a flip of the coin that I based these choices off of. That's how random it seemed to people in my circle. It was like I decided to render all my previous experiences pointless and start all over again. It felt like the **antithesis of my very being**. But it wasn't.
 
-I enjoyed programming and had even pursued a minor in computer science in college. With my piano classes as a kid, I had a basic background in music theory. Neither enough to enable my choices, and I would have to be a self-taught programmer and pianist, but it was a start. Enough of a start to be able to recognize and source good content to progress in these respective fields. As bizarre as my choices seemed (professionally speaking I mean) at the time, it was the only thing that I was certain about. Atleast I had a decision made, which was more than what I could say about my past.
+I had accumulated credits for a minor in computer science with my best grades in engineering coming from these classes. Logical thinking and math was something I felt at home with, and so, programming was something I truly enjoyed. I had taken piano, guitar and drumming lessons as a kid, a few summers at best. But I had developed a basic background in music theory.
 
-It was in January of that year that I decided to forge my beliefs based on my experiences thus far, centered around these choices. I started reading a few books which granularly coalesced my beliefs into principles of concrete substance. Through my readings (and several re-readings) of these books, I had put together my core beliefs. Unlike the ever fleeting beliefs from my past, these ones remain unchanged. It has undergone a few natural tweaks that stemmed from my discussions of these beliefs with others but I'm convinced in my way of life.
+Neither was enough to enable or defend my choices and I knew that this path as a self-taught programmer and pianist (if one could call it that) wouldn't be a cakewalk. But it was enough of a start to know that if I buckle down and put my mind to it, I could make headway. As bizarre as my choices seemed to the outside world at the time, it was the only thing I was certain about. And this certainty was enough to get me going.
 
-This page summarizes the bible I live by and is my record of continuing to fervently stick to its beliefs while keeping an open mind to criticism & change from those around me.
+It was in January of that year that I decided to forge my beliefs. I started reading a few books which granularly coalesced my beliefs into principles of concrete substance. Through my readings (and several re-readings) of these books, I had put together my core beliefs. Unlike the ever fleeting beliefs from my past, these ones remain unchanged, for the most part. It has undergone a few natural tweaks stemming from my discussions of these beliefs with others. But I'm convinced in my way of life for whatever I want to accomplish.
+
+This page summarizes **the bible I live by** and is my record of continuing to fervently stick to its beliefs. All the while keeping an open mind to criticism of my ideas from those around me.
 
 ## The 10,000 hour goal
 
@@ -61,7 +69,11 @@ As is evident in these stories, one aspect of achieving success is spending an i
 
 Having chosen my craft as a computer scientist and musician, it became a lot easier to stop myself from running the wrong race. The most important shift in perspective that I have had is the ability to pause every day and ask myself how am I spending my hours today. I visualize two buckets in my head, one for computer science and one for music. The way I see it, these buckets fill up at 10,000 hours and the goal is to try and fill up these two buckets as much as possible.
 
-Over a year of spending my time in activities that strengthen my familiarity with computer science and music, you get to a point where you start enjoying these habits. This was crucial to my philosophy. From forcing myself to spend time on these activities, I went to losing track of how much time I was spending on these activities. While this exercise has been incredibly helpful for me to focus, I've also run into some issues with the method. I have struggled with trying to find a balance between my buckets, getting a physical workout, socializing with friends and the daily drudgery of life-supporting activities (such as making your bed, laundry etc.) Oftentimes, I find it very easy to convince myself to put off a non bucketed activity for a bucketed activity because that's how I have identified my priorities. I am trying to experiment with a miscellaneous bucket to help accomplish necessary daily activities but I havent refined this theory yet.
+Putting in long hours was easy on some days and it wasn't easy on others. But I realized that as I strengthened these habits, my tolerance for the number of hours I could focus picked up radically. This was a crucial aspect to my philosophy. From forcing myself to spend time on these activities, I went to losing track of how much times I was spending on them.
+
+### We have a tendancy to underachieve in the short term and a tendancy to overachieve in the long term.
+
+Another interesting pattern I noticed while accumulating these hours was that I would always set harsh targets with the intention of pushing my limits. I almost always never met them. There were always days I felt demotivated about underachieving in comparison to what I believed was my potential. But at every stretch of the way when I look back at how far I've come in comparison to my previous version from two years ago, I see tremondous progress. And this is where I derive my motivation from. Whenever I've felt the imposter syndrome strike, I would take a moment to look back at projects I've worked on and pieces I've learnt. This self-appreciation and acknowledgement of my own efforts always gets me up and at it again.
 
 ## Defining success criteria - Where Cal Newport comes in
 
