@@ -19,6 +19,8 @@ Reference: https://ocw.mit.edu/courses/electrical-engineering-and-computer-scien
 [Lecture 4 - Decomposition, Abstraction and Functions](#lecture-4) <br/>
 [Lecture 5 - Tuples, Lists, Aliasing, Mutability & Cloning](#lecture-5) <br/>
 [Lecture 6 - Recursion & Dictionaries](#lecture-6) <br/>
+[Lecture 7 - Testing, Debugging, Exceptions and Assertions](#lecture-7) <br/>
+[Lecture 8 - Object Oriented Programming](#lecture-8) <br/>
 
 <a id="lecture-1"></a>
 
@@ -601,6 +603,12 @@ def fib(n):
 print(fib(20))  # 6765
 ```
 
+<a id="lecture-7"></a>
+
+<br/>
+<br/>
+<br/>
+
 ## Lecture 7 - Testing, Debugging, Exceptions and Assertions
 
 ### Defensive Programming
@@ -689,5 +697,79 @@ ValueError: invalid literal for int() with base 10: 's'
 ```
 
 You can also have `else` and `finally` clauses. Else executes when the try body completes with no exceptions. Finally always executes after everything else is done.
+
+<a id="lecture-8"></a>
+
+<br/>
+<br/>
+<br/>
+
+## Lecture 8 - Object Oriented Programming
+
+- All data types are objects in python
+- Each object has a type, an internal data representation (primitive or composite) and a set of procedures for interaction with the object
+- Everything in python is an object
+
+### What are objects?
+
+- Objects are a data abstraction
+- data attributes provide the internal representation
+- methods/procedures provide an interface for interaction
+
+### Example: Lists
+
+- Lists are objects that are represented internally in python as a linked set of cells with each cell comprising a data attribute and a pointer
+- You can manipulate a list using the available methods such as len(), min(), max() etc.
+- Internal representations should be private to objects
+
+### Creating your own types with classes
+
+- Creating a class involves defining the class name and defining the class attributes
+- Using the class involves creating new instances of objects and doing operations on those instances
+
+```py
+class Coordinate(object): # inheriting from object type in python
+    # define attributes here
+```
+
+### What are attributes?
+
+- data and procedures that belong to the class
+- methods are functions that only work wth this class
+- methods are procedural attributes that define how you interact with the object
+
+### Defining an instance and attributes
+
+- we have to define how to create an instance of the class
+- we use a special method called `__init__` to initialize some data attributes
+- self is a parameter that we use to refer to an instance of the class
+- self can be called anything you want but it is convention to use self
+
+```py
+class Coordinate(object):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+```
+
+Creating an instance of the Coordinate class:
+
+```py
+c = Coordinate(3,4)
+origin = Coordinate(0,0)
+print(origin.x)
+```
+
+- Data attributes of an instance are called instance variables
+- Python provides the arguments for self automatically
+
+### Defining a method
+
+```py
+class Coordinate(object):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+```
 
 ### To be continued
