@@ -175,12 +175,23 @@ const simpleColorHash = {
 // BUILDING BLOCKS
 
 const introToCS = {
-  title: "Introduction to Computer Science (using python)",
-  link: "intro-to-cs-using-python",
+  title: "Introduction to Computer Science",
+  link: "intro-to-cs",
   date: "June 23, 2019",
-  description: "Lecture Material from MIT OCW",
-  length: "20 min read",
+  description:
+    "Understanding the role computation can play in solving problems",
+  length: "ongoing",
   content: require("articles/Lectures/IntroToCS/IntroToCS.md")
+};
+
+const introToAlgos = {
+  title: "Introduction to Algorithms",
+  link: "intro-to-algos",
+  date: "July 7, 2019",
+  description:
+    "Introduction to mathematical modeling of computational problems - common algorithms, algorithmic paradigms and data structures.",
+  length: "ongoing",
+  content: require("articles/Lectures/IntroToAlgos/IntroToAlgos.md")
 };
 
 export const bigPicturePosts = [cicd, devOpsVsSRE];
@@ -193,7 +204,7 @@ export const codePosts = [
 
 export const reactInternalsPosts = [reactInternals1, reactInternals2];
 
-export const buildingBlocks = [introToCS];
+export const buildingBlocks = [introToCS, introToAlgos];
 
 export const techArticles = {
   "dev-ops-vs-sre": devOpsVsSRE,
@@ -201,7 +212,8 @@ export const techArticles = {
   "cicd-circleci": cicd,
   "react-internals": reactInternals1,
   "react-internals-2": reactInternals2,
-  "intro-to-cs-using-python": introToCS,
+  "intro-to-cs": introToCS,
+  "intro-to-algos": introToAlgos,
   "simple-color-hash": simpleColorHash,
   "regular-expressions": regularExpressions
 };
