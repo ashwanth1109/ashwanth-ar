@@ -247,10 +247,18 @@ export const musicVideos = [
   },
   {
     title: "Westworld Theme - Ramin Djawadi",
-    id: "QD4a8V3LKTI"
+    id: "sknb2JhXUBE"
   },
   {
     title: "Canon in D - Pachelbel",
-    id: "RdW2qAqSXQY"
+    id: "8rPWomLmT8A"
+  },
+  {
+    title: "Prelude in C Major - Johann Sebastian Bach",
+    id: "6iT-0iYbN8o"
+  },
+  {
+    title: "Victory - Two Steps From Hell",
+    id: "Jm1TpMYCKmo"
   }
 ];
