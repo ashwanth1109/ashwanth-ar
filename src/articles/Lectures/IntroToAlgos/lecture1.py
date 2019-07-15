@@ -14,6 +14,8 @@ sampleArray = [a, b, c, d, e, f, g, h, i]
 
 # print(sampleArray)
 
+# STRAIGHTFORWARD ALGO
+
 # for i in range(sampleArray.__len__()):
 #     if (i == 0):
 #         if (sampleArray[i] > sampleArray[i+1]):
@@ -33,15 +35,17 @@ n = sampleArray.__len__()
 # Array
 # [1, 2, 4, 3, 8, 5, 9, 6, 7]
 
+# DIVIDE AND CONQUER ALGO
+
 
 def findPeak(arr):
     n = arr.__len__()
-    print(n)
     if (n > 1):
-        # print(arr[int(n/2)-1], arr[int(n/2)-2])
-        if (arr[int(n/2)-1] > arr[int(n/2)-2]):
+        if (arr[int(n/2)] < arr[int(n/2)-1]):
+            print('in if', arr[int(n/2)], arr[int(n/2)-1])
             findPeak(arr[0:int(n/2)])
-        elif (arr[int(n/2)-1] < arr[int(n/2)-2]):
+        elif (arr[int(n/2)] < arr[int(n/2)+1]):
+            print('in el if', arr[int(n/2)], arr[int(n/2)-1])
             findPeak(arr[int(n/2):n])
         else:
             print('Peak exists at index', int(n/2))

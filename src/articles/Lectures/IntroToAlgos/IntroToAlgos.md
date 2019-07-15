@@ -2,6 +2,12 @@
 
 Reference: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/
 
+### Content
+
+[Lecture 1 - Algorithmic Thinking and Peak Finding](#lecture-1)
+
+[Lecture 2 - Models of Computation, Document Distance](#lecture-2)
+
 ### Focus
 
 - Coming up with efficient procedures for solving large-scale problems
@@ -21,6 +27,14 @@ Reference: https://ocw.mit.edu/courses/electrical-engineering-and-computer-scien
 - Dynamic Programming
 - Complexity Theory, Research etc.
 
+<a id="lecture-1"></a>
+
+<br/>
+<br/>
+<br/>
+
+## Lecture 1 - Algorithmic Thinking and Peak Finding
+
 ### Peak Finding - One dimensional version
 
 ```py
@@ -38,7 +52,7 @@ Problem Statement: Find a peak if it exists
 
 Note: if it was greater than or equal to, then a peak would always exist.
 
-### Straightforward Algorithm
+### Straightforward Algorithm (my solution)
 
 ```py
 for i in range(sampleArray.__len__()):
@@ -56,4 +70,41 @@ for i in range(sampleArray.__len__()):
 
 Worst case complexity: `O(n)`
 
+### Divide and Conquer Algorithm (my solution)
+
+```py
+def findPeak(arr):
+    n = arr.__len__()
+    if (n > 1):
+        if (arr[int(n/2)] < arr[int(n/2)-1]):
+            print('in if', arr[int(n/2)], arr[int(n/2)-1])
+            findPeak(arr[0:int(n/2)])
+        elif (arr[int(n/2)] < arr[int(n/2)+1]):
+            print('in el if', arr[int(n/2)], arr[int(n/2)-1])
+            findPeak(arr[int(n/2):n])
+        else:
+            print('Peak exists at index', int(n/2))
+```
+
+Worst case complexity: `O(log2(n))`
+
+### Peak Finding - 2d version
+
+A grid with n rows and m columns.
+
+A peak is defined as a cell on the grid that is greater than all 4 surrounding cells.
+
+### The Greedy Ascent Algorithm
+
+- Pick a cell. Any cell. Maybe middle?
+- Compare with 4 neighbouring ones - one by one
+- If you find something higher jump to it
+- Repeat steps till you find a peak
+
 ### Divide and Conquer Algorithm
+
+- Pick the middle column
+- Find global maximum: O(n)
+- Compare with left and right numbers
+- If any greater, recursively repeat with half the columns
+- Else you have your peak
