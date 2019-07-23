@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-import { colors } from "styles/constants";
+import { Heading } from "styles";
 
 export const Projects = styled.div`
   margin: 16px 0;
@@ -17,12 +17,14 @@ export const Project = styled.div`
   width: 100%;
 `;
 
+export const ProjectHeading = styled(Heading)`
+  border-radius: 0;
+`;
+
 export const ProjectImage = styled.img`
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-top: 3px solid ${colors.goldenYellow};
-  border-bottom: 3px solid ${colors.goldenYellow};
 `;
 
 export const Buttons = styled.div`

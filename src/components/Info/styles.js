@@ -10,7 +10,6 @@ export const Card = styled.div`
   flex-grow: 1;
   border-radius: 8px;
   margin: 32px 16px;
-  background: ${colors.slabGray};
   align-items: center;
   padding: 10px;
 `;
@@ -24,4 +23,5 @@ export const ProfilePicture = styled.img`
 export const Para = styled.p`
   font-family: ${fonts.primary};
   font-size: 20px;
+  color: ${colors.textGray};
 `;

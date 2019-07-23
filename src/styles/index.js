@@ -7,8 +7,25 @@ import { colors, fonts } from "styles/constants";
 export const Title = styled.h1`
   font-family: "Patrick Hand", cursive;
   font-size: 2rem;
-  color: ${colors.pureWhite};
+  color: ${colors.textGray};
   font-weight: normal;
+`;
+
+export const PageTitle = styled.h1`
+  font-family: "Patrick Hand", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: ${colors.pureWhite};
+  padding-bottom: 0.3em;
+  margin: 0;
+`;
+
+export const SubTitle = styled.h2`
+  font-family: "Patrick Hand", cursive;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: ${colors.pureWhite};
 `;
 
 export const Container = styled.div`
@@ -47,6 +64,7 @@ export const Heading = styled.div`
   font-family: ${fonts.primary};
   font-weight: bold;
   font-size: calc(10px + 1vw);
+  color: ${colors.lightGray};
 `;
 
 export const Spacer = styled.div`
@@ -61,7 +79,8 @@ export const SubHeading = styled.div`
 
 export const Para = styled.p`
   font-family: ${fonts.secondary};
-  font-size: 16px;
+  font-size: 1.6rem;
+  font-color: ${colors.textGray};
 `;
 
 export const BlogImage = styled.img`

@@ -3,6 +3,7 @@
 import styled, { keyframes } from "styled-components";
 
 import { Page } from "styles";
+import { colors, fonts } from "styles/constants";
 
 export const HomePage = styled(Page)`
   justify-content: center;
@@ -12,6 +13,59 @@ export const HomePage = styled(Page)`
 
 export const ContentPage = styled.div`
   margin-top: 76px;
+  > h1,
+  h2,
+  h3 {
+    font-family: "Patrick Hand", cursive;
+    margin: 0;
+    font-weight: bold;
+  }
+  > h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: ${colors.pureWhite};
+    padding-bottom: 0.3em;
+  }
+  > h2 {
+    font-size: 2rem;
+    color: ${colors.pureWhite};
+  }
+  > h3 {
+    font-size: 1.6rem;
+    color: ${colors.goldenYellow};
+  }
+  > hr {
+    width: 100%;
+    color: transparent;
+    border-bottom: 1.5px solid ${colors.goldenYellow + "50"};
+    border-style: dashed;
+  }
+  > blockquote {
+    margin: 24px 40px;
+    font-family: ${fonts.secondary};
+    font-size: 2rem;
+    color: ${colors.textGray};
+    border-width: 0px;
+    border-left: 1.5px solid ${colors.goldenYellow + "50"};
+    border-style: dashed;
+    padding-left: 24px;
+    font-weight: 300;
+    > span {
+      color: ${colors.goldenYellow};
+    }
+  }
+  > p {
+    font-family: ${fonts.secondary};
+    color: ${colors.textGray};
+    font-size: 1.25rem;
+    > a,
+    span {
+      color: ${colors.goldenYellow};
+    }
+    > a {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export const AboutPage = styled(ContentPage)`
@@ -49,9 +103,7 @@ export const MusicPage = styled.div`
   padding-bottom: 32px;
 `;
 
-export const CredoPage = styled(ContentPage)`
-  padding: 32px;
-`;
+export const CredoPage = styled(TechPage)``;
 
 export const MusicArticles = styled.div`
   width: 90vw;

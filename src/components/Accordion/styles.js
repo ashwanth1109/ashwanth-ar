@@ -4,7 +4,8 @@ import styled from "styled-components";
 import { ifProp } from "styled-tools";
 
 import { Heading } from "styles";
-import { colors } from "styles/constants";
+
+import { colors, fonts } from "styles/constants";
 
 export const Accordion = styled.div`
   margin-bottom: 32px;
@@ -27,11 +28,16 @@ export const PlusContainer = styled.div`
 
 export const AccordionBody = styled.div`
   width: 100%;
-  border: 1px solid ${colors.charcoal};
+  border: 1px solid ${colors.usafaBlue};
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   height: ${ifProp("isOpen", props => props.height + 50, "0")}px;
   overflow: hidden;
   transition: 1s ease-in-out height;
-  padding: 0 16px;
+  font-family: ${fonts.secondary};
+  color: ${colors.textGray};
+  font-size: 1.2rem;
+  > div {
+    padding: 16px;
+  }
 `;

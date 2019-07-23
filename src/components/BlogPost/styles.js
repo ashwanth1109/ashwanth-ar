@@ -28,8 +28,10 @@ export const Clock = styled.img`
 
 export const Length = styled.div`
   font-family: ${fonts.primary};
+  color: ${colors.textGray};
 `;
 
 export const Desc = styled.div`
   font-family: ${fonts.secondary};
+  color: ${colors.textGray};
 `;

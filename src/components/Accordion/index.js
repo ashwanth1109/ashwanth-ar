@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import {
   Accordion as StyledAccordion,
@@ -21,10 +21,6 @@ type Props = {
 const Accordion = ({ bodyHeight, children, title }: Props) => {
   const contentRef = useRef();
   const [isOpen: boolean, setIsOpen: Function] = useState(false);
-
-  useEffect(() => {
-    console.log(contentRef.current.clientHeight);
-  });
 
   return (
     <StyledAccordion>
