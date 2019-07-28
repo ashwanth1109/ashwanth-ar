@@ -11,7 +11,8 @@ type Props = {
 const Unifize = ({ test }: Props) => {
   return (
     <ContentPage>
-      <h1>How we reduce process cycle times using Unifize?</h1>
+      <h1>My Work at Unifize</h1>
+      <p className="highlight">Work in Progress. Stay tuned for updates.</p>
     </ContentPage>
   );
 };
