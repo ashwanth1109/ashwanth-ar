@@ -43,11 +43,10 @@ const Music = ({ width }: Props) => {
         I am a hardcore <span className="highlight">Beatlemaniac</span> and I
         consider <span className="highlight">Ramin Djawadi's</span> music my
         bible for music theory. Of late, I've really gotten into listening to
-        classical music and composers whose music has a transcendental effect on
-        me include <span className="highlight">Ramin Djawadi</span> (if its not
-        obvious enough yet), <span className="highlight">Yiruma</span> (Lee
-        Ru-ma),
-        <span className="highlight">Ludwig Van Beethoven</span>,{" "}
+        classical music. Composers whose music has had a transcendental effect
+        on me include <span className="highlight">Ramin Djawadi</span> (if its
+        not obvious enough yet), <span className="highlight">Yiruma</span> (Lee
+        Ru-ma), <span className="highlight">Ludwig Van Beethoven</span>,{" "}
         <span className="highlight">Hans Zimmer</span>,{" "}
         <span className="highlight">Johann Sebastian Bach</span>,{" "}
         <span className="highlight">Yann Tiersen</span>,{" "}
@@ -118,8 +117,29 @@ const Music = ({ width }: Props) => {
       <hr />
       <h2 ref={section1}>SECTION 1: SCORE RENDERER</h2>
       <hr />
-      <br />
-
+      <p>
+        This is meant to be a POC for the tool I actually want to build. There's
+        still a long way to go before it works the way I envision it in my head.{" "}
+        <span className="highlight">
+          It currently uses a library called abcjs which I have customized using
+          the 'animate' callback that the library provides access to.
+        </span>{" "}
+        I hope to develop this as a tool that can help one learn sheet music.
+        <br />
+        <br />
+        <span className="highlight">FULL DISCLAIMER</span>, I have learnt how to
+        read sheet music only in parts. The following piece was notated through
+        trial and error, where I'd listen to how it sounds before changing the
+        notes in the sequence. So it probably does not resemble how sheet music
+        for Bach's Prelude in C Major actually looks. Also, it doesn't account
+        for the specific nuances that come along when playing this.
+        <br />
+        <br />
+        <span className="highlight">IMPORTANT NOTE: </span>Clicking the play
+        button should animate the notes as the audio is being rendered. It might
+        take a little while to load, so please be patient while waiting to see
+        how the renderer works.
+      </p>
       <SheetMusic />
 
       <br />

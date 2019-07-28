@@ -32,7 +32,7 @@ G, B, DGB DGB G, B, DGB DGB | B, C EGc EGc B, C EGc EGc |
 
 const music2 = `
 X:1
-T: Prelude in C Major
+T: Prelude in C Major (sample)
 T: as interpreted by Ashwanth A R (prone to mistakes, read at your own risk)
 C: J S Bach
 Q:70
