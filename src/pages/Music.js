@@ -138,8 +138,7 @@ const Music = ({ width }: Props) => {
         <span className="highlight">IMPORTANT NOTE: </span>Click the load
         renderer button or refresh your page to show the renderer. Clicking the
         play button should animate the notes as the audio is being rendered. It
-        might take a little while to load, so please be patient while waiting to
-        see how the renderer works.
+        might take a couple of seconds to load, so please be patient.
       </p>
       <button onClick={() => window.location.reload()}>Load Renderer</button>
       <br />
