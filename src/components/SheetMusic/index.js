@@ -74,7 +74,6 @@ const SheetMusic = ({ test }: Props) => {
           if (newElements[0].length > 0) {
             newElements[0].forEach(element => {
               if (element && element.nodeName === "path") {
-                console.log(element);
                 element.classList.remove("abcjs-note");
                 element.classList.add("abcjs-note-highlight");
               }

@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useRef } from "react";
+import React, { useRef, useCallback } from "react";
 import { connect } from "react-redux";
 import Youtube from "react-youtube";
 
@@ -135,11 +135,15 @@ const Music = ({ width }: Props) => {
         for the specific nuances that come along when playing this.
         <br />
         <br />
-        <span className="highlight">IMPORTANT NOTE: </span>Clicking the play
-        button should animate the notes as the audio is being rendered. It might
-        take a little while to load, so please be patient while waiting to see
-        how the renderer works.
+        <span className="highlight">IMPORTANT NOTE: </span>Click the load
+        renderer button or refresh your page to show the renderer. Clicking the
+        play button should animate the notes as the audio is being rendered. It
+        might take a little while to load, so please be patient while waiting to
+        see how the renderer works.
       </p>
+      <button onClick={() => window.location.reload()}>Load Renderer</button>
+      <br />
+      <br />
       <SheetMusic />
 
       <br />
