@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useRef, useCallback } from "react";
+import React, { useRef } from "react";
 import { connect } from "react-redux";
 import Youtube from "react-youtube";
 
