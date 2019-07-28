@@ -6,6 +6,7 @@ const components = {
   TECH: "Tech",
   MUSIC: "Music",
   CREDO: "Credo",
+  UNIFIZE: "Unifize",
   TECH_ARTICLES: "TechArticles",
   MUSIC_ARTICLES: "MusicArticles",
   [NOT_FOUND]: "NotFound"

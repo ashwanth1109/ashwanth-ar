@@ -26,12 +26,6 @@ const Info = () => {
         empathetic and in the exploration of nonconformist ideas that you can
         truly set apart your brand from the rest.
       </Para>
-      <Para>
-        I love binging on problems from CodeWars, HackerRank or Project Euler.
-        In my free time, I look for pieces to learn and play on the piano from
-        youtube, hdpiano or flowkey. I am a Beatlemaniac and Ramin Djawadi's
-        music is my bible for music theory.
-      </Para>
     </Card>
   );
 };

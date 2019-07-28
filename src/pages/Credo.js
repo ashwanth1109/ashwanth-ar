@@ -1,9 +1,10 @@
 // @flow
 
-import React from "react";
+import React, { useRef } from "react";
 import { connect } from "react-redux";
 
 import { CredoPage } from "./styles";
+import productivity from "assets/productivity-graph.png";
 import Accordion from "components/Accordion";
 
 type Props = {
@@ -11,17 +12,19 @@ type Props = {
 };
 
 const Credo = ({ width }: Props) => {
+  const definingSuccessCriteria = useRef();
   return (
     <CredoPage>
       <h1>CREDO</h1>
       <blockquote>
-        The unexamined life is a life not worth living - <span>Socrates</span>
+        The unexamined life is a life not worth living -{" "}
+        <span className="highlight">Socrates</span>
       </blockquote>
       <p>
         The word credo originates from Middle English Latin, in which the word
         means 'I believe'. The word creed has similar roots and refers to a
         system of religious beliefs or a faith.{" "}
-        <span>
+        <span className="highlight">
           'Credo' refers to a statement of beliefs or aims which guides
           someone's actions.
         </span>
@@ -38,11 +41,11 @@ const Credo = ({ width }: Props) => {
 
       <p>
         But I do have a strong belief system that governs my actions on a daily
-        basis.
+        basis. <br />
+        This system is my truth.
       </p>
-      <p>This system is my truth.</p>
       <p>
-        <span>It is the way I perceive the world.</span>
+        <span className="highlight">It is the way I perceive the world.</span>
       </p>
       <p>
         We each have our own. A system that evolves for each of us over the
@@ -57,6 +60,7 @@ const Credo = ({ width }: Props) => {
       <br />
       <hr />
       <h2>The antithesis of my very being</h2>
+      <hr />
       <p>
         The year I turned 23 was an interesting year in my life. Alongside
         fluctuating beliefs, I had been incredibly indecisive about my career
@@ -65,8 +69,9 @@ const Credo = ({ width }: Props) => {
       </p>
 
       <p>
-        I wanted to be a professional <span>programmer</span> and a hobby{" "}
-        <span>pianist</span>.
+        I wanted to be a professional{" "}
+        <span className="highlight">programmer</span> and a hobby{" "}
+        <span className="highlight">pianist</span>.
       </p>
 
       <p>
@@ -82,7 +87,8 @@ const Credo = ({ width }: Props) => {
       <p>
         It was like I decided to render all my previous experiences pointless
         and start all over again. It felt like the{" "}
-        <span>antithesis of my very being</span>. But it wasn't.
+        <span className="highlight">antithesis of my very being</span>. But it
+        wasn't.
       </p>
 
       <p>
@@ -90,18 +96,17 @@ const Credo = ({ width }: Props) => {
         grades in engineering coming from these classes. Logical thinking and
         math was something I felt at home with, and so, programming was
         something I truly enjoyed. I had taken piano, guitar and drumming
-        lessons as a kid, a few summers at best. But I had developed a basic
-        background in music theory.
+        lessons as a kid, a few summers at best. But it was sufficient to help
+        me develop a basic foundation in music theory.
       </p>
 
       <p>
-        Neither was enough to enable or defend my choices and I knew that this
-        path as a self-taught programmer and pianist (if one could call it that)
-        wouldn't be a cakewalk. But it was enough of a start to know that if I
-        buckle down and put my mind to it, I could make headway. As bizarre as
-        my choices seemed to the outside world at the time, it was the only
-        thing I was certain about. And this certainty was enough to get me
-        going.
+        Now, neither was enough to enable or defend my choices. I knew that this
+        path as a self-taught programmer and pianist wouldn't be a cakewalk.
+        But, it was enough of a start to know that if I buckle down and put my
+        mind to it, I could make good headway. As bizarre as my choices seemed
+        to the outside world at the time, it was the only thing I was certain
+        about. And this certainty was enough to get me going.
       </p>
 
       <p>
@@ -116,7 +121,8 @@ const Credo = ({ width }: Props) => {
       </p>
 
       <p>
-        This page summarizes <span>the bible I live by</span> and is my record
+        This page summarizes{" "}
+        <span className="highlight">the bible I live by</span> and is my record
         of continuing to fervently stick to its beliefs. All the while keeping
         an open mind to criticism of my ideas from those around me.
       </p>
@@ -124,6 +130,7 @@ const Credo = ({ width }: Props) => {
       <br />
       <hr />
       <h2>The 10,000 hour goal</h2>
+      <hr />
       <p>
         It has been a year and a half (at the time of writing this which is July
         2019) since the formulation of my beliefs. As someone trying to play
@@ -228,9 +235,17 @@ const Credo = ({ width }: Props) => {
         their Hamburg crucible. It was the making of them.
       </Accordion>
 
+      <p>
+        As is evident from these stories above and the other examples that
+        Gladwell presents in his book, most people who get really good at their
+        craft, reach this point after having put in 10000 hours roughly. With
+        the target number of hours and the fields that I want to put this effort
+        into defined, the steps to implementing this became a lot clearer.
+      </p>
       <br />
       <hr />
       <h2>Creating your buckets</h2>
+      <hr />
 
       <p>
         Having chosen my craft as a computer scientist and musician, it became a
@@ -243,12 +258,50 @@ const Credo = ({ width }: Props) => {
       </p>
 
       <p>
+        There is a tool I use on my code editor called Waka Time. It measures
+        (with pretty good accuracy) how much time one spends programming each
+        day. It has an algorithm which uses a concept called heartbeat to know
+        when the user is actually working versus just keeping the editor open.
+      </p>
+
+      <img
+        src={productivity}
+        alt="productivity graph"
+        style={{ objectFit: "contain" }}
+      />
+
+      <p>
+        The above graph shows two of my most productive weeks. While this
+        doesn't show a qualitative understanding of how I used up those hours, I
+        found that it was a step in the right direction. I was putting in the
+        grind to say the least. I address the qualitative nature of work in the
+        section titled,{" "}
+        <span
+          className="link"
+          onClick={() =>
+            definingSuccessCriteria.current.scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+            })
+          }
+        >
+          Defining success criteria
+        </span>
+        . On a good week, I am able to put in 40 to 45 hours towards programming
+        (including work obviously) and 15 to 20 hours towards learning the
+        piano. While these long hours spent between these two fields, provide me
+        with a sense of accomplishment, the target continually makes me realize
+        how important being consistent with the number of hours is.
+      </p>
+
+      <p>
         Putting in long hours was easy on some days and it wasn't easy on
         others. But I realized that as I strengthened these habits, my tolerance
-        for the number of hours I could focus picked up radically. This was a
-        crucial aspect to my philosophy. From forcing myself to spend time on
-        these activities, I went to losing track of how much times I was
-        spending on them.
+        for the number of hours I could focus, picked up radically. This was a
+        crucial change to my philosophy. From forcing myself to spend time on
+        these activities, I went to losing track of how much time I was spending
+        on them. And when this transition happens naturally, it's not effort
+        anymore.
       </p>
 
       <blockquote>
@@ -271,27 +324,40 @@ const Credo = ({ width }: Props) => {
       </p>
 
       <br />
+      <h3 className="highlight underline">UPCOMING SECTIONS</h3>
+      <br />
       <hr />
-      <h2>Defining success criteria - Where Cal Newport comes in</h2>
+      <h2 ref={definingSuccessCriteria}>
+        Defining success criteria - Where Cal Newport comes in
+      </h2>
+      <hr />
 
       <p>Add thoughts about deep work</p>
 
       <br />
       <hr />
       <h2>Reconciling Malcolm Gladwell with Tim Ferriss</h2>
+      <hr />
 
       <p>Contrasting 10000 hours with the 4 hour work week</p>
 
       <br />
       <hr />
-      <h2>
-        Look to underachieve in the short term and overachieve in the long term.
-      </h2>
+      <h2>Weekly Goal Setting</h2>
+      <hr />
 
       <p>Thoughts on tracking progress</p>
+      <br />
+      <hr />
+      <h2>The power of iteration</h2>
+      <hr />
 
       <p>
-        <span>Stay tuned for updates . . .</span>
+        Extending the principle of iteration from software engineering to life.
+      </p>
+
+      <p>
+        <span className="highlight">Stay tuned for updates . . .</span>
       </p>
     </CredoPage>
   );

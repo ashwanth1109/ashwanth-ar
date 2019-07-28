@@ -2,7 +2,7 @@
 
 <Youtube videoId="frxT2qB1POQ"/>
 
-Credits to Rousseau for creating the video tutorial
+Video Credits to Rousseau
 
 ## Chord Progression 1 - 3 bars
 

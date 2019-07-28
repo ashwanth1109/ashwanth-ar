@@ -14,7 +14,6 @@ import eventful from "assets/projects/eventful.png";
 // COMPONENTS
 import Slideshow from "components/SlideshowCarousel";
 import HSLColorWheel from "components/HSLColorWheel";
-import SheetMusic from "components/SheetMusic";
 
 export const titleText = "Hello, I'm Ashwanth";
 
@@ -220,7 +219,6 @@ export const techArticles = {
 // MUSIC ARTICLES
 
 const preludeCMajor = {
-  component: () => <SheetMusic />,
   title: "Prelude in C Major - Johann Sebastian Bach",
   link: "prelude-in-c-major",
   date: "July 1, 2019",
@@ -229,10 +227,20 @@ const preludeCMajor = {
   content: require("articles/Music/PreludeCMajor.md")
 };
 
-export const classicalPosts = [preludeCMajor];
+const moonlightSonata = {
+  title: "Moonlight Sonata, 1st Movement, Ludwig Van Beethoven",
+  link: "moonlight-sonata-1",
+  date: "July 27, 2019",
+  description: "Chord progressions and musical patterns in Moonlight Sonata",
+  length: "ongoing",
+  content: require("articles/Music/MoonlightSonata.md")
+};
+
+export const classicalPosts = [preludeCMajor, moonlightSonata];
 
 export const musicArticles = {
-  "prelude-in-c-major": preludeCMajor
+  "prelude-in-c-major": preludeCMajor,
+  "moonlight-sonata-1": moonlightSonata
 };
 // MUSIC VIDEOS
 

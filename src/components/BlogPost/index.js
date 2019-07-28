@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "redux-first-router-link";
 
-import { Post, Title, Date, Clock, Length, Desc } from "./styles";
+import { Post, Date, Clock, Length, Desc } from "./styles";
 
 import { Container } from "styles";
 
@@ -26,7 +26,7 @@ const BlogPost = ({ article, route }: Props) => {
           }
         }}
       >
-        <Title>{title}</Title>
+        <h2>{title}</h2>
       </Link>
       <Container justify="flex-start" margin="8px 0">
         <Date>{date}</Date>

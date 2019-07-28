@@ -23,13 +23,46 @@ const Tech = () => {
       <h1>TECHNOLOGY</h1>
       <blockquote>
         What lies behind us and what lies before us are nothing compared to{" "}
-        <strong>what lies within us</strong>. - <span>Ralph Waldo Emerson</span>
+        <strong>what lies within us</strong>. -{" "}
+        <span className="highlight">Ralph Waldo Emerson</span>
       </blockquote>
       <p>
-        Hello world! (How cliche'd right?). Welcome to my tech page. You can
-        find links to my LinkedIn and Github page by clicking the rotating logo
-        on the top left corner. Before you browse the rest of the page, I would
-        recommend reading the following intro.
+        Hello world! (How cliche'd right?). I am currently working as a{" "}
+        <span className="highlight">Software Engineer</span> in a startup called{" "}
+        <span className="highlight">Unifize</span>. Unifize is one among 10
+        startups that was in the inaugural batch of the{" "}
+        <span className="highlight">Techstars India Accelerator</span>.
+        <br />
+        <br />
+        We develop an{" "}
+        <span className="highlight">
+          industrial grade chat application
+        </span>{" "}
+        that empowers mid to large scale engineering and manufacturing companies
+        reduce their process cycle times. We achieve this by enabling teams to
+        rapidly form and disband around micro objectives using process
+        templates. Templates guide otherwise unstructured conversations,
+        allowing people, data and processes to interact painlessly and to
+        seamlessly generate insights for business managers. You can read more
+        about it{" "}
+        <a href="/tech/unifize-chat" className="highlight underline">
+          here
+        </a>
+        .
+        <br />
+        <br />I am one of two web developers who are entrusted with building our
+        web app. I work in close collaboration with the backend, mobile and
+        design team, developing features using{" "}
+        <span className="highlight">
+          React, Redux, Saga, Firebase, Styled Components, and Flow
+        </span>{" "}
+        with a functional programming approach.
+        <br />
+        <br />
+        You can find links to my{" "}
+        <span className="highlight">LinkedIn and Github page</span> by clicking
+        the rotating logo on the top left corner. Before you browse the rest of
+        the page, I would recommend reading the following intro.
         <br />
         <br />
         This page is categorized into two sections. <br />
@@ -45,6 +78,7 @@ const Tech = () => {
                 })
               : null
           }
+          className="highlight underline"
         >
           Content and Code
         </a>{" "}
@@ -63,6 +97,7 @@ const Tech = () => {
                 })
               : null
           }
+          className="highlight underline"
         >
           Mini Apps
         </a>{" "}
@@ -71,10 +106,11 @@ const Tech = () => {
         ton of sentimental value to me and is a constant reminder of how many
         hours seemlessly passed by when I worked on them.
       </p>
-      <hr />
       <br />
 
+      <hr />
       <h2 ref={section1}>SECTION 1: CONTENT AND CODE</h2>
+      <hr />
       <br />
 
       {/** THE DEVIL IS IN THE DETAILS */}
@@ -143,9 +179,10 @@ const Tech = () => {
         ))}
       </Accordion>
 
-      <hr />
       <br />
+      <hr />
       <h2 ref={section2}>SECTION 2: MINI APPS</h2>
+      <hr />
       <MiniApps />
       <hr />
     </TechPage>

@@ -7,6 +7,7 @@ const routesMap = {
   HOME: "/",
   ABOUT: "/about",
   TECH: "/tech",
+  UNIFIZE: "/tech/unifize-chat",
   TECH_ARTICLES: "/tech/:article",
   MUSIC: "/music",
   MUSIC_ARTICLES: "/music/:article",

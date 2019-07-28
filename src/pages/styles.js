@@ -3,7 +3,6 @@
 import styled, { keyframes } from "styled-components";
 
 import { Page } from "styles";
-import { colors, fonts } from "styles/constants";
 
 export const HomePage = styled(Page)`
   justify-content: center;
@@ -13,59 +12,14 @@ export const HomePage = styled(Page)`
 
 export const ContentPage = styled.div`
   margin-top: 76px;
-  > h1,
-  h2,
-  h3 {
-    font-family: "Patrick Hand", cursive;
-    margin: 0;
-    font-weight: bold;
-  }
-  > h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: ${colors.pureWhite};
-    padding-bottom: 0.3em;
-  }
-  > h2 {
-    font-size: 2rem;
-    color: ${colors.pureWhite};
-  }
-  > h3 {
-    font-size: 1.6rem;
-    color: ${colors.goldenYellow};
-  }
-  > hr {
-    width: 100%;
-    color: transparent;
-    border-bottom: 1.5px solid ${colors.goldenYellow + "50"};
-    border-style: dashed;
-  }
-  > blockquote {
-    margin: 24px 40px;
-    font-family: ${fonts.secondary};
-    font-size: 2rem;
-    color: ${colors.textGray};
-    border-width: 0px;
-    border-left: 1.5px solid ${colors.goldenYellow + "50"};
-    border-style: dashed;
-    padding-left: 24px;
-    font-weight: 300;
-    > span {
-      color: ${colors.goldenYellow};
-    }
-  }
-  > p {
-    font-family: ${fonts.secondary};
-    color: ${colors.textGray};
-    font-size: 1.25rem;
-    > a,
-    span {
-      color: ${colors.goldenYellow};
-    }
-    > a {
-      text-decoration: underline;
-    }
-  }
+  max-width: 1000px;
+  width: 90vw;
+  padding-top: 16px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  flex-direction: column;
 `;
 
 export const AboutPage = styled(ContentPage)`
@@ -73,27 +27,9 @@ export const AboutPage = styled(ContentPage)`
   display: flex;
 `;
 
-export const TechPage = styled(ContentPage)`
-  padding-top: 16px;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 32px;
-  flex-direction: column;
-  max-width: 1000px;
-  width: 90vw;
-`;
+export const TechPage = styled(ContentPage)``;
 
-export const TechArticlePage = styled(ContentPage)`
-  padding-top: 16px;
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 32px;
-`;
+export const TechArticlePage = styled(ContentPage)``;
 
 export const MusicPage = styled.div`
   display: flex;

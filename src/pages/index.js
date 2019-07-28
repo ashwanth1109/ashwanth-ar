@@ -6,6 +6,8 @@ import Tech from "./Tech";
 import Music from "./Music";
 import Credo from "./Credo";
 
+import Unifize from "./Unifize";
+
 import TechArticles from "./TechArticles";
 import MusicArticles from "./MusicArticles";
 
@@ -17,6 +19,7 @@ export {
   Tech,
   Music,
   Credo,
+  Unifize,
   TechArticles,
   MusicArticles,
   NotFound
