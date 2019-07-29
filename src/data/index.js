@@ -14,6 +14,7 @@ import eventful from "assets/projects/eventful.png";
 // COMPONENTS
 import Slideshow from "components/SlideshowCarousel";
 import HSLColorWheel from "components/HSLColorWheel";
+import DraftJS from "components/DraftJS";
 
 export const titleText = "Hello, I'm Ashwanth";
 
@@ -111,6 +112,17 @@ const devOpsVsSRE = {
   content: require("articles/DevOps-vs-SRE.md")
 };
 
+const cicd = {
+  title: "Continuous Integration and Deployment: Automation through CircleCI",
+  link: "cicd-circleci",
+  date: "June 16, 2019",
+  description: "Setting up a React Firebase App for CICD using CircleCI",
+  length: "5 min read",
+  content: require("articles/CICD.md")
+};
+
+// REACT INTERNALS
+
 const reactInternals1 = {
   title: "React Internals Part 1 - React Base Classes",
   link: "react-internals",
@@ -126,20 +138,32 @@ const reactInternals2 = {
   date: "July 3, 2019",
   description:
     "A deep dive into react's source code: createRef, ReactCreateEventComponent, React Children",
-  length: "xx min read",
+  length: "ongoing",
   content: require("articles/React/ReactInternals2.md")
 };
 
-const cicd = {
-  title: "Continuous Integration and Deployment: Automation through CircleCI",
-  link: "cicd-circleci",
-  date: "June 16, 2019",
-  description: "Setting up a React Firebase App for CICD using CircleCI",
-  length: "5 min read",
-  content: require("articles/CICD.md")
+const forwardRef = {
+  title: "Forward Ref",
+  link: "forward-ref",
+  date: "July 29, 2019",
+  description:
+    "Ref forwarding is a technique for automatically passing a ref through a component to one of its children.",
+  length: "ongoing",
+  content: require("articles/React/ForwardRef.md")
 };
 
 // THE DEVIL IS IN THE DETAILS
+
+const draftJS = {
+  component: () => <DraftJS />,
+  title: "Getting familiar with Draft JS",
+  link: "getting-familiar-with-draft-js",
+  date: "July 29, 2019",
+  description:
+    "Draft.js is a framework for building rich text editors in React, powered by an immutable model and abstracting over cross-browser differences.",
+  length: "ongoing",
+  content: require("articles/DraftJS.md")
+};
 
 const regularExpressions = {
   title: "Regular Expressions - Patterns to match character combinations",
@@ -198,10 +222,15 @@ export const bigPicturePosts = [cicd, devOpsVsSRE];
 export const codePosts = [
   simpleColorHash,
   automaticSlideshow,
-  regularExpressions
+  regularExpressions,
+  draftJS
 ];
 
-export const reactInternalsPosts = [reactInternals1, reactInternals2];
+export const reactInternalsPosts = [
+  reactInternals1,
+  reactInternals2,
+  forwardRef
+];
 
 export const buildingBlocks = [introToCS, introToAlgos];
 
@@ -211,10 +240,12 @@ export const techArticles = {
   "cicd-circleci": cicd,
   "react-internals": reactInternals1,
   "react-internals-2": reactInternals2,
+  "forward-ref": forwardRef,
   "intro-to-cs": introToCS,
   "intro-to-algos": introToAlgos,
   "simple-color-hash": simpleColorHash,
-  "regular-expressions": regularExpressions
+  "regular-expressions": regularExpressions,
+  "getting-familiar-with-draft-js": draftJS
 };
 // MUSIC ARTICLES
 
