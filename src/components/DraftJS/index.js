@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import { Editor, EditorState, RichUtils, ContentState } from "draft-js";
 
 import {
@@ -15,6 +15,7 @@ const DraftJS = () => {
   const [isBold, setIsBold] = useState(false);
   const [isItalic, setIsItalic] = useState(false);
   const [isUnderline, setIsUnderline] = useState(false);
+  const editorRef = useRef();
 
   const controlStyles = useCallback((repVal, trueVal, setFn) => {
     if (repVal && !trueVal) setFn(false);
@@ -69,6 +70,7 @@ const DraftJS = () => {
   const stylingClick = useCallback(
     (e: any, style: string) => {
       e.preventDefault();
+      editorRef.current.focus();
       const newState = RichUtils.toggleInlineStyle(editorState, style);
       setEditorState(newState);
     },
@@ -83,11 +85,13 @@ const DraftJS = () => {
         onChange={handleChange}
         handleKeyCommand={handleKeyCommand}
         handleReturn={handleReturn}
+        ref={editorRef}
       />
       <EditorOptions>
         <EditorOption
           onMouseDown={e => stylingClick(e, "BOLD")}
           isSelected={isBold}
+          onTouchStart={e => stylingClick(e, "BOLD")}
         >
           B
         </EditorOption>

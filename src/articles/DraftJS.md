@@ -119,3 +119,13 @@ const DraftJS = () => {
   );
 };
 ```
+
+### The Entity System
+
+Draft JS uses the entity system for annotating ranges of text with metadata. Entities introduce levels of richness such as styled text, mentions, links and embedded content. They are stored in the ContentState record.
+
+An entity is an object that represents the metadata for a range of text within a Draft editor and it has 3 properties:
+
+- type: a string that indicates what kind of entity it is
+- mutability: denotes the behavior of a range of text
+- data: optional object containing metadata that is relevant to the entity
