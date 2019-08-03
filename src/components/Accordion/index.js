@@ -18,7 +18,7 @@ type Props = {
   title: string
 };
 
-const Accordion = ({ bodyHeight, children, title }: Props) => {
+const Accordion = ({ children, title }: Props) => {
   const contentRef = useRef();
   const [isOpen: boolean, setIsOpen: Function] = useState(false);
 

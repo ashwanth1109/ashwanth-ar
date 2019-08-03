@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Credo = ({ width }: Props) => {
-  const definingSuccessCriteria = useRef();
+  const definingSuccessCriteria: { current: any } = useRef();
   return (
     <CredoPage>
       <h1>CREDO</h1>

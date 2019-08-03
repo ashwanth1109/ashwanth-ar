@@ -27,7 +27,7 @@ const Tech = () => {
         <span className="highlight">Ralph Waldo Emerson</span>
       </blockquote>
       <p>
-        Hello world! (How cliche'd right?). I am currently working as a{" "}
+        I am currently working as a{" "}
         <span className="highlight">Software Engineer</span> in a startup called{" "}
         <span className="highlight">Unifize</span>. Unifize is one among 10
         startups that was in the inaugural batch of the{" "}

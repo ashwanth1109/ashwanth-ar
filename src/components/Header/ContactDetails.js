@@ -10,7 +10,7 @@ import { Container } from "styles";
 
 type Props = {
   show: boolean,
-  width: Number
+  width: number
 };
 
 const ContactDetails = ({ show, width }: Props) => {

@@ -21,13 +21,13 @@ import { Heading, Container } from "styles";
 import { musicVideos, classicalPosts } from "data";
 
 type Props = {
-  width: Number
+  width: number
 };
 
 const Music = ({ width }: Props) => {
-  const section1 = useRef();
-  const section2 = useRef();
-  const section3 = useRef();
+  const section1: { current: any } = useRef();
+  const section2: { current: any } = useRef();
+  const section3: { current: any } = useRef();
 
   const renderPageContent = () => (
     <MusicArticles>

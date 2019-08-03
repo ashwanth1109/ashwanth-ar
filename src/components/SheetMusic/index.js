@@ -7,10 +7,6 @@ import abcjs from "abcjs/midi";
 
 import { Sheet } from "./styles";
 
-type Props = {
-  test: any
-};
-
 const music1 = `
 X:1
 T: Prelude in C Major
@@ -49,7 +45,7 @@ M: 4/4
 "G"G, B, DGB DGB G, B, DGB DGB | "C7"B, C EGc EGc B, C EGc EGc |
 `;
 
-const SheetMusic = ({ test }: Props) => {
+const SheetMusic = () => {
   const tunes = abcjs.renderAbc("sheet1", music2, {
     responsive: "resize",
     add_classes: true

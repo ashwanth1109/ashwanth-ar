@@ -18,7 +18,7 @@ const routesMap = {
   CREDO: "/credo"
 };
 
-export default function configureStore(preloadedState) {
+export default function configureStore(preloadedState: any) {
   const { reducer, middleware, enhancer } = connectRoutes(routesMap);
 
   const rootReducer = combineReducers({ page, location: reducer, app });

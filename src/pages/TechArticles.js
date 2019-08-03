@@ -13,7 +13,7 @@ import { Article } from "styles";
 
 type Props = {
   article: string,
-  width: Number
+  width: number
 };
 
 const TechArticles = ({ article, width }: Props) => {

@@ -15,7 +15,7 @@ const DraftJS = () => {
   const [isBold, setIsBold] = useState(false);
   const [isItalic, setIsItalic] = useState(false);
   const [isUnderline, setIsUnderline] = useState(false);
-  const editorRef = useRef();
+  const editorRef: { current: any } = useRef();
 
   const controlStyles = useCallback((repVal, trueVal, setFn) => {
     if (repVal && !trueVal) setFn(false);
@@ -37,14 +37,12 @@ const DraftJS = () => {
     const contentState = editorState.getCurrentContent();
     const text = contentState.getPlainText();
     const lastKey = text[text.length - 1];
-    console.log("handle change triggered", { lastKey, bool: lastKey === "\n" });
     if (lastKey !== "\n") {
       setEditorState(editorState);
     }
   }, []);
 
-  const handleKeyCommand = useCallback((command, editorState) => {
-    console.log("in handle key command");
+  const handleKeyCommand = useCallback((command, editorState): any => {
     const newState = RichUtils.handleKeyCommand(editorState, command);
     if (newState) {
       setEditorState(newState);
@@ -54,7 +52,7 @@ const DraftJS = () => {
   }, []);
 
   const handleReturn = useCallback(
-    (e, editorState) => {
+    (e, editorState): any => {
       e.preventDefault();
       const contentState = ContentState.createFromText("");
       const newState = EditorState.push(
@@ -91,19 +89,21 @@ const DraftJS = () => {
         <EditorOption
           onMouseDown={e => stylingClick(e, "BOLD")}
           isSelected={isBold}
-          onTouchStart={e => stylingClick(e, "BOLD")}
+          onTouchEnd={e => stylingClick(e, "BOLD")}
         >
           B
         </EditorOption>
         <EditorOption
           onMouseDown={e => stylingClick(e, "ITALIC")}
           isSelected={isItalic}
+          onTouchEnd={e => stylingClick(e, "ITALIC")}
         >
           I
         </EditorOption>
         <EditorOption
           onMouseDown={e => stylingClick(e, "UNDERLINE")}
           isSelected={isUnderline}
+          onTouchEnd={e => stylingClick(e, "UNDERLINE")}
         >
           U
         </EditorOption>

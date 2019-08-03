@@ -24,7 +24,7 @@ import Collapsible from "./Collapsible";
 
 type Props = {
   currentPage: string,
-  width: Number,
+  width: number,
   toggleShowMenu: Function
 };
 
