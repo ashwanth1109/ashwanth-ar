@@ -1,14 +1,17 @@
 // @flow
 
 import React, { useState, useCallback, useEffect, useRef } from "react";
-import { Editor, EditorState, RichUtils, ContentState } from "draft-js";
-
 import {
-  EditorContainer,
-  Display,
-  EditorOptions,
-  EditorOption
-} from "./styles";
+  Editor,
+  EditorState,
+  RichUtils,
+  ContentState,
+  convertToRaw
+  // Modifier
+} from "draft-js";
+
+import { EditorContainer, EditorOptions, EditorOption } from "./styles";
+import Display from "./Display";
 
 const DraftJS = () => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
@@ -16,10 +19,40 @@ const DraftJS = () => {
   const [isItalic, setIsItalic] = useState(false);
   const [isUnderline, setIsUnderline] = useState(false);
   const editorRef: { current: any } = useRef();
+  const [display, setDisplay] = useState(null);
+  // const [prevContent, setPrevContent] = useState(null);
 
   const controlStyles = useCallback((repVal, trueVal, setFn) => {
     if (repVal && !trueVal) setFn(false);
     if (!repVal && trueVal) setFn(true);
+  }, []);
+
+  // remove later
+  useEffect(() => {
+    setDisplay(null);
+  }, []);
+
+  useEffect(() => {
+    let contentState = ContentState.createFromText("");
+    contentState = contentState.createEntity("LINK", "MUTABLE", {
+      url: "https://www.google.com/"
+    });
+    console.log(convertToRaw(contentState));
+    // const selectionState = editorState.getSelection();
+    // const contentStateWithEntity = contentState.createEntity(
+    //   "LINK",
+    //   "MUTABLE",
+    //   { url: "https://www.google.com/" }
+    // );
+    // const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
+    // const contentStateWithLink = Modifier.applyEntity(
+    //   contentStateWithEntity,
+    //   selectionState,
+    //   entityKey
+    // );
+    // // const newEditorState = EditorState.push(editorState, contentStateWithLink);
+    // console.log(convertToRaw(contentStateWithLink));
+    // setEditorState(newEditorState);
   }, []);
 
   useEffect(() => {
@@ -34,12 +67,14 @@ const DraftJS = () => {
   }, [editorState]);
 
   const handleChange = useCallback(editorState => {
-    const contentState = editorState.getCurrentContent();
-    const text = contentState.getPlainText();
-    const lastKey = text[text.length - 1];
-    if (lastKey !== "\n") {
-      setEditorState(editorState);
-    }
+    console.log("handle change triggered");
+    // const contentState = editorState.getCurrentContent();
+    // // console.log(convertToRaw(contentState));
+    // const selectionState = editorState.getSelection();
+    // const text = contentState.getPlainText();
+    // const lastKey = text[text.length - 1];
+    // if (lastKey !== "\n") setEditorState(editorState);
+    // else setDisplay(convertToRaw(contentState));
   }, []);
 
   const handleKeyCommand = useCallback((command, editorState): any => {
@@ -55,6 +90,7 @@ const DraftJS = () => {
     (e, editorState): any => {
       e.preventDefault();
       const contentState = ContentState.createFromText("");
+      console.log(convertToRaw(contentState));
       const newState = EditorState.push(
         editorState,
         contentState,
@@ -77,7 +113,7 @@ const DraftJS = () => {
 
   return (
     <EditorContainer>
-      <Display />
+      <Display display={display} />
       <Editor
         editorState={editorState}
         onChange={handleChange}

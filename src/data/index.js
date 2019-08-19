@@ -217,14 +217,19 @@ const introToAlgos = {
   content: require("articles/Lectures/IntroToAlgos/IntroToAlgos.md")
 };
 
+const artificialIntelligence = {
+  title: "Introduction to Artificial Intelligence",
+  link: "intro-to-ai",
+  date: "August 19, 2019",
+  description:
+    "An introduction to basic knowledge representation, problem solving, and learning methods of artificial intelligence.",
+  length: "ongoing",
+  content: require("articles/Lectures/ArtificialIntelligence/IntroToAI.md")
+};
+
 export const bigPicturePosts = [cicd, devOpsVsSRE];
 
-export const codePosts = [
-  simpleColorHash,
-  automaticSlideshow,
-  regularExpressions,
-  draftJS
-];
+export const codePosts = [automaticSlideshow, draftJS];
 
 export const reactInternalsPosts = [
   reactInternals1,
@@ -232,7 +237,7 @@ export const reactInternalsPosts = [
   forwardRef
 ];
 
-export const buildingBlocks = [introToCS, introToAlgos];
+export const buildingBlocks = [introToCS, introToAlgos, artificialIntelligence];
 
 export const techArticles = {
   "dev-ops-vs-sre": devOpsVsSRE,
@@ -245,7 +250,8 @@ export const techArticles = {
   "intro-to-algos": introToAlgos,
   "simple-color-hash": simpleColorHash,
   "regular-expressions": regularExpressions,
-  "getting-familiar-with-draft-js": draftJS
+  "getting-familiar-with-draft-js": draftJS,
+  "intro-to-ai": artificialIntelligence
 };
 // MUSIC ARTICLES
 

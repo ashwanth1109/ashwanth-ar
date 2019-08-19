@@ -149,6 +149,9 @@ export const Article = styled.div`
   }
   blockquote {
     font-size: ${ifProp("smallDevice", "16px", "24px")};
+    > span {
+      color: ${colors.goldenYellow};
+    }
   }
 `;
 

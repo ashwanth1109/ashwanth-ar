@@ -1,6 +1,8 @@
 // @flow
+
 import styled from "styled-components";
 import { ifProp } from "styled-tools";
+
 import { colors, fonts } from "styles/constants";
 
 export const EditorContainer = styled.div`
