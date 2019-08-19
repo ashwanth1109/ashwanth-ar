@@ -60,23 +60,12 @@ We can also use custom divs to control the styling within the editor.
 ```js
 const DraftJS = () => {
   const [isBold, setIsBold] = useState(false);
-  const [isItalic, setIsItalic] = useState(false);
-  const [isUnderline, setIsUnderline] = useState(false);
-
-  const controlStyles = useCallback((repVal, trueVal, setFn) => {
-    if (repVal && !trueVal) setFn(false);
-    if (!repVal && trueVal) setFn(true);
-  }, []);
 
   useEffect(() => {
     const inlineStyles = editorState.getCurrentInlineStyle().toJS();
-    console.log(inlineStyles);
     const checkBold = inlineStyles.includes("BOLD");
-    const checkItalic = inlineStyles.includes("ITALIC");
-    const checkUnderline = inlineStyles.includes("UNDERLINE");
-    controlStyles(isBold, checkBold, setIsBold);
-    controlStyles(isItalic, checkItalic, setIsItalic);
-    controlStyles(isUnderline, checkUnderline, setIsUnderline);
+    if (isBold && !checkBold) setIsBold(false);
+    if (!isBold && checkBold) setIsBold(true);
   }, [editorState]);
 
   const stylingClick = useCallback(
@@ -91,28 +80,15 @@ const DraftJS = () => {
   return (
     <EditorContainer>
       <Editor
-        editorState={editorState}
-        onChange={setEditorState}
-        handleKeyCommand={handleKeyCommand}
+      //...
       />
       <EditorOptions>
         <EditorOption
           onMouseDown={e => stylingClick(e, "BOLD")}
           isSelected={isBold}
+          onTouchEnd={e => stylingClick(e, "BOLD")}
         >
           B
-        </EditorOption>
-        <EditorOption
-          onMouseDown={e => stylingClick(e, "ITALIC")}
-          isSelected={isItalic}
-        >
-          I
-        </EditorOption>
-        <EditorOption
-          onMouseDown={e => stylingClick(e, "UNDERLINE")}
-          isSelected={isUnderline}
-        >
-          U
         </EditorOption>
       </EditorOptions>
     </EditorContainer>
@@ -129,3 +105,33 @@ An entity is an object that represents the metadata for a range of text within a
 - type: a string that indicates what kind of entity it is
 - mutability: denotes the behavior of a range of text
 - data: optional object containing metadata that is relevant to the entity
+
+### Creating an entity
+
+Entities can be created using the `contentState.createEntity` method as follows:
+
+```js
+const contentState = editorState.getCurrentContent();
+const contentStateWithEntity = contentState.createEntity("LINK", "MUTABLE", {
+  url: "http://www.zombo.com"
+});
+```
+
+You can retrieve the last created entity using the `getLastCreatedEntityKey` and apply it to the content state using the Modifier's `applyEntity` method.
+
+```js
+const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
+const contentStateWithLink = Modifier.applyEntity(
+  contentStateWithEntity,
+  selectionState,
+  entityKey
+);
+```
+
+You can then set the new content state back into the editor using the `push` static method from the EditorState class.
+
+```js
+const newEditorState = EditorState.push(editorState, {
+  currentContent: contentStateWithLink
+});
+```
